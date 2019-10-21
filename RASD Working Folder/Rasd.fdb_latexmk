@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1571671788 "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.tex" "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" "Rasd" 1571671788
+["pdflatex"] 1571671844 "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.tex" "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" "Rasd" 1571671859
   "/etc/texmf/web2c/texmf.cnf" 1571236248 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux" 1571671788 3807 9f0dc3d7483a7bbd0bbecf15103708be ""
-  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.tex" 1571671787 4277 4be5106256679f87d55de5836b1a690d ""
+  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux" 1571671844 3807 7b7b3ea41d8f4bad09bd58bcea9309c9 ""
+  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.tex" 1571671858 4210 7f1251c1af09dbc1e1e94c6c90e53729 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -39,13 +39,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1571236858 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1571236871 4130558 9e740b19f16afe3d8f5ec3480d799932 ""
-  "Rasd.aux" 1571671788 3807 9f0dc3d7483a7bbd0bbecf15103708be ""
-  "Rasd.tex" 1571671787 4277 4be5106256679f87d55de5836b1a690d ""
-  "Rasd.toc" 1571671788 2989 a92a5c32b351c86414a37f8fc019b07b ""
+  "Rasd.aux" 1571671844 3807 7b7b3ea41d8f4bad09bd58bcea9309c9 ""
+  "Rasd.tex" 1571671858 4210 7f1251c1af09dbc1e1e94c6c90e53729 ""
+  "Rasd.toc" 1571671844 2989 35559845dae7fd3e2d533f8aaa4e2cf8 ""
   (generated)
-  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.log"
+  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf"
+  "Rasd.log"
   "Rasd.pdf"
   "Rasd.toc"
-  "Rasd.log"
   "Rasd.aux"
-  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf"
+  "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.log"

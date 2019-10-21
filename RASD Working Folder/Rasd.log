@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.16)  21 OCT 2019 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.16)  21 OCT 2019 17:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -200,42 +200,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
+ (/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write3
+\openout3 = `Rasd.toc'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 17--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
+Underfull \hbox (badness 10000) in paragraph at lines 17--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--32
+Underfull \hbox (badness 10000) in paragraph at lines 17--34
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
- (/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc [2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
- [3])
-\tf@toc=\write3
-\openout3 = `Rasd.toc'.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+ [3]
+Overfull \vbox (282.01305pt too high) has occurred while \output is active []
 
- [4]
-Overfull \vbox (326.37411pt too high) has occurred while \output is active []
-
- [5] (/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
+ [4] (/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
 Here is how much of TeX's memory you used:
  8521 strings out of 492982
  177047 string characters out of 6134895
@@ -245,10 +245,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  32i,6n,31p,10471b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (5 pages, 97911 bytes).
+Output written on "/home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (4 pages, 98869 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
