@@ -1,22 +1,44 @@
 \documentclass{article}
 \usepackage{xparse}
 
-
 \title{SafeStreets}
 \author{Marco Premi, Fabrizio Siciliano, Giuseppe Taddeo}
-
 \pagestyle{headings}
 
 \begin{document}
 \maketitle
-
-\newpage
 
 \tableofcontents
 \newpage
 
 \section{Introduction}
 \subsection{Purpose}
+\paragraph{General Purpose}
+    The purpose of this document is to correctly analyze all requirements, goals 
+    and actions needed in order to correctly develop SafeStreets.\\
+    \\
+    SafeStreets is a crowd-sourced application that intends to provide users with the possibility to notify authorities when
+    traffic violations occur (eg. traffic violations) and will help to maintain stability and order within the streets. A reporting
+    system will also be available to police offices and municipal employees in order to allow them to analyze (and take actions accordingly)
+    different areas of the city and assess which areas have the most violations committed in.\\
+    \\
+    The core application will focus on storing useful traffic violation data provided by users, mainly with the help of input forms and
+    hard evidence such as images. At any violation input, SafeStreets will also store useful metadata such as date and time the violation 
+    was retrieved, geolocate where it is and update a city wide map highlighting the areas where violations happen.\\
+    \\
+    In addition to that, with the help of third parties (eg. municipality), SafeStreets will be able to retrieve the data given by such party
+    and cross-reference them with its own data retrieved by users. By doing so, it will be possible to identify unsafe areas, assess which kind 
+    of problems happen more frequently and suggest possible intervention. It will also be possible for third parties (municipality and police officers)
+    to automatically generate traffic tickets. This will be happening in order to cross-reference all available data in order to build statistics such 
+    as the most (or less) egregious offenders or the effectivness of the SafeStreets initiative
+    \paragraph{Goals} Follows a list of all goals that will be reached with the SafeStreets initiative.
+    \begin{itemize}
+        \item G1: The system must allow all kind of users (both third parties and civilians) to correctly input (with hard evidence) traffic violations around the city;
+        \item G2: The system must autonomously retrieve metadata from hard evidence useful to report and to all users;
+        \item G3: The system must allow to create different clearance levels in order to offer different reporting systems to different kind of users;
+        \item G4: The system will provide an efficient reporting system in order to highlight different violation categories through all parts of the city where the initiative is active;
+        \item 
+    \end{itemize}
 \subsection{Scope}
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
@@ -60,7 +82,5 @@
 \section{Formal Analysis using Alloy}
 \section{Effort spent}
 \section{References}
-
-
     
 \end{document}
