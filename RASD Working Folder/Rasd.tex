@@ -9,11 +9,11 @@
 \maketitle
 
 \tableofcontents
-\newpage
 
+\newpage
 \section{Introduction}
 \subsection{Purpose}
-\paragraph{General Purpose}
+\subsubsection{General Purpose}
     The purpose of this document is to correctly analyze all requirements, goals 
     and actions needed in order to correctly develop SafeStreets.\\
     \\
@@ -30,23 +30,32 @@
     and cross-reference them with its own data retrieved by users. By doing so, it will be possible to identify unsafe areas, assess which kind 
     of problems happen more frequently and suggest possible intervention. It will also be possible for third parties (municipality and police officers)
     to automatically generate traffic tickets. This will be happening in order to cross-reference all available data in order to build statistics such 
-    as the most (or less) egregious offenders or the effectivness of the SafeStreets initiative
-    \paragraph{Goals} Follows a list of all goals that will be reached with the SafeStreets initiative.
+    as the most (or less) egregious offenders or the effectiveness of the SafeStreets initiative
+    \subsubsection{Goals} Follows a list of all goals that will be reached with the SafeStreets initiative.
     \begin{itemize}
         \item G1: The system must allow all kind of users (both third parties and civilians) to correctly input (with hard evidence) traffic violations around the city;
         \item G2: The system must autonomously retrieve metadata from hard evidence useful to report and to all users;
         \item G3: The system must allow to create different clearance levels in order to offer different reporting systems to different kind of users;
         \item G4: The system will provide an efficient reporting system in order to highlight different violation categories through all parts of the city where the initiative is active;
-        \item 
     \end{itemize}
 \subsection{Scope}
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
+\paragraph{User:} it is identified as a civilian customer of the product. It will be the main source for the SafeStreets initiative to obtain information about traffic violations and therefore be successful;
+\paragraph{Third parties:}those kind of organization/company that could provide services useful to SafeStreets and that will be able to retrieve data in order to improve the streets' safety;
 \subsubsection{Acronym}
+\paragraph{UI:} User Interface
+\paragraph{GDPR:} General Data Protection Regulation
+\paragraph{API:} Application Programming Interface
 \subsubsection{Abbreviations}
+\paragraph{Gn:} nth goal;
+\paragraph{Dn:} nth domain;
+\paragraph{Rn:} nth requirement;
 \subsection{Revision History}
 \subsection{Reference Documents}
 \subsection{Document Structure}
+
+\newpage
 \section{Overall Description}
 \subsection{Product Perspective}
 \subsection{Product Functions}
@@ -56,6 +65,8 @@
 \subsubsection{Assumptions}
 \subsubsection{Dependencies}
 \subsubsection{Constraints}
+
+\newpage
 \section{Specific Requirements}
 \subsection{External Interface Requirements}
 \subsubsection{User Interfaces}
@@ -79,8 +90,22 @@
 \subsubsection{Security}
 \subsubsection{Mantainability}
 \subsubsection{Portability}
+
+\newpage
 \section{Formal Analysis using Alloy}
+
+\newpage
 \section{Effort spent}
+\begin{center}
+    \begin{tabular}{c|c|c|c|c}
+        \hline
+        \textbf{Description of the task} & \textbf{MP} & \textbf{FS} & \textbf{GT} \\
+        Introduction                    & 0 & 2 & 0 \\
+        Overall Description             & 0 & 0 & 0 \\
+        Specific requirements           & 0 & 0 & 0 \\
+        Formal analysis using Alloy     & 0 & 0 & 0 \\
+    \end{tabular}
+\end{center}
 \section{References}
     
-\end{document}
+\end{document}  
