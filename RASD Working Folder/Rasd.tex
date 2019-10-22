@@ -39,6 +39,17 @@
         \item G4: The system will provide an efficient reporting system in order to highlight different violation categories through all parts of the city where the initiative is active;
     \end{itemize}
 \subsection{Scope}
+With SafeStreets users can notify the authorities when traffic violations occur, and in particular parking violations.
+Both user and authorities must register to the application and agree that SafeStreets stores the information provided, completing it with suitable meta-data.
+The whole system, because it tracks users information, must respect the standards defined for processing of sensitive information such as GDPR if it is used in Europe.
+The user sends the type of the violation to the municipality and direct proofs of it (like a photograph). The system runs an algorithm to read the license plate and also asks the user to directly insert the license for a better recognition.
+Of course other information are required, like the name of the street when the violation has occurred, which can be retrieved from user's direct input or from the geographical position of the violation (using Google Maps API).  
+Both users and authorities can highlight the streets with the highest frequency of violations or the vehicles that commit the most violations.
+SafeStreets crosses information about the accidents that occur on the territory of the municipality with his own data to identify potentially unsafe areas and suggest possible interventions.
+Because municipality could generates traffic tickets from the information about violations SafeStreets should guarantee that information is never altered (if a manipulations occurs, the application should discard the information).
+Such features are made possible trough the use of two mobile applications(one for the citizens and one for the officers on the field).
+The collected information are sent to a back-end.
+All the services can also be accessed through a specific web-site. 
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
 \paragraph{User:} it is identified as a civilian customer of the product. It will be the main source for the SafeStreets initiative to obtain information about traffic violations and therefore be successful;
@@ -54,10 +65,34 @@
 \subsection{Revision History}
 \subsection{Reference Documents}
 \subsection{Document Structure}
-
+\paragraph{Chapter 1 - Introduction}
+Gives an introduction to the problem by describing the purpose of SafeStreets. It also shows the goals and the scope of the application. 
+\paragraph{Chapter 2 - Overall Description}
+Offers an overall description of the project. It identifies the actors involved in the application and lists all the assumptions in order to identify all the boundaries of the project.
+The product perspective includes details on the shared phenomena and the domain models.
+The class diagram describe the domain model used and the state diagrama analyzes:
+\begin{itemize}
+    \item The process of collecting violations from users
+    \item The process of sharing informations with the municipality
+\end{itemize}
+The majority of functions of the system are more precisely specified by taking in mind the goals of the system.  
+\paragraph{Chapter 3 - Specific Requirements}
+Contains external interface requirements which are: user interfaces, hardware interfaces, software interfaces and communication interfaces.
+Few scenarios describing how the system acts in real world are listed here.
+Furthermore it provides the description of the functional requirements, through the use of use cases and sequence diagrams.
+The non-functional requirements are defined through performance requirements, design constraints and software system attributes.
+\paragraph{Chapter 4 - Formal analysis using Alloy}
+Includes the alloy model of some critical aspects with comments and documentation.
+\paragraph{Chapter 5 - Effort Spent}
+Show the effort spent by the single group members while working on the RASD.
+\paragraph{Chapter 6 - References}
+Includes the documents we used as reference.
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
+SafeStreets is designed to be a completely new software applications. It uses some already proven servicese (like Google Maps API) for its critical tasks.
+The system is composed of two different mobile applications: one for the citizens that want to reports violations and one for the officers acting on the field.
+
 \subsection{Product Functions}
 %qua vanno aggiunte le varie funzioni
 \subsection{User characteristics}

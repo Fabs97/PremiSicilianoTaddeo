@@ -1,64 +1,70 @@
-PWD /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder
-INPUT /etc/texmf/web2c/texmf.cnf
-INPUT /usr/share/texmf/web2c/texmf.cnf
-INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.tex
-OUTPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.log
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
-INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
-INPUT /usr/share/texlive/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
-INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-INPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
-INPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
-OUTPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
-INPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-OUTPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-OUTPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /home/hastur/Documents/Polimi/Master Degree/First year/First semester/SE/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+PWD c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder
+INPUT c:/texlive/2019/texmf.cnf
+INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.tex
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.log
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/nul
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/nul
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/nul
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/nul
+INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
