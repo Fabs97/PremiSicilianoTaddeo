@@ -14,85 +14,125 @@
 \section{Introduction}
 \subsection{Purpose}
 \subsubsection{General Purpose}
-    The purpose of this document is to correctly analyze all requirements, goals 
+    The purpose of this document is to correctly analyze all requirements, goals
     and actions needed in order to correctly develop SafeStreets.\\
     \\
-    SafeStreets is a crowd-sourced application that intends to provide users with the possibility to notify authorities when
-    traffic violations occur (eg. traffic violations) and will help to maintain stability and order within the streets. A reporting
-    system will also be available to police offices and municipal employees in order to allow them to analyze (and take actions accordingly)
-    different areas of the city and assess which areas have the most violations committed in.\\
+    SafeStreets is a crowd-sourced application that intends to provide users
+    with the possibility to notify authorities when traffic violations occur
+    (eg. traffic violations) and will help to maintain stability and order
+    within the streets. A reporting system will also be available to police
+    offices and municipal employees in order to allow them to analyze (and take
+    actions accordingly) different areas of the city and assess which areas have
+    the most violations committed in.\\
     \\
-    The core application will focus on storing useful traffic violation data provided by users, mainly with the help of input forms and
-    hard evidence such as images. At any violation input, SafeStreets will also store useful metadata such as date and time the violation 
-    was retrieved, geolocate where it is and update a city wide map highlighting the areas where violations happen.\\
+    The core application will focus on storing useful traffic violation data
+    provided by users, mainly with the help of input forms and hard evidence
+    such as images. At any violation input, SafeStreets will also store useful
+    metadata such as date and time the violation was retrieved, geolocate where
+    it is and update a city wide map highlighting the areas where violations
+    happen.\\
     \\
-    In addition to that, with the help of third parties (eg. municipality), SafeStreets will be able to retrieve the data given by such party
-    and cross-reference them with its own data retrieved by users. By doing so, it will be possible to identify unsafe areas, assess which kind 
-    of problems happen more frequently and suggest possible intervention. It will also be possible for third parties (municipality and police officers)
-    to automatically generate traffic tickets. This will be happening in order to cross-reference all available data in order to build statistics such 
-    as the most (or less) egregious offenders or the effectiveness of the SafeStreets initiative
-    \subsubsection{Goals} Follows a list of all goals that will be reached with the SafeStreets initiative.
+    In addition to that, with the help of third parties (eg. municipality),
+    SafeStreets will be able to retrieve the data given by such party and
+    cross-reference them with its own data retrieved by users. By doing so, it
+    will be possible to identify unsafe areas, assess which kind of problems
+    happen more frequently and suggest possible intervention. It will also be
+    possible for third parties (municipality and police officers) to
+    automatically generate traffic tickets. This will be happening in order to
+    cross-reference all available data in order to build statistics such as the
+    most (or less) egregious offenders or the effectiveness of the SafeStreets
+    initiative \subsubsection{Goals} Follows a list of all goals that will be
+    reached with the SafeStreets initiative.
     \begin{itemize}
-        \item G1: The system must allow all kind of users (both third parties and civilians) to correctly input (with hard evidence) traffic violations around the city;
-        \item G2: The system must autonomously retrieve metadata from hard evidence useful to report and to all users;
-        \item G3: The system must allow to create different clearance levels in order to offer different reporting systems to different kind of users;
-        \item G4: The system will provide an efficient reporting system in order to highlight different violation categories through all parts of the city where the initiative is active;
+        \item G1: The system must allow all kind of users (both third parties
+        and civilians) to correctly input (with hard evidence) traffic
+        violations around the city;
+        \item G2: The system must autonomously retrieve metadata from hard
+        evidence useful to report and to all users;
+        \item G3: The system must allow to create different clearance levels in
+        order to offer different reporting systems to different kind of users;
+        \item G4: The system will provide an efficient reporting system in order
+        to highlight different violation categories through all parts of the
+        city where the initiative is active;
     \end{itemize}
 \subsection{Scope}
-With SafeStreets users can notify the authorities when traffic violations occur, and in particular parking violations.
-Both user and authorities must register to the application and agree that SafeStreets stores the information provided, completing it with suitable meta-data.
-The whole system, because it tracks users information, must respect the standards defined for processing of sensitive information such as GDPR if it is used in Europe.
-The user sends the type of the violation to the municipality and direct proofs of it (like a photograph). The system runs an algorithm to read the license plate and also asks the user to directly insert the license for a better recognition.
-Of course other information are required, like the name of the street when the violation has occurred, which can be retrieved from user's direct input or from the geographical position of the violation (using Google Maps API).  
-Both users and authorities can highlight the streets with the highest frequency of violations or the vehicles that commit the most violations.
-SafeStreets crosses information about the accidents that occur on the territory of the municipality with his own data to identify potentially unsafe areas and suggest possible interventions.
-Because municipality could generates traffic tickets from the information about violations SafeStreets should guarantee that information is never altered (if a manipulations occurs, the application should discard the information).
-Such features are made possible trough the use of two mobile applications(one for the citizens and one for the officers on the field).
-The collected information are sent to a back-end.
-All the services can also be accessed through a specific web-site. 
+With SafeStreets users can notify the authorities when traffic violations occur,
+and in particular parking violations. Both user and authorities must register to
+the application and agree that SafeStreets stores the information provided,
+completing it with suitable meta-data. The whole system, because it tracks users
+information, must respect the standards defined for processing of sensitive
+information such as GDPR if it is used in Europe. The user sends the type of the
+violation to the municipality and direct proofs of it (like a photograph). The
+system runs an algorithm to read the license plate and also asks the user to
+directly insert the license for a better recognition. Of course other
+information are required, like the name of the street when the violation has
+occurred, which can be retrieved from user's direct input or from the
+geographical position of the violation (using Google Maps API). Both users and
+authorities can highlight the streets with the highest frequency of violations
+or the vehicles that commit the most violations. SafeStreets crosses information
+about the accidents that occur on the territory of the municipality with his own
+data to identify potentially unsafe areas and suggest possible interventions.
+Because municipality could generates traffic tickets from the information about
+violations SafeStreets should guarantee that information is never altered (if a
+manipulations occurs, the application should discard the information). Such
+features are made possible trough the use of two mobile applications(one for the
+citizens and one for the officers on the field). The collected information are
+sent to a back-end. All the services can also be accessed through a specific
+web-site. 
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
-\paragraph{User:} it is identified as a civilian customer of the product. It will be the main source for the SafeStreets initiative to obtain information about traffic violations and therefore be successful;
-\paragraph{Third parties:}those kind of organization/company that could provide services useful to SafeStreets and that will be able to retrieve data in order to improve the streets' safety;
+\paragraph{User:} it is identified as a civilian customer of the product. It
+will be the main source for the SafeStreets initiative to obtain information
+about traffic violations and therefore be successful; \paragraph{Third
+parties:}those kind of organization/company that could provide services useful
+to SafeStreets and that will be able to retrieve data in order to improve the
+streets' safety;
 \subsubsection{Acronym}
-\paragraph{UI:} User Interface
-\paragraph{GDPR:} General Data Protection Regulation
-\paragraph{API:} Application Programming Interface
+\paragraph{UI:} User Interface \paragraph{GDPR:} General Data Protection
+Regulation \paragraph{API:} Application Programming Interface
 \subsubsection{Abbreviations}
-\paragraph{Gn:} nth goal;
-\paragraph{Dn:} nth domain;
-\paragraph{Rn:} nth requirement;
+\paragraph{Gn:} nth goal; \paragraph{Dn:} nth domain; \paragraph{Rn:} nth
+requirement;
 \subsection{Revision History}
 \subsection{Reference Documents}
 \subsection{Document Structure}
 \paragraph{Chapter 1 - Introduction}
-Gives an introduction to the problem by describing the purpose of SafeStreets. It also shows the goals and the scope of the application. 
+Gives an introduction to the problem by describing the purpose of SafeStreets.
+It also shows the goals and the scope of the application. 
 \paragraph{Chapter 2 - Overall Description}
-Offers an overall description of the project. It identifies the actors involved in the application and lists all the assumptions in order to identify all the boundaries of the project.
-The product perspective includes details on the shared phenomena and the domain models.
-The class diagram describe the domain model used and the state diagrama analyzes:
+Offers an overall description of the project. It identifies the actors involved
+in the application and lists all the assumptions in order to identify all the
+boundaries of the project. The product perspective includes details on the
+shared phenomena and the domain models. The class diagram describe the domain
+model used and the state diagrama analyzes:
 \begin{itemize}
     \item The process of collecting violations from users
     \item The process of sharing informations with the municipality
 \end{itemize}
-The majority of functions of the system are more precisely specified by taking in mind the goals of the system.  
+The majority of functions of the system are more precisely specified by taking
+in mind the goals of the system.  
 \paragraph{Chapter 3 - Specific Requirements}
-Contains external interface requirements which are: user interfaces, hardware interfaces, software interfaces and communication interfaces.
-Few scenarios describing how the system acts in real world are listed here.
-Furthermore it provides the description of the functional requirements, through the use of use cases and sequence diagrams.
-The non-functional requirements are defined through performance requirements, design constraints and software system attributes.
+Contains external interface requirements which are: user interfaces, hardware
+interfaces, software interfaces and communication interfaces. Few scenarios
+describing how the system acts in real world are listed here. Furthermore it
+provides the description of the functional requirements, through the use of use
+cases and sequence diagrams. The non-functional requirements are defined through
+performance requirements, design constraints and software system attributes.
 \paragraph{Chapter 4 - Formal analysis using Alloy}
-Includes the alloy model of some critical aspects with comments and documentation.
+Includes the alloy model of some critical aspects with comments and
+documentation.
 \paragraph{Chapter 5 - Effort Spent}
-Show the effort spent by the single group members while working on the RASD.
+Shows the effort spent by each single group member while working on the RASD.
 \paragraph{Chapter 6 - References}
 Includes the documents we used as reference.
+
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-SafeStreets is designed to be a completely new software applications. It uses some already proven servicese (like Google Maps API) for its critical tasks.
-The system is composed of two different mobile applications: one for the citizens that want to reports violations and one for the officers acting on the field.
-
+SafeStreets is designed to be a completely new software application. It uses
+some already proven servicese (like Google Maps API) for its critical tasks. The
+system is composed of two different mobile applications: one for the citizens
+that want to reports violations and one for the officers acting on the field.
 \subsection{Product Functions}
 %qua vanno aggiunte le varie funzioni
 \subsection{User characteristics}
@@ -113,7 +153,7 @@ The system is composed of two different mobile applications: one for the citizen
 \subsection{Use Cases}
 \subsubsection{User use cases}
 \subsubsection{Third party use cases}
-%aggiungo subsections
+
 \subsection{Performance requirements}
 \subsection{Design Constraints}
 \subsubsection{Standars compliance}
@@ -134,13 +174,15 @@ The system is composed of two different mobile applications: one for the citizen
 \begin{center}
     \begin{tabular}{c|c|c|c|c}
         \hline
-        \textbf{Description of the task} & \textbf{MP} & \textbf{FS} & \textbf{GT} \\
-        Introduction                    & 0 & 2 & 0 \\
-        Overall Description             & 0 & 0 & 0 \\
-        Specific requirements           & 0 & 0 & 0 \\
-        Formal analysis using Alloy     & 0 & 0 & 0 \\
+        \textbf{Description of the task} & \textbf{MP} & \textbf{FS} &
+        \textbf{GT} \\
+        Introduction                    & 2.5   & 2     & 0     \\
+        Overall Description             & 1.5   & 1.5   & 0     \\
+        Specific requirements           & 0     & 0     & 0     \\
+        Formal analysis using Alloy     & 0     & 0     & 0     \\
     \end{tabular}
 \end{center}
 \section{References}
+    \paragraph{Plate Recognizer:} https://app.platerecognizer.com
     
 \end{document}  

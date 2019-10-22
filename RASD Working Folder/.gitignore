@@ -1,0 +1,8 @@
+#Don't track these files
+Rasd.aux
+Rasd.fls
+Rasd.log
+Rasd.pdf
+Rasd.synctex.gz
+Rasd.toc
+Rasd.fdb_latexmk
