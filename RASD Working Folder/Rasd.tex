@@ -129,10 +129,28 @@ Includes the documents we used as reference.
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-SafeStreets is designed to be a completely new software application. It uses
-some already proven servicese (like Google Maps API) for its critical tasks. The
-system is composed of two different mobile applications: one for the citizens
-that want to reports violations and one for the officers acting on the field.
+afeStreets is designed to be a completely new software applications. It uses
+some already proven services (like Google Maps and PlateRecognizer APIs) for its
+critical tasks. The software uses these services in order to double check
+whether both addresses and license plates are correctly standardized in order to
+be stored into the violations database.\\
+The system is composed of two different mobile applications: one for the
+citizens that want to reports violations and one for the officers acting on the
+field. It also provides a web site for third party users which allows them to
+assess and analyze potential unsafe areas, thanks also to a powerful reporting
+system.\\
+Taken into consideration that the municipality could generate traffic tickets
+from the input violations, the software will be critical when it comes to
+handling chain of custody. The latter is assured to never be broken by not
+allowing any kind of user to modify the reported violation. Supposedly, when
+some traffic violations might be erroneous or do not have any reason of
+existence, the inputting user can warn the responsible third party by attaching
+a warning explaining why it should not be taken into consideration. The systems
+also ensures the veracity of each violation and the hard evidence attached to it
+by running an algorithm of image manipulation detection. This process is used by
+third parties before the emission of each ticket to the corresponding offender.
+%generico, poi aggiorniamo
+
 \subsection{Product Functions}
 %qua vanno aggiunte le varie funzioni
 \subsection{User characteristics}
