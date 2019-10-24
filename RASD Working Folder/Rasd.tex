@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{xparse}
 \usepackage{graphicx}
+\usepackage{float}
 
 \title{SafeStreets}
 \author{Marco Premi, Fabrizio Siciliano, Giuseppe Taddeo}
@@ -15,8 +16,8 @@
 \section{Introduction}
 \subsection{Purpose}
 \subsubsection{General Purpose}
-    The purpose of this document is to correctly analyze all requirements, goals
-    and actions needed in order to correctly develop SafeStreets.\\
+    The purpose of this document is to correctly analyze all requirements, 
+    goals and actions needed in order to correctly develop SafeStreets.\\
     \\
     SafeStreets is a crowd-sourced application that intends to provide users
     with the possibility to notify authorities when traffic violations occur
@@ -105,7 +106,7 @@ requirement;
 \paragraph{Chapter 1 - Introduction}
 Gives an introduction to the problem by describing the purpose of SafeStreets.
 It also shows the goals and the scope of the application. 
-\paragraph{Chapter 2 - Overall Description}
+\paragraph{Chapter 2 - Overall Description}[H]
 Offers an overall description of the project. It identifies the actors involved
 in the application and lists all the assumptions in order to identify all the
 boundaries of the project. The product perspective includes details on the
@@ -167,16 +168,14 @@ application and web application; the latter will be provided access just to the
 above mentioned web application which will help these users assess the veracity of the hard
 evidence attached to the traffic violations and to further analyze unsafe areas
 around the municipality.\\
-\\
-\begin{figure}
+
+\begin{figure}[H]
     \centering
     \includegraphics[scale=0.255]{Images/umlmodel}
     \caption{Class diagram}
 \end{figure}
 
 Each customer will be provided with a clearance level defined by a string 
-
-
 \subsection{Product Functions}
 In the following section the most important product functions of the system are reported.
 %qua vanno aggiunte le varie funzioni
@@ -190,9 +189,82 @@ In the following section the most important product functions of the system are 
 \section{Specific Requirements}
 \subsection{External Interface Requirements}
 \subsubsection{User Interfaces}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignUpAuthoritiesApp}
+    \caption{SignUp authorities}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignUpUtenteAPP}
+    \caption{SignUp User}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignInAPP}
+    \caption{SignIn}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/MenuAPP}
+    \caption{Menu}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignalAViolationAPP}
+    \caption{SignIn}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/UnsafeAreaAnalysisAPP}
+    \caption{SignIn}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBSignUp}
+    \caption{SignUp}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBSignIn}
+    \caption{SignIn}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBViolations}
+    \caption{Violations}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBViolationChecking}
+    \caption{Violations checking}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBUnsafeAreas}
+    \caption{Unsafe Areas}
+\end{figure}
+\newpage
+\newpage
 \subsubsection{Hardware Interfaces}
+The system has no hardware interfaces.
 \subsubsection{Software Interfaces}
+The system doesn't provide any API to external applications.\\
+However some softwares part of SafeStreets is developed by other companies.
+\begin{itemize}
+    \item Google Maps API: for localization and creation of unsafe areas.
+    \item Plate Recognizer API: for License Plate recognition.
+    \item Ghiro: a digital image forensics tool used for find out if the image
+    in the violation report is real.
+\end{itemize}
 \subsubsection{Communication Interfaces}
+The system only uses HTTP(more precisely HTTPS) as communication service.
+HTTP/HTTPS is used for:
+\begin{itemize}
+    \item User and third parties registration.
+    \item Sending violations both to SafeStreets and to authorities.
+    \item Using Google Maps API, Plate Recognizer API and Ghiro
+\end{itemize}
 \subsection{Scenarios}
 \subsection{Functional requirements}
 \subsection{Use Cases}
