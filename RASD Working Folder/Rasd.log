@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  24 OCT 2019 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  24 OCT 2019 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -398,7 +398,12 @@ File: Images/WEBUnsafeAreas.png Graphic file (type png)
 <use Images/WEBUnsafeAreas.png>
 Package pdftex.def Info: Images/WEBUnsafeAreas.png  used on input line 244.
 (pdftex.def)             Requested size: 291.68156pt x 202.09554pt.
- [16 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolations.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolationChecking.png>] [17 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBUnsafeAreas.png>] [18] [19] [20] [21] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
+ [16 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolations.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolationChecking.png>] [17 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBUnsafeAreas.png>]
+Overfull \hbox (16.68002pt too wide) in paragraph at lines 284--285
+[]\OT1/cmr/m/n/10 must be able to make HTTPS re-quests (con-nec-tion to in-ter-net 4G/3G/2G/Wi-
+ []
+
+[18] [19] [20] [21] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
 Here is how much of TeX's memory you used:
  11695 strings out of 492167
  225486 string characters out of 6129158
@@ -408,7 +413,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  46i,6n,67p,375b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (21 pages, 1472943 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (21 pages, 1473437 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
