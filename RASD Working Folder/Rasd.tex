@@ -274,7 +274,7 @@ $\langle$\textbf{G0}$\rangle$ SignUp to the system
     in the system with the same email or fiscal code
     \item $\langle$\textbf{R2}$\rangle$ fiscal code and email must be valid and
     belonging to the user who is signing up
-    \item $\langle$\textbf{R3}$\rangle$ the user must verify her/his email
+    \item $\langle$\textbf{R3}$\rangle$ the system must verify her/his email
     \item $\langle$\textbf{R4}$\rangle$ the user must agree to the Term of Use
 \end{description}\mbox{}\\
 $\langle$\textbf{G1}$\rangle$ SignIn to the system
@@ -283,8 +283,30 @@ $\langle$\textbf{G1}$\rangle$ SignIn to the system
     the system
     \item $\langle$\textbf{R6}$\rangle$ the user must insert her/his email and
     the password
-\end{description}
+\end{description}\mbox{}\\\\
 $\langle$\textbf{G}$\rangle$ Signal a violation
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the user must be able to insert one or
+    more photos of the violation
+    \item $\langle$\textbf{R}$\rangle$ the user must send information about his
+    location
+    \item $\langle$\textbf{R}$\rangle$ the user can add more informations about
+    the violation
+\end{description}
+%una volta inserita la violazione nessuno può cambiarla
+$\langle$\textbf{G}$\rangle$ Show Unsafe Areas
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the user is shown the unsafe areas around him
+    \item $\langle$\textbf{R}$\rangle$ the user is allowed to filter the unsafe areas
+    \item $\langle$\textbf{R}$\rangle$ the user is allowed to search unsafe areas 
+\end{description}    
+$\langle$\textbf{G}$\rangle$ Manage Account
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the user must be able to change his/her
+    address, the password and the email
+    \item $\langle$\textbf{R}$\rangle$ the user must be able to delete his/her account
+\end{description}
+
 \paragraph{Third parties}\mbox{}\\
 $\langle$\textbf{G}$\rangle$ SignUp to the system
 \begin{description}
@@ -295,17 +317,28 @@ $\langle$\textbf{G}$\rangle$ SignUp to the system
     \item $\langle$\textbf{R}$\rangle$ the third party must supply a valid
     institutional email
     \item $\langle$\textbf{R}$\rangle$ must agree to the Term of Use
-\end{description}
+\end{description}\mbox{}\\
 $\langle$\textbf{G}$\rangle$ SignIn to the system
 \begin{description}
     \item $\langle$\textbf{R}$\rangle$ the third party must be already sign up
     \item $\langle$\textbf{R}$\rangle$ the third party must insert the email and
     the password\\
 \end{description}
+$\langle$\textbf{G}$\rangle$ Check Violations
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the third party must be able to check all the
+    new and past violations
+    \item $\langle$\textbf{R}$\rangle$ the third party must be able to use Ghiro
+    \item $\langle$\textbf{R}$\rangle$ the third party must be able to report if
+the violation is valid or not \end{description}\mbox{}\\
+$\langle$\textbf{G}$\rangle$ Create Unsafe Areas
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the third party must be able to create
+    and delete unsafe areas
+    \item $\langle$\textbf{R}$\rangle$ the third party must be able to filter
+    the different unsafe areas
+\end{description}    
 
-$\langle$\textbf{G}$\rangle$ Check Violations\\
-$\langle$\textbf{G}$\rangle$ Contact user\\
-$\langle$\textbf{G}$\rangle$ Send ticket report
 
 
 \subsection{Use Cases}
