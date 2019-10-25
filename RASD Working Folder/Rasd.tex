@@ -2,6 +2,7 @@
 \usepackage{xparse}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage[T1]{fontenc}
 
 \title{SafeStreets}
 \author{Marco Premi, Fabrizio Siciliano, Giuseppe Taddeo}
@@ -266,10 +267,50 @@ HTTP/HTTPS is used for:
 \end{itemize}
 \subsection{Scenarios}
 \subsection{Functional requirements}
+\paragraph{User}\mbox{}\\
+$\langle$\textbf{G0}$\rangle$ SignUp to the system
+\begin{description}
+    \item $\langle$\textbf{R1}$\rangle$ the user must not be already registered
+    in the system with the same email or fiscal code
+    \item $\langle$\textbf{R2}$\rangle$ fiscal code and email must be valid and
+    belonging to the user who is signing up
+    \item $\langle$\textbf{R3}$\rangle$ the user must verify her/his email
+    \item $\langle$\textbf{R4}$\rangle$ the user must agree to the Term of Use
+\end{description}\mbox{}\\
+$\langle$\textbf{G1}$\rangle$ SignIn to the system
+\begin{description}
+    \item $\langle$\textbf{R5}$\rangle$ the user must already be registered in
+    the system
+    \item $\langle$\textbf{R6}$\rangle$ the user must insert her/his email and
+    the password
+\end{description}
+$\langle$\textbf{G}$\rangle$ Signal a violation
+\paragraph{Third parties}\mbox{}\\
+$\langle$\textbf{G}$\rangle$ SignUp to the system
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the third party must have a valid
+    AuthoritiesID
+    \item $\langle$\textbf{R}$\rangle$ the third party must not be already
+    registered  in the system
+    \item $\langle$\textbf{R}$\rangle$ the third party must supply a valid
+    institutional email
+    \item $\langle$\textbf{R}$\rangle$ must agree to the Term of Use
+\end{description}
+$\langle$\textbf{G}$\rangle$ SignIn to the system
+\begin{description}
+    \item $\langle$\textbf{R}$\rangle$ the third party must be already sign up
+    \item $\langle$\textbf{R}$\rangle$ the third party must insert the email and
+    the password\\
+\end{description}
+
+$\langle$\textbf{G}$\rangle$ Check Violations\\
+$\langle$\textbf{G}$\rangle$ Contact user\\
+$\langle$\textbf{G}$\rangle$ Send ticket report
+
+
 \subsection{Use Cases}
 \subsubsection{User use cases}
 \subsubsection{Third party use cases}
-
 \subsection{Performance requirements}
 The system is provided to serve a great number of users and third parties
 simultaneously. The back-end must be powerful enough to accept thousands of
