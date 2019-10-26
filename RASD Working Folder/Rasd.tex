@@ -351,7 +351,7 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\ \hline  
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{} \end{minipage} \\ \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\
     \hline 
@@ -526,6 +526,146 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
 \end{table}
 
 \subsubsection{Third party use cases}
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up}\end{minipage} \\ \hline  
+     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\end{minipage} \\ \hline 
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
+     not already registered\end{minipage} \\
+     \hline 
+     Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The third party accesses SafeStreets website
+        \item The third party is asked to sign in
+        \item The third party clicks on "Sign Up"
+        \item The third party fills the registration form with all the mandatory
+        fields
+        \item The third party clicks the confirmation button
+        \item The system saves the data
+    \end{enumerate}
+    \end{minipage} \\ \hline
+     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The system has stored
+     third party data, the third party is registered and now is able to use the
+     website\end{minipage} \\
+     \hline
+     Exceptions & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The third party was already signed up
+        \item The third party doesn't fill all the mandatory fields with valid
+        data
+        \item The email or the AuthoritiesID is already registered
+        \item The third party closed the application beforse the process has
+        ended
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already signed up\end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The third party accesses SafeStreets website
+        \item The third party is asked to sign in
+        \item The third party inserts the credentials in the "Email" and
+        "Password" fields.
+        \item The third party clicks on "Sign In"
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party is successfully signed in \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The third party inserts invalid Email
+        \item The third party inserts invalid Password
+        \item The third party closes the website before the process has ended
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already logged in\end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The third party clicks on the menu icon
+        \item The third party click on "Unsafe ares"
+        \item The third party is allowed create and delete unsafe areas, to
+        select different filters and to search different areas
+    \end{enumerate} 
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The unsafe areas editor
+    is presented to the third party\end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already logged in \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The third party clicks on the menu icone
+        \item The third party clicks on "Violations"
+        \item The third party is allowed to see the list of previous and
+        actual violations (checked or not)
+        \item The third party click on "Open Details" of one particular not
+        checked violation
+        \item The third party is allowed to see information about the particular
+        violation
+        \item The third party can click "Use" on Ghiro card to find out if the
+        image is real
+        \item The third party can click "Report not valid" if the image is fake
+        or "Emit Ticket" if the image is real
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party can manage the violations \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
+    website before the process has ended \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth}Third party\end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already logged in \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The third party clicks on the menu icon
+        \item The third party click on "Manage Account"
+        \item The third party is allowed to change the email, the password or to
+        delete the account
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
+    saved to the third party account or the account is deleted\end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
+    website before the process has ended \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+
 \subsection{Performance requirements}
 The system is provided to serve a great number of users and third parties
 simultaneously. The back-end must be powerful enough to accept thousands of

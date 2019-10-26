@@ -48,18 +48,18 @@
 \contentsline {subsection}{\numberline {3.4}Use Cases}{20}% 
 \contentsline {subsubsection}{\numberline {3.4.1}User use cases}{20}% 
 \contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{23}% 
-\contentsline {subsection}{\numberline {3.5}Performance requirements}{23}% 
-\contentsline {subsection}{\numberline {3.6}Design Constraints}{23}% 
-\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{23}% 
-\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{23}% 
-\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{24}% 
-\contentsline {subsection}{\numberline {3.7}Software System Attributes}{24}% 
-\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{24}% 
-\contentsline {subsubsection}{\numberline {3.7.2}Availability}{24}% 
-\contentsline {subsubsection}{\numberline {3.7.3}Security}{24}% 
-\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{24}% 
-\contentsline {subsubsection}{\numberline {3.7.5}Portability}{24}% 
-\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{25}% 
-\contentsline {section}{\numberline {5}Effort spent}{26}% 
-\contentsline {section}{\numberline {6}References}{26}% 
-\contentsline {paragraph}{Plate Recognizer:}{26}% 
+\contentsline {subsection}{\numberline {3.5}Performance requirements}{25}% 
+\contentsline {subsection}{\numberline {3.6}Design Constraints}{25}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{25}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{25}% 
+\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{26}% 
+\contentsline {subsection}{\numberline {3.7}Software System Attributes}{26}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{26}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Availability}{26}% 
+\contentsline {subsubsection}{\numberline {3.7.3}Security}{26}% 
+\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{26}% 
+\contentsline {subsubsection}{\numberline {3.7.5}Portability}{26}% 
+\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{27}% 
+\contentsline {section}{\numberline {5}Effort spent}{28}% 
+\contentsline {section}{\numberline {6}References}{28}% 
+\contentsline {paragraph}{Plate Recognizer:}{28}% 
