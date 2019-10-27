@@ -689,10 +689,30 @@ limitations regarding the smartphones.
 %probabilmente da cancellare (Secondo me non ci sono, a parere mio)
 \subsection{Software System Attributes}
 \subsubsection{Reliability}
+The system must be able to run 24/7 without any interruptions. Only small
+concessions from this requirement might be tolerated. The system must also be
+fault tolerant. In order to exploit this last point the data saved on the
+servers should be duplicated.
 \subsubsection{Availability}
+Maximum availability is a necessity because users should be able to report
+violations 24/7. One or two days per year may be used for maintainance, so 
+availability of 99\% is expected.
 \subsubsection{Security}
+User and third party provide data that contains sensitive information, so the
+security aspect is of primary relevance.\\ Communications between user, third
+party and SafeStreets must be encrypted and the database with all the data must
+be protected from any possibile internal or external attack.
 \subsubsection{Mantainability}
+The system shoule be flexibile and easy to mantain. For this purpose the whole
+system will be developed using a modular architecture. \\
+Fixing and modifying the system will be easy with the modular architecture.
+
 \subsubsection{Portability}
+SafeStreets in order to be useful must be used by a very large number of people.
+It is for this reason that third parties' registration website must be available
+on the majority of browsers (Firefox, Google Chrome, Safari, Opera, Microsoft
+Edge and Internet Explorer 11).\\
+Naturally the mobile application must be available on both Android and iOs.
 
 \newpage
 \section{Formal Analysis using Alloy}
@@ -700,12 +720,12 @@ limitations regarding the smartphones.
 \newpage
 \section{Effort spent}
 \begin{center}
-    \begin{tabular}{c|c|c|c|c}
+    \begin{tabular}{|c|c|c|c|c|}
         \hline
         \textbf{Description of the task} & \textbf{MP} & \textbf{FS} &
         \textbf{GT} \\
         Introduction                    & 2.5   & 2     & 0     \\
-        Overall Description             & 1.5   & 3   & 0     \\
+        Overall Description             & 3   & 3   & 0     \\
         Specific requirements           & 0     & 0     & 0     \\
         Formal analysis using Alloy     & 0     & 2     & 0     \\
     \end{tabular}
