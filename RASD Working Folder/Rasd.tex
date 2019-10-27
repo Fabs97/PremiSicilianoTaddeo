@@ -222,6 +222,16 @@ reported.
 \end{figure}
 \begin{figure}[H]
     \centering
+    \includegraphics[scale=0.7]{Images/MenuOfficerAPP}
+    \caption{Officer Menu}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/ViolationsAPP}
+    \caption{Violations check}
+\end{figure}
+\begin{figure}[H]
+    \centering
     \includegraphics[scale=0.35]{Images/WEBSignUp}
     \caption{SignUp}
 \end{figure}
@@ -434,7 +444,7 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The user opens the Menu
-        \item The user click on "Signal a violation" button in the Menu
+        \item The user clicks on "Signal a violation" button in the Menu
         \item The user uploads one or more photos
         \item The user adds additional information
         \item The user adds one or more violation types
@@ -621,7 +631,7 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party clicks on the menu icone
+        \item The third party clicks on the menu icon
         \item The third party clicks on "Violations"
         \item The third party is allowed to see the list of previous and
         actual violations (checked or not)
@@ -632,7 +642,7 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
         \item The third party can click "Use" on Ghiro card to find out if the
         image is real
         \item The third party can click "Report not valid" if the image is fake
-        or "Emit Ticket" if the image is real
+        or "Report valid" if the image is real
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party can manage the violations \end{minipage} \\
@@ -662,6 +672,36 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
     website before the process has ended \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check violations on the field} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party(officer) \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth}The third party has
+    already logged in \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The third party opens the Menu
+        \item The third party clicks on "Violations" button in the Menu
+        \item The third party is allowed to see the list of violations
+        \item The third party clicks on "Go check it out" button
+        \item SafeStreets opens Google Maps or one other turn-by-turn navigation
+        app to reach the violation location
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The officer can reach
+    the violation location\end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The officer closes the application before the process has ended
+        \item The officer doesn't have internet connection 
+    \end{enumerate}    
+    \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 

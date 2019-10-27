@@ -38,28 +38,28 @@
 \contentsline {section}{\numberline {3}Specific Requirements}{9}% 
 \contentsline {subsection}{\numberline {3.1}External Interface Requirements}{9}% 
 \contentsline {subsubsection}{\numberline {3.1.1}User Interfaces}{9}% 
-\contentsline {subsubsection}{\numberline {3.1.2}Hardware Interfaces}{18}% 
-\contentsline {subsubsection}{\numberline {3.1.3}Software Interfaces}{18}% 
-\contentsline {subsubsection}{\numberline {3.1.4}Communication Interfaces}{18}% 
-\contentsline {subsection}{\numberline {3.2}Scenarios}{18}% 
-\contentsline {subsection}{\numberline {3.3}Functional requirements}{18}% 
-\contentsline {paragraph}{User}{18}% 
-\contentsline {paragraph}{Third parties}{19}% 
-\contentsline {subsection}{\numberline {3.4}Use Cases}{20}% 
-\contentsline {subsubsection}{\numberline {3.4.1}User use cases}{20}% 
-\contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{23}% 
-\contentsline {subsection}{\numberline {3.5}Performance requirements}{25}% 
-\contentsline {subsection}{\numberline {3.6}Design Constraints}{25}% 
-\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{25}% 
-\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{25}% 
-\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{25}% 
-\contentsline {subsection}{\numberline {3.7}Software System Attributes}{25}% 
-\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{25}% 
-\contentsline {subsubsection}{\numberline {3.7.2}Availability}{26}% 
-\contentsline {subsubsection}{\numberline {3.7.3}Security}{26}% 
-\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{26}% 
-\contentsline {subsubsection}{\numberline {3.7.5}Portability}{26}% 
-\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{27}% 
-\contentsline {section}{\numberline {5}Effort spent}{28}% 
-\contentsline {section}{\numberline {6}References}{28}% 
-\contentsline {paragraph}{Plate Recognizer:}{28}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Hardware Interfaces}{20}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Software Interfaces}{20}% 
+\contentsline {subsubsection}{\numberline {3.1.4}Communication Interfaces}{20}% 
+\contentsline {subsection}{\numberline {3.2}Scenarios}{20}% 
+\contentsline {subsection}{\numberline {3.3}Functional requirements}{20}% 
+\contentsline {paragraph}{User}{20}% 
+\contentsline {paragraph}{Third parties}{21}% 
+\contentsline {subsection}{\numberline {3.4}Use Cases}{22}% 
+\contentsline {subsubsection}{\numberline {3.4.1}User use cases}{22}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{25}% 
+\contentsline {subsection}{\numberline {3.5}Performance requirements}{27}% 
+\contentsline {subsection}{\numberline {3.6}Design Constraints}{28}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{28}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{28}% 
+\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{28}% 
+\contentsline {subsection}{\numberline {3.7}Software System Attributes}{28}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{28}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Availability}{28}% 
+\contentsline {subsubsection}{\numberline {3.7.3}Security}{28}% 
+\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{28}% 
+\contentsline {subsubsection}{\numberline {3.7.5}Portability}{29}% 
+\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{30}% 
+\contentsline {section}{\numberline {5}Effort spent}{31}% 
+\contentsline {section}{\numberline {6}References}{31}% 
+\contentsline {paragraph}{Plate Recognizer:}{31}% 
