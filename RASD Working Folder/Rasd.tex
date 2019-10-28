@@ -97,7 +97,8 @@ hard evidence connected to the traffic ticket
 \subsubsection{Acronym}
 \paragraph{UI:} User Interface \paragraph{GDPR:} General Data Protection
 Regulation \paragraph{API:} Application Programming Interface \paragraph{GPS:}
-Global Positioning System
+Global Positioning System \paragraph{PO:} Police Officer \paragraph{ME:}
+Municipality Employee
 \subsubsection{Abbreviations}
 \paragraph{Gn:} nth goal; \paragraph{Dn:} nth domain; \paragraph{Rn:} nth
 requirement;
@@ -175,6 +176,48 @@ unsafe areas around the municipality.\\
     \includegraphics[scale=0.255]{Images/umlmodel}
     \caption{Class diagram}
 \end{figure}
+
+It is possible to notice that there are two actors that model the third party.
+Police Officers and municipality employees have both access to a web version of
+the application, since this version provides the tools for checking input
+violations, emit traffic tickets and assess possible improvements to unsafe areas.\\
+\\
+We will now furtherly analize some critical aspects of the system with the use
+of activity diagrams. Actual system functions will not be presented, just some
+high level system main processes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.36]{Images/ActivityInputViolation}
+    \caption{Activity Diagram: Input violation}
+\end{figure}
+
+It is easily understandable that for any unathorized user trying to access the
+system (those who have not correctly signed up) is not possible to input any new
+violation. Furthermore, the location retrieving and the plate recognizing
+processes are a bit tricky. The system tries to execute both of them
+automatically by calling the respective API from GoogleMaps or PlateRecognizer.
+If one (or both) processes fail, the system recognizes the problem and asks the
+user to input the missing piece of information. Once all information is ready,
+everything is sent to a shared database and saved for future check by third
+party employees (PO or ME). 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.36]{Images/ActivityCheckViolation}
+    \caption{Activity Diagram: Checking violation}
+\end{figure}
+
+As it is mentioned by the description above this one, no user can access the system
+without a proper username and password. What is interesting in this part of the
+process, is the possibility to end the whole process only once the traffic
+violation has been checked, which means that the hard evidence attached to it
+has to be approved as not being counterfeited or else. A running version of the
+Ghiro software has to be already installed on the machine which is accessing the
+system through a web browser; if not, the system itself will automatically
+redirect to the latest downloadable version of it. 
+
 
 \subsection{Product Functions}
 In the following section the most important product functions of the system are
@@ -372,6 +415,11 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
     \end{tabular}
 \end{table}
 %fine prototipo tabella 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Images/UseCaseUserView}
+    \caption{Use Case Diagram: User}
+\end{figure}
 
 \begin{table}[H]
     \begin{tabular}{|l|l|}
@@ -536,6 +584,13 @@ $\langle$\textbf{G}$\rangle$ Create Unsafe Areas
 \end{table}
 
 \subsubsection{Third party use cases}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Images/UseCaseThirdPartyView}
+    \caption{Use Case Diagram: Third Party}
+\end{figure}
+
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
