@@ -4,7 +4,7 @@ one sig False extends Bool{}
 
 sig FiscalCode{}
 
-sig ThirdPartyId{} --non possono essere unificati FiscalCode e ThirdPartyId?
+sig ThirdPartyId{}
 
 sig Username{}
 
@@ -27,7 +27,11 @@ sig User extends Customer{
 sig ThirdParty extends Customer{
     id: one ThirdPartyId
 }
+--------Do we really need them?
+sig PoliceOfficer extends ThirdParty{}
 
+sig MunicipalEmployee extends ThirdParty{}
+--------------------------------------
 sig Location{
     latitude: one Int,
     longitude: one Int
@@ -68,4 +72,3 @@ fact OneUserFiscalCode{
 fact OneThirdPartyUserId{
     no disj t1, t2 : ThirdParty | t1.id = t2.id
 }
-
