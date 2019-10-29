@@ -45,6 +45,7 @@ sig LicensePlate{}
 sig TimeStamp{}
 
 sig Violation{
+    id: one Int,
     licensePlate: one LicensePlate,
     location: one Location,
     spotter: one User,
@@ -69,6 +70,19 @@ fact OneUserFiscalCode{
     no disj u1,u2 : User | u1.fiscalCode = u2.fiscalCode
 } 
 
+--Only one id per violation, no replicas!
 fact OneThirdPartyUserId{
     no disj t1, t2 : ThirdParty | t1.id = t2.id
 }
+
+--Only one id per violation, no replicas!
+fact OneIDViolation{
+    no disj v1, v2 : Violation | v1.id = v2.id
+}
+
+--It is not possible to have two different locations with the same plate and timestamp
+fact SamePlateLocationAndTimestamp {
+    all v1, v2 : Violation | 
+    v1.location = v2.location implies (v1.licensePlate = v2.licensePlate and v1.timestamp = v2.timestamp)
+}
+
