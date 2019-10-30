@@ -57,6 +57,10 @@
         \item G4: The system will provide an efficient reporting system in order
         to highlight different violation categories through all parts of the
         city where the initiative is active;
+        \item G5: The system allows the authorities to be able to use the 
+        application data to generates traffic tickets to civilians who commit 
+        infractions (the requirement of authenticity of the chain of custody 
+        follows);
     \end{itemize}
 \subsection{Scope}
 With SafeStreets users can notify the authorities when traffic violations occur,
@@ -137,12 +141,11 @@ Includes the documents we used as reference.
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-SafeStreets is designed to be a completely new software applications. It uses
-some already proven services (Google Maps, PlateRecognizer APIs and Ghiro
-software) for its critical tasks. The software uses these services in order to
-double check whether both addresses and license plates are correctly
-standardized in order to be stored into the violations database and if the
-collected hard evidence have been somehow manipulated or corrupted.\\
+afeStreets is designed to be a completely new software applications. It uses
+some already proven services (like Google Maps and PlateRecognizer APIs) for its
+critical tasks. The software uses these services in order to double check
+whether both addresses and license plates are correctly standardized in order to
+be stored into the violations database.\\
 The system is composed of two different mobile applications: one for the
 citizens that want to reports violations and one for the officers acting on the
 field. It also provides a web site for third party users which allows them to
@@ -218,17 +221,79 @@ Ghiro software has to be already installed on the machine which is accessing the
 system through a web browser; if not, the system itself will automatically
 redirect to the latest downloadable version of it. 
 
-
 \subsection{Product Functions}
-In the following section the most important product functions of the system are
+In the following section the most important product functions of the system are 
 reported.
-%qua vanno aggiunte le varie funzioni
+    \subsubsection{Reporting traffic violations}
+    This function is the main action that the user can use. After having
+    logged in within its application, pressing on "Report Infraction" the system 
+    will ask to insert an image specifying its format and characteristics (clear 
+    image, defined context, visible plate). Once the image is loaded, the system 
+    will ask him to enter the type of infraction reported, the date and time, as 
+    well as the position detected by GPS signal or manually via user input. At this 
+    point the user will confirm the data entered and save the report. Moreover he 
+    will see in his personal area, under the list of his reports, the new report 
+    with all the data he has entered. In addition, the report will be added to the 
+    list of reports made in the same municipality.
+
+    \subsubsection{Police Officer - Reportings Management (APP)}
+    This function allows the police officer to have in real time all the reports 
+    made in his municipality of competence. In fact, after logging into his 
+    application and providing his identification as a police officer, the 
+    application through an analysis system of the latter will identify the 
+    municipality of competence of the agent and will show him the list of all the 
+    appropriate reports. He can therefore go to the place of the report to resolve 
+    the infraction manually by clicking "Resolve Live" and closing the infraction 
+    or, in the event that the violation can no longer be assessed in person 
+    (i.e. the car has moved) he can leave the report opened to then resolve it 
+    from the website.
+
+    \subsubsection{Police Officer - Reportings Management (WEB)}
+    This function allows the police officer to resolve the reports (i.e. generating 
+    a traffic ticket for the owner of the machine) via the website without being 
+    physically present on the spot. Once logged in using codes provided by the 
+    municipality, the police officer will be able to see all the reports still open 
+    (i.e. no one has clicked "Resolve Live") and analyze them. He can take the photo 
+    posted by the user and submit it to specialized programs to ensure that it is 
+    not tampered with and will therefore be able to generate the ticket and close 
+    the report.
+
+    \subsubsection{Municipal Employee - Interventions Management}
+    This function allows a municipal employee, after logging in through his own 
+    identifier, to be able to view all the reports made in the municipality of 
+    competence and be able to insert in the application the accident data that occur 
+    in the territory. In this way, by pressing the "Start Analysis" button, SafeStreets 
+    will identify potentially unsafe areas and show them to the municipal employee and 
+    the municipal employee will be able to decide whether to take precautions 
+    (i.e. insert barrier between cycle path and road).
+
 \subsection{User characteristics}
+The actors of the application are the following:
+\begin{itemize}
+    \item User: a customer of the service who, after having installed the application 
+    on his mobile device, having registered through univocal identification data and 
+    accepted the processing of his data and the civil and criminal liability of his own 
+    reports, can post an infraction report attaching a photo of this (with clear and legible 
+    license plate) followed by date, time and position (the latter acquired by GPS detection 
+    or manual entry)
+    \item Authority: a customer who uses the system based on its role;
+    \begin{itemize}
+        \item Policeman: after installing the application on his mobile device, having registered 
+        through univocal data and codes provided by your municipality, he have the possibility 
+        to see the list of reports of infractions made in the Municipality of his competence and 
+        also has the ability to access to the system through a website to carry out analysis of 
+        the reports (image photoshop) and generate traffic ticket to the accused.
+        \item Municipal Employee: through the website, he has access to the unsafe areas of his own 
+        Municipality to decide road interventions to be applied within it
+        \item Municipal Director: through the website, he has access to both reports and traffic tickets 
+        both to unsafe areas and to statistical data produced by SafeStreets in order to assess the 
+        effectiveness of the application.
+    \end{itemize}
+\end{itemize}
 \subsection{Assumptions, dependencies and constraints}
 \subsubsection{Assumptions}
 \subsubsection{Dependencies}
 \subsubsection{Constraints}
-
 \newpage
 \section{Specific Requirements}
 \subsection{External Interface Requirements}
@@ -836,7 +901,7 @@ Naturally the mobile application must be available on both Android and iOs.
         Introduction                    & 2.5   & 2     & 0     \\
         Overall Description             & 3     & 8     & 0     \\
         Specific requirements           & 0     & 0     & 0     \\
-        Formal analysis using Alloy     & 0     & 2     & 0     \\
+        Formal analysis using Alloy     & 0     & 0     & 0     \\
     \end{tabular}
 \end{center}
 \section{References}
