@@ -234,6 +234,11 @@ fact ViolationOneMunicipality{
     all v: Violation | all disj m1,m2: Municipality | v.municipality = m1 implies v not in m2.violations  
 }
 
+--All Violations are refered to Municipality
+fact ViolationsOfMunicipality{
+    all v: Violation | all m: Municipality | v.municipality = m implies v in m.violations   
+}
+
 --All Tickets are refered to a Signalation of the Municipality of the Police Offer who erogates the ticket
 fact TicketSameMunicipalityPoliceOfficer{
     all t: Ticket | t.signalation.violation.municipality = t.policeOfficer.municipal 
