@@ -1035,6 +1035,17 @@ Naturally the mobile application must be available on both Android and iOs.
 
 \newpage
 \section{Formal Analysis using Alloy}
+In this section an analysis of some critical aspects of the system is provided expoliting Alloy. The focus is on some static constraints, in particular:
+\begin{itemize}
+    \item It cannot happen that two different third parties have the same Id or two different users have the same fiscal code
+    \item In case of a police officer erogates a ticket referred to a violation, the violation must have been verified
+    \item Every third parties of the same Municipality can see all and only the signalations on the territory of competence
+    \item there may be multiple signalations referring to the same and unique violation. 
+\end{itemize}
+The prove of validity of evidence and all the checks are excluded from the Alloy analysis, they are taken for granted and after them the parameter 'isValid' of a violation is put on 'True'.
+When we says Police Officer mean not only the policemen but anyone in charge and able to issue fines and deal with road violations. Same analogy for Director and Employee 
+Then, some other necessary, but less important, structural constraints are expressed and properly commented in the Alloy formal notation. These bonds are verified analyzing the worlds generated running the model and checking some relevant assertion.
+It's important to note that some numerical values that were too big for having a correct analysis in Alloy have been reduced. \newpage
 \lstinputlisting[language=alloy,basicstyle=\normalsize]{RASD.als}
 
 \newpage
