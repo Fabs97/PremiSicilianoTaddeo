@@ -6,13 +6,43 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{listings}
 \usepackage{alloy-style}
+\usepackage{hyperref}
 
 \title{SafeStreets}
 \author{Marco Premi, Fabrizio Siciliano, Giuseppe Taddeo}
 \pagestyle{headings}
 
 \begin{document}
-\maketitle
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Images/logo_polimi.png}\\[4ex]
+    \begingroup
+        \huge \textbf{Marco Premi} $\langle$\textbf{941388}$\rangle$ \\
+        \vfill
+        \huge \textbf{Fabrizio Siciliano} $\langle$\textbf{939895}$\rangle$\\
+        \vfill
+        \huge \textbf{Giuseppe Taddeo} $\langle$\textbf{928360}$\rangle$\\
+        \vfill
+    \endgroup
+    \vfill
+    \begingroup
+        \fontsize{15pt}{12pt}\selectfont
+        \textbf{Software engineering 2}
+    \endgroup\\[3ex]
+    \begingroup
+        \fontsize{20pt}{12pt}\selectfont
+        \textbf{RASD}\\[1ex]
+        \fontsize{15pt}{12pt}\selectfont
+        Requirements Analysis and Specification Document
+    \endgroup\\[8ex]
+    \normalsize \today\\
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+    \textbf{Reference professor:}\\[0.2cm]
+    Matteo Giovanni Rossi\\[0cm]
+    {\small \href{mailto:matteo.rossi@polimi.it}{\texttt{matteo.rossi@polimi.it}}}
+\end{flushright}
 
 \newpage
 \tableofcontents
@@ -194,15 +224,15 @@ unsafe areas around the municipality.\\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.255]{Images/umlmodel}
+    \includegraphics[scale=0.38,angle=90]{Images/umlmodel}
     \caption{Class diagram}
 \end{figure}
 
-It is possible to notice that there are two actors that model the third party.
-Police Officers and municipality employees have both access to a web version of
-the application, since this version provides the tools for checking input
-violations, emit traffic tickets and assess possible improvements to unsafe
-areas.\\
+It is possible to notice that there are three actors that model the third party.
+Police Officers and municipality employees and director have access to a web
+version of the application, since this version provides the tools for checking
+input violations, emit traffic tickets and assess possible improvements to
+unsafe areas.\\
 \\
 We will now furtherly analize some critical aspects of the system with the use
 of activity diagrams. Actual system functions will not be presented, just some
