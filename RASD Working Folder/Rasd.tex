@@ -3,6 +3,9 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[T1]{fontenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{alloy-style}
 
 \title{SafeStreets}
 \author{Marco Premi, Fabrizio Siciliano, Giuseppe Taddeo}
@@ -47,9 +50,9 @@
     initiative \subsubsection{Goals} Follows a list of all goals that will be
     reached with the SafeStreets initiative.
     \begin{itemize}
-        \item $\langle$\textbf{G0}$\rangle$ The system will allow new customers to
-        automatically sign up and create new accounts with the minimum required
-        ID, email and password (all three will have to be valid);
+        \item $\langle$\textbf{G0}$\rangle$ The system will allow new customers
+        to automatically sign up and create new accounts with the minimum
+        required ID, email and password (all three will have to be valid);
         \item $\langle$\textbf{G1}$\rangle$ The systen will allow customers to
         sign in, upon check of the validity of email and password the customer
         inputs;
@@ -110,19 +113,26 @@ Global Positioning System \paragraph{PO:} Police Officer \paragraph{ME:}
 Municipality Employee
 \subsubsection{Abbreviations}
 \paragraph{Gn:} nth goal; \paragraph{Dn:} nth assumption; \paragraph{Rn:} nth
-requirement; \paragraph{ID: } identifier (Fiscal Code fomunir Users, a municipality
-identifier for Third Parties)
+requirement; \paragraph{ID: } identifier (Fiscal Code fomunir Users, a
+municipality identifier for Third Parties)
 \subsection{Revision History}
 \subsection{Reference Documents}
+\begin{itemize}
+    \item Specification document: "Mandatory Project Assignement AY 2019-2010"
+    \item Alloy doc: http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html
+    \item UML diagrams: https://www.uml-diagrams.org/
+    \item Plate Recognizer: https://app.platerecognizer.com
+    \item Ghiro: https://www.getghiro.org/
+\end{itemize}
 \subsection{Document Structure}
 \paragraph{Chapter 1 - Introduction}
 Gives an introduction to the problem by describing the purpose of SafeStreets.
 It also shows the goals and the scope of the application. \paragraph{Chapter 2 -
-Overall Description}Offers an overall description of the project. It
-identifies the actors involved in the application and lists all the assumptions
-in order to identify all the boundaries of the project. The product perspective
-includes details on the shared phenomena and the domain models. The class
-diagram describe the domain model used and the state diagrama analyzes:
+Overall Description}Offers an overall description of the project. It identifies
+the actors involved in the application and lists all the assumptions in order to
+identify all the boundaries of the project. The product perspective includes
+details on the shared phenomena and the domain models. The class diagram
+describe the domain model used and the state diagrama analyzes:
 \begin{itemize}
     \item The process of collecting violations from users
     \item The process of sharing informations with the municipality
@@ -189,7 +199,8 @@ unsafe areas around the municipality.\\
 It is possible to notice that there are two actors that model the third party.
 Police Officers and municipality employees have both access to a web version of
 the application, since this version provides the tools for checking input
-violations, emit traffic tickets and assess possible improvements to unsafe areas.\\
+violations, emit traffic tickets and assess possible improvements to unsafe
+areas.\\
 \\
 We will now furtherly analize some critical aspects of the system with the use
 of activity diagrams. Actual system functions will not be presented, just some
@@ -218,82 +229,88 @@ party employees (PO or ME).
     \caption{Activity Diagram: Checking violation}
 \end{figure}
 
-As it is mentioned by the description above this one, no user can access the system
-without a proper username and password. What is interesting in this part of the
-process, is the possibility to end the whole process only once the traffic
-violation has been checked, which means that the hard evidence attached to it
-has to be approved as not being counterfeited or else. A running version of the
-Ghiro software has to be already installed on the machine which is accessing the
-system through a web browser; if not, the system itself will automatically
-redirect to the latest downloadable version of it. 
+As it is mentioned by the description above this one, no user can access the
+system without a proper username and password. What is interesting in this part
+of the process, is the possibility to end the whole process only once the
+traffic violation has been checked, which means that the hard evidence attached
+to it has to be approved as not being counterfeited or else. A running version
+of the Ghiro software has to be already installed on the machine which is
+accessing the system through a web browser; if not, the system itself will
+automatically redirect to the latest downloadable version of it. 
 
 \subsection{Product Functions}
-In the following section the most important product functions of the system are 
+In the following section the most important product functions of the system are
 reported.
     \subsubsection{Reporting traffic violations}
-    This function is the main action that the user can use. After having
-    logged in within its application, pressing on "Report Infraction" the system 
-    will ask to insert an image specifying its format and characteristics (clear 
-    image, defined context, visible plate). Once the image is loaded, the system 
-    will ask him to enter the type of infraction reported, the date and time, as 
-    well as the position detected by GPS signal or manually via user input. At this 
-    point the user will confirm the data entered and save the report. Moreover he 
-    will see in his personal area, under the list of his reports, the new report 
-    with all the data he has entered. In addition, the report will be added to the 
-    list of reports made in the same municipality.
+    This function is the main action that the user can use. After having logged
+    in within its application, pressing on "Report Infraction" the system will
+    ask to insert an image specifying its format and characteristics (clear
+    image, defined context, visible plate). Once the image is loaded, the system
+    will ask him to enter the type of infraction reported, the date and time, as
+    well as the position detected by GPS signal or manually via user input. At
+    this point the user will confirm the data entered and save the report.
+    Moreover he will see in his personal area, under the list of his reports,
+    the new report with all the data he has entered. In addition, the report
+    will be added to the list of reports made in the same municipality.
 
     \subsubsection{Police Officer - Reportings Management (APP)}
-    This function allows the police officer to have in real time all the reports 
-    made in his municipality of competence. In fact, after logging into his 
-    application and providing his identification as a police officer, the 
-    application through an analysis system of the latter will identify the 
-    municipality of competence of the agent and will show him the list of all the 
-    appropriate reports. He can therefore go to the place of the report to resolve 
-    the infraction manually by clicking "Resolve Live" and closing the infraction 
-    or, in the event that the violation can no longer be assessed in person 
-    (i.e. the car has moved) he can leave the report opened to then resolve it 
-    from the website.
+    This function allows the police officer to have in real time all the reports
+    made in his municipality of competence. In fact, after logging into his
+    application and providing his identification as a police officer, the
+    application through an analysis system of the latter will identify the
+    municipality of competence of the agent and will show him the list of all
+    the appropriate reports. He can therefore go to the place of the report to
+    resolve the infraction manually by clicking "Resolve Live" and closing the
+    infraction or, in the event that the violation can no longer be assessed in
+    person (i.e. the car has moved) he can leave the report opened to then
+    resolve it from the website.
 
     \subsubsection{Police Officer - Reportings Management (WEB)}
-    This function allows the police officer to resolve the reports (i.e. generating 
-    a traffic ticket for the owner of the machine) via the website without being 
-    physically present on the spot. Once logged in using codes provided by the 
-    municipality, the police officer will be able to see all the reports still open 
-    (i.e. no one has clicked "Resolve Live") and analyze them. He can take the photo 
-    posted by the user and submit it to specialized programs to ensure that it is 
-    not tampered with and will therefore be able to generate the ticket and close 
-    the report.
+    This function allows the police officer to resolve the reports (i.e.
+    generating a traffic ticket for the owner of the machine) via the website
+    without being physically present on the spot. Once logged in using codes
+    provided by the municipality, the police officer will be able to see all the
+    reports still open (i.e. no one has clicked "Resolve Live") and analyze
+    them. He can take the photo posted by the user and submit it to specialized
+    programs to ensure that it is not tampered with and will therefore be able
+    to generate the ticket and close the report.
 
     \subsubsection{Municipal Employee - Interventions Management}
-    This function allows a municipal employee, after logging in through his own 
-    identifier, to be able to view all the reports made in the municipality of 
-    competence and be able to insert in the application the accident data that occur 
-    in the territory. In this way, by pressing the "Start Analysis" button, SafeStreets 
-    will identify potentially unsafe areas and show them to the municipal employee and 
-    the municipal employee will be able to decide whether to take precautions 
-    (i.e. insert barrier between cycle path and road).
+    This function allows a municipal employee, after logging in through his own
+    identifier, to be able to view all the reports made in the municipality of
+    competence and be able to insert in the application the accident data that
+    occur in the territory. In this way, by pressing the "Start Analysis"
+    button, SafeStreets will identify potentially unsafe areas and show them to
+    the municipal employee and the municipal employee will be able to decide
+    whether to take precautions (i.e. insert barrier between cycle path and
+    road).
 
 \subsection{User characteristics}
 The actors of the application are the following:
 \begin{itemize}
-    \item User: a customer of the service who, after having installed the application 
-    on his mobile device, having registered through univocal identification data and 
-    accepted the processing of his data and the civil and criminal liability of his own 
-    reports, can post an infraction report attaching a photo of this (with clear and legible 
-    license plate) followed by date, time and position (the latter acquired by GPS detection 
-    or manual entry)
+    \item User: a customer of the service who, after having installed the
+    application on his mobile device, having registered through univocal
+    identification data and accepted the processing of his data and the civil
+    and criminal liability of his own reports, can post an infraction report
+    attaching a photo of this (with clear and legible license plate) followed by
+    date, time and position (the latter acquired by GPS detection or manual
+    entry)
     \item Authority: a customer who uses the system based on its role;
     \begin{itemize}
-        \item Policeman: after installing the application on his mobile device, having registered 
-        through univocal data and codes provided by your municipality, he have the possibility 
-        to see the list of reports of infractions made in the Municipality of his competence and 
-        also has the ability to access to the system through a website to carry out analysis of 
-        the reports (image photoshop) and generate traffic ticket to the accused.
-        \item Municipal Employee: through the website, he has access to the unsafe areas of his own 
-        Municipality to decide road interventions to be applied within it
-        \item Municipal Director: through the website, he has access to both reports and traffic tickets 
-        both to unsafe areas and to statistical data produced by SafeStreets in order to assess the 
-        effectiveness of the application.
+        \item Policeman: after installing the application on his mobile device,
+        having registered through univocal data and codes provided by your
+        municipality, he have the possibility to see the list of reports of
+        infractions made in the Municipality of his competence and also has the
+        ability to access to the system through a website to carry out analysis
+        of the reports (image photoshop) and generate traffic ticket to the
+        accused.
+        \item Municipal Employee: through the website, he has access to the
+        unsafe areas of his own Municipality to decide road interventions to be
+        applied within it
+        \item Municipal Director: through the website, he has access to both
+        reports and traffic tickets both to unsafe areas and to statistical data
+        produced by SafeStreets in order to assess the effectiveness of the
+        application.
     \end{itemize}
 \end{itemize}
 \subsection{Assumptions, dependencies and constraints}
@@ -324,11 +341,10 @@ The system uses external suitable services to make its architecture simpler.
 SafeStreets uses sensitive data which handling differs from nation to nation.
 For example, in UE, GDPR provides the guidelines to transmit, store and analyze
 information.\\ SafeStreets personalizes the process according to the country in
-which the services are used.
-\paragraph{2.4.3.2 Parallel Operations}\mbox{}\\
+which the services are used. \paragraph{2.4.3.2 Parallel Operations}\mbox{}\\
 The system must provide support for multiple parallel operations from a big
-number of different users.
-The user must not wait in order to be able to connect to the service.
+number of different users. The user must not wait in order to be able to connect
+to the service.
 \newpage
 \section{Specific Requirements}
 \subsection{External Interface Requirements}
@@ -428,8 +444,8 @@ $\langle$\textbf{G0}$\rangle$ SignUp to the system
     registered  in the system
     \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
     email
-    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of Use
-\end{description}\mbox{}\\
+    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
+Use \end{description}\mbox{}\\
 $\langle$\textbf{G1}$\rangle$ SignIn to the system
 \begin{description}
     \item $\langle$\textbf{R4}$\rangle$ the customer must be already sign up
@@ -446,19 +462,19 @@ $\langle$\textbf{G2}$\rangle$ Signal a violation
 \end{description}
 $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
 \begin{description}
-    \item $\langle$\textbf{R9}$\rangle$ the user is shown the unsafe areas around
-    him
-    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the unsafe
-    areas
-    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search unsafe
-    areas 
+    \item $\langle$\textbf{R9}$\rangle$ the user is shown the unsafe areas
+    around him
+    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
+    unsafe areas
+    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
+    unsafe areas 
 \end{description}    
 $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{description}
     \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
     account information
-    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete his/her
-    account
+    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
+    his/her account
 \end{description}
 
 \paragraph{Sequence diagrams}
@@ -482,8 +498,8 @@ $\langle$\textbf{G0}$\rangle$ SignUp to the system
     registered  in the system
     \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
     email
-    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of Use
-\end{description}\mbox{}\\
+    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
+Use \end{description}\mbox{}\\
 $\langle$\textbf{G1}$\rangle$ SignIn to the system
 \begin{description}
     \item $\langle$\textbf{R4}$\rangle$ the customer must be already signed up
@@ -492,17 +508,18 @@ $\langle$\textbf{G1}$\rangle$ SignIn to the system
 \end{description}
 $\langle$\textbf{G5}$\rangle$ Check Violations
 \begin{description}
-    \item $\langle$\textbf{R14}$\rangle$ the third party must be able to check all
-    the new and past violations details
-    \item $\langle$\textbf{R15}$\rangle$ the third party must be able to use Ghiro
+    \item $\langle$\textbf{R14}$\rangle$ the third party must be able to check
+    all the new and past violations details
+    \item $\langle$\textbf{R15}$\rangle$ the third party must be able to use
+    Ghiro
     \item $\langle$\textbf{R16}$\rangle$ the third party must be able to report
     the validity of the violation \end{description}\mbox{}\\
 $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
 \begin{description}
-    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the unsafe
-    areas
-    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search unsafe
-    areas 
+    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
+    unsafe areas
+    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
+    unsafe areas 
     \item $\langle$\textbf{R17}$\rangle$ the third party is shown a list of
     possible improvements to be made to the shown areas by the system
 \end{description}
@@ -510,8 +527,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{description}
     \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
     account information
-    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete his/her
-    account
+    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
+    his/her account
 \end{description}    
 
 \begin{figure}[H]
@@ -567,7 +584,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In} \end{minipage} \\ \hline  
+    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In} \end{minipage} \\
+    \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} User \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} \begin{enumerate}
         \item The user has already downloaded the the application on his/her
@@ -598,8 +616,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Signal a violation}\end{minipage}
-    \\ \hline  
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Signal a
+    violation}\end{minipage} \\ \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} User\end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
     logged in \end{minipage} \\ \hline 
@@ -629,7 +647,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize unsafe areas} \end{minipage} \\ \hline  
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize unsafe areas}
+    \end{minipage} \\ \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} User \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
     logged in\end{minipage} \\
@@ -654,7 +673,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize previous reports}\end{minipage} \\ \hline  
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize previous
+    reports}\end{minipage} \\ \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} User\end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
     logged in \end{minipage} \\
@@ -677,9 +697,11 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Manage Account} \end{minipage} \\ \hline  
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Manage Account}
+    \end{minipage} \\ \hline  
      Actor & \begin{minipage}[t]{0.7\textwidth} User \end{minipage} \\ \hline 
-     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already logged in \end{minipage} \\
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+     logged in \end{minipage} \\
      \hline 
      Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
@@ -708,8 +730,10 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up}\end{minipage} \\ \hline  
-     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\end{minipage} \\ \hline 
+     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up}\end{minipage} \\
+     \hline  
+     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\end{minipage} \\
+     \hline 
      Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
      not already registered\end{minipage} \\
      \hline 
@@ -744,9 +768,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\ \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already signed up\end{minipage} \\
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In} \end{minipage} \\
+    \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    already signed up\end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -757,7 +784,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The third party clicks on "Sign In"
     \end{enumerate}    
     \end{minipage} \\ \hline
-    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party is successfully signed in \end{minipage} \\
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
+    successfully signed in \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -772,9 +800,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\ \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already logged in\end{minipage} \\
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    already logged in\end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -794,16 +825,19 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\ \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already logged in \end{minipage} \\
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    already logged in \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The third party clicks on the menu icon
         \item The third party clicks on "Violations"
-        \item The third party is allowed to see the list of previous and
-        actual violations (checked or not)
+        \item The third party is allowed to see the list of previous and actual
+        violations (checked or not)
         \item The third party click on "Open Details" of one particular not
         checked violation
         \item The third party is allowed to see information about the particular
@@ -814,7 +848,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         or "Report valid" if the image is real
     \end{enumerate}
     \end{minipage} \\ \hline
-    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party can manage the violations \end{minipage} \\
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party can
+    manage the violations \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
     website before the process has ended \end{minipage} \\ \hline
@@ -824,9 +859,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth}Third party\end{minipage} \\ \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has already logged in \end{minipage} \\
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth}Third party\end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    already logged in \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -847,8 +885,10 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check violations on the field} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party(officer) \end{minipage} \\ \hline 
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check violations on the
+    field} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party(officer)
+    \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth}The third party has
     already logged in \end{minipage} \\
     \hline 
@@ -904,7 +944,7 @@ fault tolerant. In order to exploit this last point the data saved on the
 servers should be duplicated.
 \subsubsection{Availability}
 Maximum availability is a necessity because users should be able to report
-violations 24/7. One or two days per year may be used for maintainance, so 
+violations 24/7. One or two days per year may be used for maintainance, so
 availability of 99\% is expected.
 \subsubsection{Security}
 User and third party provide data that contains sensitive information, so the
@@ -925,6 +965,7 @@ Naturally the mobile application must be available on both Android and iOs.
 
 \newpage
 \section{Formal Analysis using Alloy}
+\lstinputlisting[language=alloy]{RASD.als}
 
 \newpage
 \section{Effort spent}
@@ -941,7 +982,6 @@ Naturally the mobile application must be available on both Android and iOs.
         \hline
     \end{tabular}
 \end{center}
-\section{References}
-    \paragraph{Plate Recognizer:} https://app.platerecognizer.com
+
     
 \end{document}  
