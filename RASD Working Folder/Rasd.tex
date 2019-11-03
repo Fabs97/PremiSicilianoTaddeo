@@ -47,20 +47,25 @@
     initiative \subsubsection{Goals} Follows a list of all goals that will be
     reached with the SafeStreets initiative.
     \begin{itemize}
-        \item G1: The system must allow all kind of users (both third parties
-        and civilians) to correctly input (with hard evidence) traffic
-        violations around the city;
-        \item G2: The system must autonomously retrieve metadata from hard
-        evidence useful to report and to all users;
-        \item G3: The system must allow to create different clearance levels in
-        order to offer different reporting systems to different kind of users;
-        \item G4: The system will provide an efficient reporting system in order
-        to highlight different violation categories through all parts of the
-        city where the initiative is active;
-        \item G5: The system allows the authorities to be able to use the 
-        application data to generates traffic tickets to civilians who commit 
-        infractions (the requirement of authenticity of the chain of custody 
-        follows);
+        \item $\langle$\textbf{G0}$\rangle$ The system will allow new customers to
+        automatically sign up and create new accounts with the minimum required
+        ID, email and password (all three will have to be valid);
+        \item $\langle$\textbf{G1}$\rangle$ The systen will allow customers to
+        sign in, upon check of the validity of email and password the customer
+        inputs;
+        \item $\langle$\textbf{G2}$\rangle$ The system will allow new traffic
+        violations to be input by users, upon providing a list of required
+        information;
+        \item $\langle$\textbf{G3}$\rangle$ The system will provide an efficient
+        reporting system in order to highlight different unsafe areas and will
+        allow to filter the shown areas around the municipality; 
+        \item $\langle$\textbf{G4}$\rangle$ The system will allow all customers
+        to modify all account information and to delete the existing account; 
+        \item $\langle$\textbf{G5}$\rangle$ The system will allow third parties
+        to check all violations' details input in the municipality area, connect
+        with an external software for photo forensics purposes and report the
+        validity of the traffic violation in order to emit tickets or discard
+        the violation itself.
     \end{itemize}
 \subsection{Scope}
 With SafeStreets users can notify the authorities when traffic violations occur,
@@ -104,8 +109,9 @@ Regulation \paragraph{API:} Application Programming Interface \paragraph{GPS:}
 Global Positioning System \paragraph{PO:} Police Officer \paragraph{ME:}
 Municipality Employee
 \subsubsection{Abbreviations}
-\paragraph{Gn:} nth goal; \paragraph{Dn:} nth domain; \paragraph{Rn:} nth
-requirement;
+\paragraph{Gn:} nth goal; \paragraph{Dn:} nth assumption; \paragraph{Rn:} nth
+requirement; \paragraph{ID: } identifier (Fiscal Code fomunir Users, a municipality
+identifier for Third Parties)
 \subsection{Revision History}
 \subsection{Reference Documents}
 \subsection{Document Structure}
@@ -389,43 +395,40 @@ HTTP/HTTPS is used for:
 \paragraph{User}\mbox{}\\
 $\langle$\textbf{G0}$\rangle$ SignUp to the system
 \begin{description}
-    \item $\langle$\textbf{R1}$\rangle$ the user must not be already registered
-    in the system with the same email or fiscal code
-    \item $\langle$\textbf{R2}$\rangle$ fiscal code and email must be valid and
-    belonging to the user who is signing up
-    \item $\langle$\textbf{R3}$\rangle$ the system must verify her/his email
-    \item $\langle$\textbf{R4}$\rangle$ the user must agree to the Term of Use
+    \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
+    registered  in the system
+    \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
+    email
+    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of Use
 \end{description}\mbox{}\\
 $\langle$\textbf{G1}$\rangle$ SignIn to the system
 \begin{description}
-    \item $\langle$\textbf{R5}$\rangle$ the user must already be registered in
-    the system
-    \item $\langle$\textbf{R6}$\rangle$ the user must insert her/his email and
-    the password \end{description}\mbox{}\\\\
-$\langle$\textbf{G}$\rangle$ Signal a violation
+    \item $\langle$\textbf{R4}$\rangle$ the customer must be already sign up
+    \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
+    password \end{description}\mbox{}\\\\
+$\langle$\textbf{G2}$\rangle$ Signal a violation
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the user must be able to insert one or
+    \item $\langle$\textbf{R6}$\rangle$ the user must be able to insert one or
     more photos of the violation
-    \item $\langle$\textbf{R}$\rangle$ the user must send information about his
+    \item $\langle$\textbf{R7}$\rangle$ the user must send information about its
     location
-    \item $\langle$\textbf{R}$\rangle$ the user can add more informations about
-    the violation
+    \item $\langle$\textbf{R8}$\rangle$ the user can add the type of violation
+    that is being reported
 \end{description}
-%una volta inserita la violazione nessuno può cambiarla
-$\langle$\textbf{G}$\rangle$ Show Unsafe Areas
+$\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the user is shown the unsafe areas around
+    \item $\langle$\textbf{R9}$\rangle$ the user is shown the unsafe areas around
     him
-    \item $\langle$\textbf{R}$\rangle$ the user is allowed to filter the unsafe
+    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the unsafe
     areas
-    \item $\langle$\textbf{R}$\rangle$ the user is allowed to search unsafe
+    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search unsafe
     areas 
 \end{description}    
-$\langle$\textbf{G}$\rangle$ Manage Account
+$\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the user must be able to change his/her
-    address, the password and the email
-    \item $\langle$\textbf{R}$\rangle$ the user must be able to delete his/her
+    \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
+    account information
+    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete his/her
     account
 \end{description}
 
@@ -444,35 +447,42 @@ $\langle$\textbf{G}$\rangle$ Manage Account
 \end{figure}
 
 \paragraph{Third parties}\mbox{}\\
-$\langle$\textbf{G}$\rangle$ SignUp to the system
+$\langle$\textbf{G0}$\rangle$ SignUp to the system
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the third party must have a valid
-    AuthoritiesID
-    \item $\langle$\textbf{R}$\rangle$ the third party must not be already
+    \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
     registered  in the system
-    \item $\langle$\textbf{R}$\rangle$ the third party must supply a valid
-    institutional email
-    \item $\langle$\textbf{R}$\rangle$ must agree to the Term of Use
+    \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
+    email
+    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of Use
 \end{description}\mbox{}\\
-$\langle$\textbf{G}$\rangle$ SignIn to the system
+$\langle$\textbf{G1}$\rangle$ SignIn to the system
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the third party must be already sign up
-    \item $\langle$\textbf{R}$\rangle$ the third party must insert the email and
-    the password\\
+    \item $\langle$\textbf{R4}$\rangle$ the customer must be already signed up
+    \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
+    password\\
 \end{description}
-$\langle$\textbf{G}$\rangle$ Check Violations
+$\langle$\textbf{G5}$\rangle$ Check Violations
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the third party must be able to check all
-    the new and past violations
-    \item $\langle$\textbf{R}$\rangle$ the third party must be able to use Ghiro
-    \item $\langle$\textbf{R}$\rangle$ the third party must be able to report if
-the violation is valid or not \end{description}\mbox{}\\
-$\langle$\textbf{G}$\rangle$ Create Unsafe Areas
+    \item $\langle$\textbf{R14}$\rangle$ the third party must be able to check all
+    the new and past violations details
+    \item $\langle$\textbf{R15}$\rangle$ the third party must be able to use Ghiro
+    \item $\langle$\textbf{R16}$\rangle$ the third party must be able to report
+    the validity of the violation \end{description}\mbox{}\\
+$\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
 \begin{description}
-    \item $\langle$\textbf{R}$\rangle$ the third party must be able to create
-    and delete unsafe areas
-    \item $\langle$\textbf{R}$\rangle$ the third party must be able to filter
-    the different unsafe areas
+    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the unsafe
+    areas
+    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search unsafe
+    areas 
+    \item $\langle$\textbf{R17}$\rangle$ the third party is shown a list of
+    possible improvements to be made to the shown areas by the system
+\end{description}
+$\langle$\textbf{G4}$\rangle$ Manage Account
+\begin{description}
+    \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
+    account information
+    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete his/her
+    account
 \end{description}    
 
 
