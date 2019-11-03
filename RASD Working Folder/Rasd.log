@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  3 NOV 2019 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  3 NOV 2019 15:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,37 +561,33 @@ Overfull \hbox (16.59729pt too wide) in paragraph at lines 933--935
 []\T1/cmr/m/n/10 must be able to make HTTPS re-quests (con-nec-tion to in-ter-net 4G/3G/2G/Wi-
  []
 
-[39] [40]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 968.
- (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <7> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
- [41]
-Overfull \hbox (161.3557pt too wide) in paragraph at lines 108--110
+[39] [40] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als [41] [42]
+Overfull \hbox (327.95934pt too wide) in paragraph at lines 108--110
 [][][][][] 
  []
 
-[42] [43] [44]
-Overfull \hbox (259.5074pt too wide) in paragraph at lines 249--251
+[43] [44] [45] [46]
+Overfull \hbox (459.92812pt too wide) in paragraph at lines 249--251
 [][][][][] 
  []
 
-[45]) [46] [47] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
+[47]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 284.
+ [48] [49]) [50] [51] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
 Here is how much of TeX's memory you used:
- 14399 strings out of 492167
- 262103 string characters out of 6129158
- 553288 words of memory out of 5000000
- 18673 multiletter control sequences out of 15000+600000
- 542679 words of font info for 44 fonts, out of 8000000 for 9000
+ 14379 strings out of 492167
+ 261514 string characters out of 6129158
+ 480273 words of memory out of 5000000
+ 18658 multiletter control sequences out of 15000+600000
+ 541969 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,67p,416b,1902s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfit0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (47 pages, 1973636 bytes).
+ 46i,11n,67p,416b,1904s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (51 pages, 1946852 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
