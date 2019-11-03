@@ -108,15 +108,15 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
-OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf
-INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecsl1000.tfm
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.toc
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
@@ -190,6 +190,21 @@ INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilian
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

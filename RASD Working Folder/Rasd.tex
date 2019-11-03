@@ -14,6 +14,7 @@
 \begin{document}
 \maketitle
 
+\newpage
 \tableofcontents
 
 \newpage
@@ -124,6 +125,7 @@ municipality identifier for Third Parties)
     \item Plate Recognizer: https://app.platerecognizer.com
     \item Ghiro: https://www.getghiro.org/
 \end{itemize}
+\newpage
 \subsection{Document Structure}
 \paragraph{Chapter 1 - Introduction}
 Gives an introduction to the problem by describing the purpose of SafeStreets.
@@ -436,6 +438,8 @@ HTTP/HTTPS is used for:
     \item Using Google Maps API and Plate Recognizer API
 \end{itemize}
 \subsection{Scenarios}
+
+\newpage
 \subsection{Functional requirements}
 \paragraph{User}\mbox{}\\
 $\langle$\textbf{G0}$\rangle$ SignUp to the system
@@ -477,8 +481,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     his/her account
 \end{description}
 
-\paragraph{Sequence diagrams}
-
+\newpage
+\paragraph{Sequence diagrams}\mbox{}\\
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{Images/SequenceReportViolation}
@@ -490,7 +494,7 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \includegraphics[scale=0.5]{Images/SequenceUserAnalyseUnsafeAreas} 
     \caption{Sequence diagram: analyse unsafe areas}
 \end{figure}
-
+\newpage
 \paragraph{Third parties}\mbox{}\\
 $\langle$\textbf{G0}$\rangle$ SignUp to the system
 \begin{description}
@@ -529,8 +533,9 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     account information
     \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
     his/her account
-\end{description}    
-
+\end{description}  
+\newpage  
+\paragraph{Sequence diagrams}\mbox{}\\
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.47]{Images/SequenceThirdPartyCheckViolation} 
@@ -555,10 +560,10 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \textbf{Sign Up} \\ \hline  
-    Actor & User\\ \hline 
-    Entry conditions &  The user has downloaded the application on his/her
-    device\\ \hline 
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth}User\\\end{minipage}\\ \hline 
+    Entry conditions &  \begin{minipage}[t]{0.7\textwidth}The user has downloaded the application on his/her
+    device\\ \end{minipage}\\ \hline 
     Events flow & 
     \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -566,17 +571,17 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The user clicks on "Sign Up" button
         \item The user fills the registration form with all the mandatory fields
         \item The user clicks the confirmation button
-        \item The system saves the data
+        \item The system saves the data\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth}The system has stored
-    user data, the user is registered and now is able to use te application
+    user data, the user is registered and now is able to use te application\\
     \end{minipage}\\ \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} \begin{enumerate}
         \item The user was already signed up
         \item The user doesn't fill all the mandatory fields with valid data
         \item The email or the fiscal code is already registered
-        \item The user closes the application before the process has ended
+        \item The user closes the application before the process has ended\\
     \end{enumerate}\end{minipage} \\ \hline
     \end{tabular}
 \end{table}
@@ -584,13 +589,13 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In} \end{minipage} \\
+    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In\\} \end{minipage} \\
     \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} User \end{minipage} \\ \hline 
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} \begin{enumerate}
         \item The user has already downloaded the the application on his/her
         device
-        \item The user has already signed up
+        \item The user has already signed up\\
     \end{enumerate}
     \end{minipage} \\ \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
@@ -598,16 +603,16 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The user opens the application on his/her device
         \item The user inserts his/her credentials in the "Email" and "Password"
         fields.
-        \item The user clicks on the "Sign In" button
+        \item The user clicks on the "Sign In" button\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user is
-    successfully signed in \end{minipage} \\ \hline
+    successfully signed in \\ \end{minipage} \\ \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The user inserts invalid Email
         \item The user inserts invalid Password   
-        \item The user closes the application before the process has ended 
+        \item The user closes the application before the process has ended \\
     \end{enumerate}
     \end{minipage} \\ \hline
     \end{tabular}
@@ -617,10 +622,10 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \begin{tabular}{|l|l|}
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Signal a
-    violation}\end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} User\end{minipage} \\ \hline 
+    violation\\}\end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
-    logged in \end{minipage} \\ \hline 
+    logged in\\  \end{minipage} \\ \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The user opens the Menu
@@ -629,15 +634,15 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The user adds additional information
         \item The user adds one or more violation types
         \item The user clicks "Send"
-        \item SafeStreets receives the violation
+        \item SafeStreets receives the violation\\ 
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth}The user has
-    successfully reported a violation \end{minipage} \\ \hline
+    successfully reported a violation\\ \end{minipage} \\ \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The user closes the application before the process has ended 
-        \item The user doesn't have internet connection 
+        \item The user doesn't have internet connection\\
     \end{enumerate}    
     \end{minipage} \\ \hline
     \end{tabular}
@@ -647,26 +652,26 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize unsafe areas}
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize unsafe areas\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} User \end{minipage} \\ \hline 
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
-    logged in\end{minipage} \\
+    logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
         \item The user opens the Menu
         \item The user clicks on the "Unsafe area analysis" button in the Menu
         \item The user is allowed to select different filters and the area
-        he/she wants to see
+        he/she wants to see\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user can see all
-    the unsafe areas proposed by SafeStreets and the third party\end{minipage}
+    the unsafe areas proposed by SafeStreets and the third party\\ \end{minipage}
     \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}  The user doesn't have
-    internet connection \end{minipage} \\ \hline
+    internet connection\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
@@ -674,48 +679,48 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \begin{tabular}{|l|l|}
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize previous
-    reports}\end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} User\end{minipage} \\ \hline 
+    reports\\}\end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
-    logged in \end{minipage} \\
+    logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
         \item The user opens the Menu
         \item The user selects the "My reports" button in the Menu
-        \item The user is allowed to see all the previous reports he/she made
+        \item The user is allowed to see all the previous reports he/she made\\
     \end{enumerate}    
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user is provided
-    with the requested data \end{minipage} \\
+    with the requested data\\ \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user doesn't have
-    internet connection  \end{minipage} \\ \hline
+    internet connection\\  \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Manage Account}
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Manage Account\\}
     \end{minipage} \\ \hline  
-     Actor & \begin{minipage}[t]{0.7\textwidth} User \end{minipage} \\ \hline 
+     Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
      Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
-     logged in \end{minipage} \\
+     logged in\\ \end{minipage} \\
      \hline 
      Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
         \item The user opens the Menu
         \item The user selects the "Settings" button in the Menu
         \item The user is allowed to change his/her adress, the password, the
-        email or to delete the account
+        email or to delete the account\\
     \end{enumerate}    
     \end{minipage} \\ \hline
      Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
-     saved to his/her account or the account is deleted \end{minipage} \\
+     saved to his/her account or the account is deleted\\ \end{minipage} \\
      \hline
      Exceptions & \begin{minipage}[t]{0.7\textwidth} The user closes the
-     application before the process has ended \end{minipage} \\ \hline
+     application before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
@@ -730,12 +735,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up}\end{minipage} \\
+     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage} \\
      \hline  
-     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\end{minipage} \\
+     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
      \hline 
      Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
-     not already registered\end{minipage} \\
+     not already registered\\ \end{minipage} \\
      \hline 
      Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
@@ -745,12 +750,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The third party fills the registration form with all the mandatory
         fields
         \item The third party clicks the confirmation button
-        \item The system saves the data
+        \item The system saves the data\\
     \end{enumerate}
     \end{minipage} \\ \hline
      Exit conditions & \begin{minipage}[t]{0.7\textwidth} The system has stored
      third party data, the third party is registered and now is able to use the
-     website\end{minipage} \\
+     website\\ \end{minipage} \\
      \hline
      Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -759,7 +764,7 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         data
         \item The email or the AuthoritiesID is already registered
         \item The third party closed the application beforse the process has
-        ended
+        ended\\
     \end{enumerate}    
     \end{minipage} \\ \hline
     \end{tabular}
@@ -768,12 +773,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In} \end{minipage} \\
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In\\} \end{minipage} \\
     \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
     \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
-    already signed up\end{minipage} \\
+    already signed up\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -781,17 +786,17 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The third party is asked to sign in
         \item The third party inserts the credentials in the "Email" and
         "Password" fields.
-        \item The third party clicks on "Sign In"
+        \item The third party clicks on "Sign In"\\
     \end{enumerate}    
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
-    successfully signed in \end{minipage} \\
+    successfully signed in\\ \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The third party inserts invalid Email
         \item The third party inserts invalid Password
-        \item The third party closes the website before the process has ended
+        \item The third party closes the website before the process has ended\\
     \end{enumerate}
     \end{minipage} \\ \hline
     \end{tabular}
@@ -800,23 +805,23 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas}
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
     \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
-    already logged in\end{minipage} \\
+    already logged in\\\end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The third party clicks on the menu icon
         \item The third party click on "Unsafe ares"
         \item The third party is allowed create and delete unsafe areas, to
-        select different filters and to search different areas
+        select different filters and to search different areas\\
     \end{enumerate} 
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The unsafe areas editor
-    is presented to the third party\end{minipage} \\
+    is presented to the third party\\\end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\ \hline
     \end{tabular}
@@ -825,12 +830,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations}
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party \end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
     \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
-    already logged in \end{minipage} \\
+    already logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -845,40 +850,40 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The third party can click "Use" on Ghiro card to find out if the
         image is real
         \item The third party can click "Report not valid" if the image is fake
-        or "Report valid" if the image is real
+        or "Report valid" if the image is real\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party can
-    manage the violations \end{minipage} \\
+    manage the violations\\ \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
-    website before the process has ended \end{minipage} \\ \hline
+    website before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account}
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth}Third party\end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth}Third party\\\end{minipage} \\
     \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
-    already logged in \end{minipage} \\
+    already logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
         \item The third party clicks on the menu icon
         \item The third party click on "Manage Account"
         \item The third party is allowed to change the email, the password or to
-        delete the account
+        delete the account\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
-    saved to the third party account or the account is deleted\end{minipage} \\
+    saved to the third party account or the account is deleted\\ \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
-    website before the process has ended \end{minipage} \\ \hline
+    website before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
@@ -886,11 +891,11 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \begin{tabular}{|l|l|}
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check violations on the
-    field} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party(officer)
+    field\\} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Third party(officer)\\
     \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth}The third party has
-    already logged in \end{minipage} \\
+    already logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
@@ -899,16 +904,16 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
         \item The third party is allowed to see the list of violations
         \item The third party clicks on "Go check it out" button
         \item SafeStreets opens Google Maps or one other turn-by-turn navigation
-        app to reach the violation location
+        app to reach the violation location\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The officer can reach
-    the violation location\end{minipage} \\
+    the violation location\\\end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
         \item The officer closes the application before the process has ended
-        \item The officer doesn't have internet connection 
+        \item The officer doesn't have internet connection \\
     \end{enumerate}    
     \end{minipage} \\ \hline
     \end{tabular}
@@ -966,6 +971,36 @@ Naturally the mobile application must be available on both Android and iOs.
 \newpage
 \section{Formal Analysis using Alloy}
 \lstinputlisting[language=alloy,basicstyle=\normalsize]{RASD.als}
+
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1]{Images/Alloy-Assertions}
+    \caption{Alloy assertions}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.48]{Images/Alloy-World1}
+    \caption{Alloy world1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.35]{Images/Alloy-World2}
+    \caption{Alloy world2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.18]{Images/Alloy-World3}
+    \caption{Alloy world3}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90, scale=0.25]{Images/Alloy-World4}
+    \caption{Alloy world4}
+\end{figure}
+
+
 
 \newpage
 \section{Effort spent}
