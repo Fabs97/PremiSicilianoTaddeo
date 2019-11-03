@@ -59,16 +59,16 @@
 \contentsline {subsection}{\numberline {3.4}Use Cases}{32}% 
 \contentsline {subsubsection}{\numberline {3.4.1}User use cases}{32}% 
 \contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{37}% 
-\contentsline {subsection}{\numberline {3.5}Performance requirements}{42}% 
-\contentsline {subsection}{\numberline {3.6}Design Constraints}{42}% 
-\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{42}% 
-\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{42}% 
-\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{42}% 
-\contentsline {subsection}{\numberline {3.7}Software System Attributes}{42}% 
-\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{42}% 
-\contentsline {subsubsection}{\numberline {3.7.2}Availability}{42}% 
-\contentsline {subsubsection}{\numberline {3.7.3}Security}{42}% 
-\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{43}% 
-\contentsline {subsubsection}{\numberline {3.7.5}Portability}{43}% 
-\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{44}% 
-\contentsline {section}{\numberline {5}Effort spent}{58}% 
+\contentsline {subsection}{\numberline {3.5}Performance requirements}{43}% 
+\contentsline {subsection}{\numberline {3.6}Design Constraints}{43}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{43}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{43}% 
+\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{43}% 
+\contentsline {subsection}{\numberline {3.7}Software System Attributes}{43}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{43}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Availability}{43}% 
+\contentsline {subsubsection}{\numberline {3.7.3}Security}{43}% 
+\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{44}% 
+\contentsline {subsubsection}{\numberline {3.7.5}Portability}{44}% 
+\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{45}% 
+\contentsline {section}{\numberline {5}Effort spent}{59}% 
