@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  3 NOV 2019 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  3 NOV 2019 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -380,11 +380,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--194
 
  []
 
-<Images/umlmodel.png, id=33, 1597.97pt x 600.2425pt>
+<Images/umlmodel.png, id=33, 1597.97pt x 616.3025pt>
 File: Images/umlmodel.png Graphic file (type png)
 <use Images/umlmodel.png>
 Package pdftex.def Info: Images/umlmodel.png  used on input line 197.
-(pdftex.def)             Requested size: 407.48915pt x 153.06439pt.
+(pdftex.def)             Requested size: 407.48915pt x 157.15976pt.
 
 Overfull \hbox (62.48915pt too wide) in paragraph at lines 197--198
  [][] 
@@ -405,7 +405,8 @@ Overfull \hbox (9.84543pt too wide) in paragraph at lines 213--214
  [][] 
  []
 
-<Images/ActivityCheckViolation.png, id=39, 984.67876pt x 414.54875pt>
+[9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/umlmodel.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityInputViolation.png>]
+<Images/ActivityCheckViolation.png, id=44, 984.67876pt x 414.54875pt>
 File: Images/ActivityCheckViolation.png Graphic file (type png)
 <use Images/ActivityCheckViolation.png>
 Package pdftex.def Info: Images/ActivityCheckViolation.png  used on input line 230.
@@ -415,7 +416,7 @@ Overfull \hbox (9.48409pt too wide) in paragraph at lines 230--231
  [][] 
  []
 
-[9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/umlmodel.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityInputViolation.png>] [10 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityCheckViolation.png>] [11] [12] [13]
+[10 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityCheckViolation.png>] [11] [12] [13]
 <Images/SignUpAuthoritiesApp.png, id=59, 278.84175pt x 537.207pt>
 File: Images/SignUpAuthoritiesApp.png Graphic file (type png)
 <use Images/SignUpAuthoritiesApp.png>
@@ -899,71 +900,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 897--898
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--908
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 910--911
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 916--917
+Underfull \hbox (badness 10000) in paragraph at lines 917--918
 
  []
 
-[41]
-Overfull \hbox (16.59729pt too wide) in paragraph at lines 938--940
+[41] [42]
+Overfull \hbox (16.59729pt too wide) in paragraph at lines 939--941
 []\T1/cmr/m/n/10 must be able to make HTTPS re-quests (con-nec-tion to in-ter-net 4G/3G/2G/Wi-
  []
 
-[42] [43] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als [44] [45] [46] [47] [48] [49] [50] [51]) [52]
-<Images/Alloy-Assertions.png, id=224, 348.55219pt x 306.39468pt>
+[43] [44] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als [45] [46] [47] [48] [49] [50] [51] [52]) [53]
+<Images/Alloy-Assertions.png, id=227, 348.55219pt x 306.39468pt>
 File: Images/Alloy-Assertions.png Graphic file (type png)
 <use Images/Alloy-Assertions.png>
-Package pdftex.def Info: Images/Alloy-Assertions.png  used on input line 979.
+Package pdftex.def Info: Images/Alloy-Assertions.png  used on input line 980.
 (pdftex.def)             Requested size: 348.55132pt x 306.39394pt.
 
-Overfull \hbox (3.55132pt too wide) in paragraph at lines 979--980
+Overfull \hbox (3.55132pt too wide) in paragraph at lines 980--981
  [][] 
  []
 
-<Images/Alloy-World1.png, id=225, 1327.96124pt x 360.34625pt>
+<Images/Alloy-World1.png, id=228, 1327.96124pt x 360.34625pt>
 File: Images/Alloy-World1.png Graphic file (type png)
 <use Images/Alloy-World1.png>
-Package pdftex.def Info: Images/Alloy-World1.png  used on input line 984.
+Package pdftex.def Info: Images/Alloy-World1.png  used on input line 985.
 (pdftex.def)             Requested size: 1327.95801pt x 360.34537pt.
-<Images/Alloy-World2.png, id=226, 1703.36375pt x 778.91pt>
+<Images/Alloy-World2.png, id=229, 1703.36375pt x 778.91pt>
 File: Images/Alloy-World2.png Graphic file (type png)
 <use Images/Alloy-World2.png>
-Package pdftex.def Info: Images/Alloy-World2.png  used on input line 989.
+Package pdftex.def Info: Images/Alloy-World2.png  used on input line 990.
 (pdftex.def)             Requested size: 1703.3596pt x 778.90811pt.
-[53 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png>]
+[54 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png>]
 Overfull \vbox (111.35814pt too high) has occurred while \output is active []
 
- [54 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png (PNG copy)>]
-<Images/Alloy-World3.png, id=233, 3253.15375pt x 891.33pt>
+ [55 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png (PNG copy)>]
+<Images/Alloy-World3.png, id=237, 3253.15375pt x 891.33pt>
 File: Images/Alloy-World3.png Graphic file (type png)
 <use Images/Alloy-World3.png>
-Package pdftex.def Info: Images/Alloy-World3.png  used on input line 994.
+Package pdftex.def Info: Images/Alloy-World3.png  used on input line 995.
 (pdftex.def)             Requested size: 3253.14586pt x 891.32784pt.
 
 Overfull \vbox (70.13022pt too high) has occurred while \output is active []
 
- [55 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png (PNG copy)>]
-<Images/Alloy-World4.png, id=238, 2476.25125pt x 787.94376pt>
+ [56 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png (PNG copy)>]
+<Images/Alloy-World4.png, id=241, 2476.25125pt x 787.94376pt>
 File: Images/Alloy-World4.png Graphic file (type png)
 <use Images/Alloy-World4.png>
-Package pdftex.def Info: Images/Alloy-World4.png  used on input line 999.
+Package pdftex.def Info: Images/Alloy-World4.png  used on input line 1000.
 (pdftex.def)             Requested size: 2476.24524pt x 787.94183pt.
 
 Overfull \vbox (59.48639pt too high) has occurred while \output is active []
 
- [56 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png (PNG copy)>]
+ [57 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png (PNG copy)>]
 Overfull \vbox (93.00528pt too high) has occurred while \output is active []
 
- [57 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png (PNG copy)>] [58] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
+ [58 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png (PNG copy)>] [59] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux) ) 
 Here is how much of TeX's memory you used:
  14418 strings out of 492167
  262540 string characters out of 6129158
@@ -973,10 +974,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  46i,11n,67p,416b,1862s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (58 pages, 2849292 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (59 pages, 2851884 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 290 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
