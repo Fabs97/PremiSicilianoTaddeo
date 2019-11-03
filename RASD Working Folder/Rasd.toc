@@ -8,58 +8,68 @@
 \contentsline {paragraph}{User:}{4}% 
 \contentsline {paragraph}{Third parties:}{4}% 
 \contentsline {paragraph}{Customer:}{4}% 
-\contentsline {paragraph}{Ghiro:}{4}% 
-\contentsline {subsubsection}{\numberline {1.3.2}Acronym}{4}% 
-\contentsline {paragraph}{UI:}{4}% 
+\contentsline {paragraph}{Ghiro:}{5}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Acronym}{5}% 
+\contentsline {paragraph}{UI:}{5}% 
 \contentsline {paragraph}{GDPR:}{5}% 
 \contentsline {paragraph}{API:}{5}% 
 \contentsline {paragraph}{GPS:}{5}% 
+\contentsline {paragraph}{PO:}{5}% 
+\contentsline {paragraph}{ME:}{5}% 
 \contentsline {subsubsection}{\numberline {1.3.3}Abbreviations}{5}% 
 \contentsline {paragraph}{Gn:}{5}% 
 \contentsline {paragraph}{Dn:}{5}% 
 \contentsline {paragraph}{Rn:}{5}% 
+\contentsline {paragraph}{ID: }{5}% 
 \contentsline {subsection}{\numberline {1.4}Revision History}{5}% 
 \contentsline {subsection}{\numberline {1.5}Reference Documents}{5}% 
 \contentsline {subsection}{\numberline {1.6}Document Structure}{5}% 
 \contentsline {paragraph}{Chapter 1 - Introduction}{5}% 
 \contentsline {paragraph}{Chapter 2 - Overall Description}{5}% 
-\contentsline {paragraph}{Chapter 3 - Specific Requirements}{5}% 
+\contentsline {paragraph}{Chapter 3 - Specific Requirements}{6}% 
 \contentsline {paragraph}{Chapter 4 - Formal analysis using Alloy}{6}% 
 \contentsline {paragraph}{Chapter 5 - Effort Spent}{6}% 
 \contentsline {paragraph}{Chapter 6 - References}{6}% 
 \contentsline {section}{\numberline {2}Overall Description}{7}% 
 \contentsline {subsection}{\numberline {2.1}Product Perspective}{7}% 
-\contentsline {subsection}{\numberline {2.2}Product Functions}{8}% 
-\contentsline {subsection}{\numberline {2.3}User characteristics}{8}% 
-\contentsline {subsection}{\numberline {2.4}Assumptions, dependencies and constraints}{8}% 
-\contentsline {subsubsection}{\numberline {2.4.1}Assumptions}{8}% 
-\contentsline {subsubsection}{\numberline {2.4.2}Dependencies}{8}% 
-\contentsline {subsubsection}{\numberline {2.4.3}Constraints}{8}% 
-\contentsline {section}{\numberline {3}Specific Requirements}{9}% 
-\contentsline {subsection}{\numberline {3.1}External Interface Requirements}{9}% 
-\contentsline {subsubsection}{\numberline {3.1.1}User Interfaces}{9}% 
-\contentsline {subsubsection}{\numberline {3.1.2}Hardware Interfaces}{20}% 
-\contentsline {subsubsection}{\numberline {3.1.3}Software Interfaces}{20}% 
-\contentsline {subsubsection}{\numberline {3.1.4}Communication Interfaces}{20}% 
-\contentsline {subsection}{\numberline {3.2}Scenarios}{20}% 
-\contentsline {subsection}{\numberline {3.3}Functional requirements}{20}% 
-\contentsline {paragraph}{User}{20}% 
-\contentsline {paragraph}{Third parties}{21}% 
-\contentsline {subsection}{\numberline {3.4}Use Cases}{22}% 
-\contentsline {subsubsection}{\numberline {3.4.1}User use cases}{22}% 
-\contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{25}% 
-\contentsline {subsection}{\numberline {3.5}Performance requirements}{27}% 
-\contentsline {subsection}{\numberline {3.6}Design Constraints}{28}% 
-\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{28}% 
-\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{28}% 
-\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{28}% 
-\contentsline {subsection}{\numberline {3.7}Software System Attributes}{28}% 
-\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{28}% 
-\contentsline {subsubsection}{\numberline {3.7.2}Availability}{28}% 
-\contentsline {subsubsection}{\numberline {3.7.3}Security}{28}% 
-\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{28}% 
-\contentsline {subsubsection}{\numberline {3.7.5}Portability}{29}% 
-\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{30}% 
-\contentsline {section}{\numberline {5}Effort spent}{31}% 
-\contentsline {section}{\numberline {6}References}{31}% 
-\contentsline {paragraph}{Plate Recognizer:}{31}% 
+\contentsline {subsection}{\numberline {2.2}Product Functions}{9}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Reporting traffic violations}{9}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Police Officer - Reportings Management (APP)}{10}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Police Officer - Reportings Management (WEB)}{10}% 
+\contentsline {subsubsection}{\numberline {2.2.4}Municipal Employee - Interventions Management}{10}% 
+\contentsline {subsection}{\numberline {2.3}User characteristics}{10}% 
+\contentsline {subsection}{\numberline {2.4}Assumptions, dependencies and constraints}{11}% 
+\contentsline {subsubsection}{\numberline {2.4.1}Assumptions}{11}% 
+\contentsline {subsubsection}{\numberline {2.4.2}Dependencies}{11}% 
+\contentsline {subsubsection}{\numberline {2.4.3}Constraints}{12}% 
+\contentsline {paragraph}{2.4.3.1 Regulatory policies}{12}% 
+\contentsline {paragraph}{2.4.3.2 Parallel Operations}{12}% 
+\contentsline {section}{\numberline {3}Specific Requirements}{13}% 
+\contentsline {subsection}{\numberline {3.1}External Interface Requirements}{13}% 
+\contentsline {subsubsection}{\numberline {3.1.1}User Interfaces}{13}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Hardware Interfaces}{24}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Software Interfaces}{24}% 
+\contentsline {subsubsection}{\numberline {3.1.4}Communication Interfaces}{24}% 
+\contentsline {subsection}{\numberline {3.2}Scenarios}{24}% 
+\contentsline {subsection}{\numberline {3.3}Functional requirements}{24}% 
+\contentsline {paragraph}{User}{24}% 
+\contentsline {paragraph}{Sequence diagrams}{27}% 
+\contentsline {paragraph}{Third parties}{27}% 
+\contentsline {subsection}{\numberline {3.4}Use Cases}{31}% 
+\contentsline {subsubsection}{\numberline {3.4.1}User use cases}{31}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{35}% 
+\contentsline {subsection}{\numberline {3.5}Performance requirements}{38}% 
+\contentsline {subsection}{\numberline {3.6}Design Constraints}{39}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{39}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{39}% 
+\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{39}% 
+\contentsline {subsection}{\numberline {3.7}Software System Attributes}{39}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{39}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Availability}{39}% 
+\contentsline {subsubsection}{\numberline {3.7.3}Security}{39}% 
+\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{39}% 
+\contentsline {subsubsection}{\numberline {3.7.5}Portability}{40}% 
+\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{41}% 
+\contentsline {section}{\numberline {5}Effort spent}{42}% 
+\contentsline {section}{\numberline {6}References}{42}% 
+\contentsline {paragraph}{Plate Recognizer:}{42}% 

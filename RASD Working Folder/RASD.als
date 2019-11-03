@@ -19,23 +19,23 @@ sig Registration{
 
 abstract sig AccessRights{}
 
---See the list of my reports (User)
+--This right allows to see the list of my reports (User right)
 one sig MySignalViolations extends AccessRights{}
 
---See unsafe areas (User and Municipal Employee and Municipal Director and Police Officer)
+--This right allows to see unsafe areas (User and Third Parties right)
 one sig UnsafeAreaAnalysis extends AccessRights{}
 
---Make a report (User)
+--This right allows to make a report (User's right)
 one sig SignalViolation extends AccessRights{}
 
---See all violations (Police Officer and Municipal Director)
+--This right allows to see all violations (Police Officer and Municipal Director right)
 one sig CheckViolations extends AccessRights{}
 
 
---Validate Signalations (Police Officer)
+--This right allows to validate signalations (Police Officer right)
 one sig ValidateSignalViolations extends AccessRights{}
 
---See Statistics (Municipal Director)
+--This right allows to see statistics (Municipal Director right)
 one sig Statistics extends AccessRights{}
 
 abstract sig Customer{
@@ -48,6 +48,7 @@ sig User extends Customer{
     mySignalations: set Signalation
 }
 
+--The system automatically assigns the municipality to the third party based on its Id
 abstract sig ThirdParty extends Customer{
     id: one ThirdPartyId,
     municipal : one Municipality
@@ -77,6 +78,8 @@ sig Location{
     latitude: one Int,
     longitude: one Int
 }
+--{latitude >= -90 and latitude <= 90 and longitude >= -180 and longitude <= 180}
+--NB: scaled valued for simplicity
 {latitude >= -3 and latitude <= 3 and longitude >= -6 and longitude <= 6}
 
 sig LicensePlate{}
@@ -92,6 +95,8 @@ sig Violation{
     isValid: one Bool,
     municipality: one Municipality
 }
+{id >= 0}
+--'isValid' is put on 'True' after a check of police officer
 
 sig Ticket{
     amount: one Int,
@@ -103,7 +108,7 @@ sig Ticket{
 ------------------------------------------------------------------------------------------------------------
 
 --All Registrations have to be associated to one Customer
-fact RegistrationCustomer{
+fact RegistrationCustomerConnection{
     all r : Registration | some c : Customer | r in c.registration
 }
 
@@ -113,12 +118,12 @@ fact NoSameRegistration{
 }
 
 --All Usernames have to be associated to a Registration
-fact UsernameRegistration{
+fact UsernameRegistrationConnection{
     all u : Username | some r : Registration | u in r.username
 }
 
 --All Passwords have to be associated to a Registration
-fact PasswordRegistration{
+fact PasswordRegistrationConnection{
     all p : Password | some r : Registration | p in r.password
 }
 
@@ -128,12 +133,12 @@ fact NoSameUsername{
 }
 
 --All FiscalCodes must be associated to a User
-fact FiscalCodeMustBeAssociatedToUser{
+fact FiscalCodeUserConnection{
     all f : FiscalCode | some u : User | f in u.fiscalCode
 }
 
 --All ThirdPartyId must be associated to a ThirdParty
-fact ThirdPartyIdMustBeAssociatedToTHirdParty{
+fact IdThirdPartyConnection{
     all i : ThirdPartyId | some t : ThirdParty | i in t.id
 }
 
@@ -148,17 +153,17 @@ fact OneThirdPartyUserId{
 }
 
 --All LicensePlates have to be associated to a Violation
-fact LicenseViolation{
+fact LicenseViolationConnection{
     all l : LicensePlate | some v : Violation | l in v.licensePlate
 }
 
 --All Timestamps have to be associated to a Violation
-fact TimestampViolation{
+fact TimestampViolationConnection{
     all t : TimeStamp | some v : Violation | t in v.timestamp
 }
 
 --All Violations have to be associated to a Signalation
-fact ViolationSignalation{
+fact ViolationSignalationConnection{
     all v : Violation | some s : Signalation | v in s.violation
 }
 
@@ -172,6 +177,7 @@ fact SamePlateLocationAndTimestamp {
     all v1,v2 : Violation | 
     v1.location = v2.location implies (v1.licensePlate = v2.licensePlate and v1.timestamp = v2.timestamp)
 }
+
 
 fact PoliceOfficerRights{
     all p : PoliceOfficer | CheckViolations in p.accessRights and ValidateSignalViolations in p.accessRights and UnsafeAreaAnalysis in p.accessRights
@@ -190,12 +196,12 @@ fact MunicipalDirectorRights{
 }
 
 
---Police Officer sees all and only the violations of his Municipality of competence
+--Police Officer sees all the violations of his Municipality of competence
 fact PoliceSeeViolations{
     all p : PoliceOfficer | all s : Signalation | p.municipal = s.violation.municipality implies s in p.listSignalations    
 }
 
---Police Officer sees all and only the violations of his municipality of competence
+--Police Officer sees only the violations of his municipality of competence
 fact PoliceDontSeeViolations{
     all p: PoliceOfficer | all s: Signalation | p.municipal != s.violation.municipality implies s not in p.listSignalations
 }
@@ -203,6 +209,11 @@ fact PoliceDontSeeViolations{
 --Municipal Director sees all the violations of his municipality of competence
 fact MunicipalDirectorSeeViolations{
     all md : MunicipalDirector | all v : Violation | md.municipal = v.municipality implies v in md.listViolations 
+}
+
+--Municipal Director sees only the violations of his municipality of competence
+fact MunicipalDirectoreDontSeeViolations{
+    all md : MunicipalDirector | all v : Violation | md.municipal != v.municipality implies v not in md.listViolations
 }
 
 --All Signalations are referred to one User

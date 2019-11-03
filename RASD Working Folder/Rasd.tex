@@ -298,8 +298,37 @@ The actors of the application are the following:
 \end{itemize}
 \subsection{Assumptions, dependencies and constraints}
 \subsubsection{Assumptions}
+\begin{itemize}
+    \item $\langle$\textbf{D0}$\rangle$ The device acquires users' location with
+    an error of 5 meters at most.
+    \item $\langle$\textbf{D1}$\rangle$ Each fiscal code is unique.
+    \item $\langle$\textbf{D2}$\rangle$ Each authorithies ID is unique.
+    \item $\langle$\textbf{D5}$\rangle$ The system automatically recognizes the
+    city using the Authorities ID.
+    \item $\langle$\textbf{D3}$\rangle$ Once a violation has been saved it can't
+    be modified.
+    \item $\langle$\textbf{D4}$\rangle$ The system is always able to contact to
+    user in order to ask him/her more information.
+    \item $\langle$\textbf{D5}$\rangle$ If the customer is connected to internet
+    he/she is always able to contact the system.
+\end{itemize}
 \subsubsection{Dependencies}
+The system uses external suitable services to make its architecture simpler.
+\begin{itemize}
+    \item PlateRecognizer API
+    \item Google Maps API
+    \item Ghiro
+\end{itemize}
 \subsubsection{Constraints}
+\paragraph{2.4.3.1 Regulatory policies}\mbox{}\\
+SafeStreets uses sensitive data which handling differs from nation to nation.
+For example, in UE, GDPR provides the guidelines to transmit, store and analyze
+information.\\ SafeStreets personalizes the process according to the country in
+which the services are used.
+\paragraph{2.4.3.2 Parallel Operations}\mbox{}\\
+The system must provide support for multiple parallel operations from a big
+number of different users.
+The user must not wait in order to be able to connect to the service.
 \newpage
 \section{Specific Requirements}
 \subsection{External Interface Requirements}
@@ -485,6 +514,17 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     account
 \end{description}    
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.47]{Images/SequenceThirdPartyCheckViolation} 
+    \caption{Sequence diagram: check violation and report its validity}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.47]{Images/SequenceThirdPartyUnsafeAreas} 
+    \caption{Sequence diagram: analyse unsafe areas}
+\end{figure}
 
 
 \subsection{Use Cases}
@@ -895,7 +935,7 @@ Naturally the mobile application must be available on both Android and iOs.
         \textbf{GT} \\
         Introduction                    & 2.5   & 2     & 0     \\
         Overall Description             & 3     & 8     & 2     \\
-        Specific requirements           & 0     & 0     & 0     \\
+        Specific requirements           & 0     & 4     & 0     \\
         Formal analysis using Alloy     & 0     & 0     & 10     \\
     \end{tabular}
 \end{center}
