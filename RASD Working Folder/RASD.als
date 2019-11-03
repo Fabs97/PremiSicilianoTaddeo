@@ -105,8 +105,6 @@ sig Ticket{
 }
 {amount >=0}
 
-------------------------------------------------------------------------------------------------------------
-
 --All Registrations have to be associated to one Customer
 fact RegistrationCustomerConnection{
     all r : Registration | some c : Customer | r in c.registration
@@ -160,6 +158,11 @@ fact LicenseViolationConnection{
 --All Timestamps have to be associated to a Violation
 fact TimestampViolationConnection{
     all t : TimeStamp | some v : Violation | t in v.timestamp
+}
+
+--All Locations have to be associated to a Violation
+fact LocationViolationConnection{
+    all l : Location | some v : Violation | l in v.location
 }
 
 --All Violations have to be associated to a Signalation
@@ -246,8 +249,6 @@ fact MunicipalityToThirdPartyOrViolation{
     all m : Municipality | some t : ThirdParty | m in t.municipal
 }
 
-----------------------------------------------------------------------------------------------------------------------------------
-
 --Different Police Officer of the same Municipality see the same violations
 assert DifferentOfficerSameViolations{
     all disj p1, p2 : PoliceOfficer | all s1 : p1.listSignalations | all s2 : p2.listSignalations | p1.municipal = p2.municipal 
@@ -281,12 +282,6 @@ pred world1{
 }
 run world1 for 10 but 0 Ticket, 0 Bool, 0 Signalation, 0 Violation, 0 AccessRights
 
-/*
-From the first world in Figure ? it can be noticed that every Police Officer has a different Id, every User has a different
-FiscalCode and every Username is different from another. Both Users and Third Parties can share the password and there can be 
-many Police Officer in the same Municipality, same analogy is for MunicipalDirector and MunicipalEmployee 
-*/
-
 pred world2{
     #PoliceOfficer = 2
     #Signalation = 2
@@ -296,26 +291,13 @@ pred world2{
 }
 run world2 for 10 but 0 AccessRights
 
-/*
-From the second world in Figure ? it can be noticed that there are two Violations, one it's a real violation that it doesn't tampered
-(so it has True as 'isValid') and the other one it's a fake violation that it has tampered (so it has False as 'isValid'). The ticket 
-genereated by the Police Officer is for only the real violation (omitting all the checks that led to 'true') and not for the other one.
-Moreover, the ticket is generated only one time (in this case by PoliceOfficer0 and not also by PoliceOfficer1 of the same Municipality) 
-*/
-
 pred world3{
     #PoliceOfficer = 2
     #User = 2
     #MunicipalDirector = 1
     #MunicipalEmployee = 2
 }
-run world3 for 10 but 0 Ticket, 0 Bool, 0 Signalation, 0 Violation
-
-/*
-From the third world in Figure ? it can be noticed that every PoliceOfficer have the same accessRights as well as all the Users have the 
-same accessRights and so on. Classes of accessRights have been created for a reason of granularity: in this way the accessRight can change 
-in the future or can be added and the application keeps track of the privilege of everyone.
-*/
+run world3 for 10 but 0 Ticket, 0 Signalation, 0 Violation
 
 pred world4{
     #PoliceOfficer = 2
@@ -328,8 +310,3 @@ pred world4{
     and (s.violation in d.listViolations implies (s in p1.listSignalations))
 }
 run world4 for 10 but 0 Ticket
-/*
-From the fourth world in Figure ? it can be noticed that every signalation is present on the list of signalation of every PoliceOfficer of
-the same Municipality and the MunicipalDirector sees the violations in his list of violations of all the signalations of his Municipality of
-competence
-*/ 
