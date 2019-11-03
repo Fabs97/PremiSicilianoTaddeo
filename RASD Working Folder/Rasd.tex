@@ -29,11 +29,9 @@
         \textbf{Software engineering 2}
     \endgroup\\[3ex]
     \begingroup
-        \fontsize{20pt}{12pt}\selectfont
-        \textbf{RASD}\\[1ex]
-        \fontsize{15pt}{12pt}\selectfont
-        Requirements Analysis and Specification Document
-    \endgroup\\[8ex]
+        \fontsize{20pt}{12pt}\selectfont \textbf{RASD}\\[1ex]
+        \fontsize{15pt}{12pt}\selectfont Requirements Analysis and Specification
+        Document \endgroup\\[8ex]
     \normalsize \today\\
 \end{center}
 
@@ -41,7 +39,8 @@
 \begin{flushright}
     \textbf{Reference professor:}\\[0.2cm]
     Matteo Giovanni Rossi\\[0cm]
-    {\small \href{mailto:matteo.rossi@polimi.it}{\texttt{matteo.rossi@polimi.it}}}
+    {\small
+    \href{mailto:matteo.rossi@polimi.it}{\texttt{matteo.rossi@polimi.it}}}
 \end{flushright}
 
 \newpage
@@ -149,11 +148,12 @@ municipality identifier for Third Parties)
 \subsection{Revision History}
 \subsection{Reference Documents}
 \begin{itemize}
-    \item \textbf{Specification document:} "Mandatory Project Assignement AY 2019-2010"
-    \item \textbf{Alloy doc:} \href{http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html}{\texttt{http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html}}
-    \item \textbf{UML diagrams:} \href{https://www.uml-diagrams.org/}{\texttt{https://www.uml-diagrams.org/}}
-    \item \textbf{Plate Recognizer:} \href{https://app.platerecognizer.com}{\texttt{https://app.platerecognizer.com}}
-    \item \textbf{Ghiro:} \href{https://www.getghiro.org/}{\texttt{https://www.getghiro.org/}}
+    \item Specification document: "Mandatory Project Assignement AY 2019-2010"
+    \item Alloy doc:
+    http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html
+    \item UML diagrams: https://www.uml-diagrams.org/
+    \item Plate Recognizer: https://app.platerecognizer.com
+    \item Ghiro: https://www.getghiro.org/
 \end{itemize}
 \newpage
 \subsection{Document Structure}
@@ -189,7 +189,7 @@ Includes the documents we used as reference.
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-SafeStreets is designed to be a completely new software applications. It uses
+afeStreets is designed to be a completely new software applications. It uses
 some already proven services (like Google Maps and PlateRecognizer APIs) for its
 critical tasks. The software uses these services in order to double check
 whether both addresses and license plates are correctly standardized in order to
@@ -609,10 +609,11 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage} \\ \hline  
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage} \\
+    \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth}User\\\end{minipage}\\ \hline 
-    Entry conditions &  \begin{minipage}[t]{0.7\textwidth}The user has downloaded the application on his/her
-    device\\ \end{minipage}\\ \hline 
+    Entry conditions &  \begin{minipage}[t]{0.7\textwidth}The user has
+    downloaded the application on his/her device\\ \end{minipage}\\ \hline 
     Events flow & 
     \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
@@ -638,7 +639,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In\\} \end{minipage} \\
+    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In\\} \end{minipage}
+    \\
     \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
     Entry conditions & \begin{minipage}[t]{0.7\textwidth} \begin{enumerate}
@@ -716,8 +718,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user can see all
-    the unsafe areas proposed by SafeStreets and the third party\\ \end{minipage}
-    \\
+    the unsafe areas proposed by SafeStreets and the third party\\
+    \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}  The user doesn't have
     internet connection\\ \end{minipage} \\ \hline
@@ -784,7 +786,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage} \\
+     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage}
+     \\
      \hline  
      Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
      \hline 
@@ -822,7 +825,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
-    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In\\} \end{minipage} \\
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In\\} \end{minipage}
+    \\
     \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
     \hline 
@@ -929,7 +933,8 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
-    saved to the third party account or the account is deleted\\ \end{minipage} \\
+    saved to the third party account or the account is deleted\\ \end{minipage}
+    \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
     website before the process has ended\\ \end{minipage} \\ \hline
@@ -1031,26 +1036,49 @@ Naturally the mobile application must be available on both Android and iOs.
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[angle=90,scale=0.48]{Images/Alloy-World1}
-    \caption{Alloy world1}
+    \includegraphics[angle=90,scale=0.25]{Images/Alloy-World1}
+    \caption{Alloy world 1}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[angle=90,scale=0.35]{Images/Alloy-World2}
-    \caption{Alloy world2}
+    \includegraphics[angle=90,scale=0.25]{Images/Alloy-World2}
+    \caption{Alloy world 2}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[angle=90,scale=0.18]{Images/Alloy-World3}
-    \caption{Alloy world3}
+    \includegraphics[angle=90,scale=0.23]{Images/Alloy-World3}
+    \caption{Alloy world 3}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[angle=90, scale=0.25]{Images/Alloy-World4}
-    \caption{Alloy world4}
+    \includegraphics[angle=90, scale=0.22]{Images/Alloy-World4}
+    \caption{Alloy world 4}
 \end{figure}
 
+From the first world in Figure 24 it can be noticed that every Police Officer has
+a different Id, every User has a different FiscalCode and every Username is
+different from another. Both Users and Third Parties can share the password and
+there can be many Police Officer in the same Municipality, same analogy is for
+MunicipalDirector and MunicipalEmployee.
 
+From the second world in Figure 25 it can be noticed that there are two
+Violations, one it's a real violation that it doesn't tampered (so it has True
+as 'isValid') and the other one it's a fake violation that it has tampered (so
+it has False as 'isValid'). The ticket genereated by the Police Officer is for
+only the real violation (omitting all the checks that led to 'true') and not for
+the other one. Moreover, the ticket is generated only one time (in this case by
+PoliceOfficer0 and not also by PoliceOfficer1 of the same Municipality).
+
+From the third world in Figure 26 it can be noticed that every PoliceOfficer have
+the same accessRights as well as all the Users have the same accessRights and so
+on. Classes of accessRights have been created for a reason of granularity: in
+this way the accessRight can change in the future or can be added and the
+application keeps track of the privilege of everyone.
+
+From the fourth world in Figure 27 it can be noticed that every signalation is
+present on the list of signalation of every PoliceOfficer of the same
+Municipality and the MunicipalDirector sees the violations in his list of
+violations of all the signalations of his Municipality of competence.
 
 \newpage
 \section{Effort spent}
