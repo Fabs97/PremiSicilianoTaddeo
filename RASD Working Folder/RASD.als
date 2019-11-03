@@ -84,7 +84,24 @@ sig Location{
 
 sig LicensePlate{}
 
-sig TimeStamp{}
+sig Date {
+    day: Int,
+    month: Int,
+    year: Int
+} 
+--{day > 0 and day <= 31 and month > 0 and month <= 12}
+--NB: scaled valued for simplicity
+{day > 0 and day <= 7 and month > 0 and month <= 3 and year > 0}
+
+
+sig TimeStamp{
+    date: one Date,
+    hour: Int,
+    minute: Int
+}
+--{hour >= 0 and hour < 24 and minute >= 0 and minute < 60}
+--NB: scaled valued for simplicity
+{hour >= 0 and hour < 2 and minute >= 0 and minute < 7}
 
 sig Violation{
     id: one Int,
@@ -100,7 +117,7 @@ sig Violation{
 
 sig Ticket{
     amount: one Int,
-    signalation: one Signalation,
+    violation: one Violation,
     policeOfficer: one PoliceOfficer 
 }
 {amount >=0}
@@ -150,6 +167,11 @@ fact OneThirdPartyUserId{
     no disj t1, t2 : ThirdParty | t1.id = t2.id
 }
 
+--All Date have to be associated to a TimeStamp
+fact DateTimeStampConnection{
+    all d : Date | some t : TimeStamp | d in t.date
+}
+
 --All LicensePlates have to be associated to a Violation
 fact LicenseViolationConnection{
     all l : LicensePlate | some v : Violation | l in v.licensePlate
@@ -175,10 +197,11 @@ fact OneIDViolation{
     no disj v1,v2 : Violation | v1.id = v2.id
 }
 
+
 --It is not possible to have two different locations with the same plate and timestamp
 fact SamePlateLocationAndTimestamp {
     all v1,v2 : Violation | 
-    v1.location = v2.location implies (v1.licensePlate = v2.licensePlate and v1.timestamp = v2.timestamp)
+    (v1.licensePlate = v2.licensePlate and v1.timestamp = v2.timestamp) implies v1.location = v2.location
 }
 
 
@@ -187,7 +210,7 @@ fact PoliceOfficerRights{
 }
 
 fact UserRights{
-    all u : User | MySignalViolations in u.accessRights and UnsafeAreaAnalysis in u.accessRights and SignalViolation in u.accessRights
+    all u : User | MySignalViolations in u.accessRights and SignalViolation in u.accessRights
 }
 
 fact MunicipalEmployeeRights{
@@ -236,17 +259,23 @@ fact ViolationsOfMunicipality{
 
 --All Tickets are referred to a Signalation of the Municipality of the Police Offer who erogates the ticket
 fact TicketSameMunicipalityPoliceOfficer{
-    all t : Ticket | t.signalation.violation.municipality = t.policeOfficer.municipal 
+    all t : Ticket | t.violation.municipality = t.policeOfficer.municipal 
 }
 
 --All Tickets are referred to a Signalation of a valid Violation
 fact TicketsForValidViolation{
-    all t : Ticket | t.signalation.violation.isValid = True
+    all t : Ticket | t.violation.isValid = True
 }
 
 --All Municipalities are referred to a Third Party or Violation
 fact MunicipalityToThirdPartyOrViolation{
     all m : Municipality | some t : ThirdParty | m in t.municipal
+}
+
+fact SameViolationSameId{
+    all v1,v2 : Violation | ((v1.licensePlate = v2.licensePlate and v1.location = v2.location and v1.timestamp.date = v2.timestamp.date) 
+    implies v1.id = v2.id) and 
+    (v1.id = v2.id implies (v1.licensePlate = v2.licensePlate and v1.location = v2.location))
 }
 
 --Different Police Officer of the same Municipality see the same violations
@@ -266,12 +295,12 @@ check SignalationPresentInTheList for 10
 
 --All Tickets refer to a signalation of the list signalations of the Police Officer
 assert TicketFromPoliceOfficer{
-    all t : Ticket | all s : Signalation | some p : PoliceOfficer | s in t.signalation implies s in p.listSignalations 
+    all t : Ticket | all v : Violation | some p : PoliceOfficer | v in t.violation implies v in p.listSignalations.violation 
 }
 check TicketFromPoliceOfficer for 10
 
 assert TicketOnlyTrueViolation{
-    no t : Ticket | t.signalation.violation.isValid = False
+    no t : Ticket | t.violation.isValid = False
 }
 check TicketOnlyTrueViolation for 10
 
@@ -284,10 +313,10 @@ run world1 for 10 but 0 Ticket, 0 Bool, 0 Signalation, 0 Violation, 0 AccessRigh
 
 pred world2{
     #PoliceOfficer = 2
-    #Signalation = 2
+    #Violation = 2
     #Ticket >= 1
-    one s : Signalation | s.violation.isValid = False
-    one s : Signalation | s.violation.isValid = True
+    one v : Violation | v.isValid = False
+    one v : Violation | v.isValid = True
 }
 run world2 for 10 but 0 AccessRights
 
