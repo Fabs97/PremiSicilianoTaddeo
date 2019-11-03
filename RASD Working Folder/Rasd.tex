@@ -189,7 +189,7 @@ Includes the documents we used as reference.
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-afeStreets is designed to be a completely new software applications. It uses
+SafeStreets is designed to be a completely new software applications. It uses
 some already proven services (like Google Maps and PlateRecognizer APIs) for its
 critical tasks. The software uses these services in order to double check
 whether both addresses and license plates are correctly standardized in order to
@@ -486,6 +486,16 @@ of what has been happening, but when he reaches the indicated position, the car
 with that license plate is not there anymore. He chooses to leave the violation
 open and unchecked, knowing that he will check the authenticity of it by using
 the web site and that he will, eventually, emit the proper ticket in the future.
+\subsubsection{Scenario 3}
+Wilbur is a police officer from Rome. He decided to
+apply to the SafeStreets’ initiative in order to have an useful work support
+tool. Once logged in, as one of his colleagues in Milan, he notices that there
+is a traffic violation that has been signaled by a user and, by looking at the
+violation’s position with the application’s integrated map, he realizes that the
+felony is taking place just 500 meters away from his actual position. He then
+decides to do an immediate inspection of what has been happening and he
+validates the veracity of the signalisation. He then closes the violation,
+reports it valid and emits the ticket to the owner of the car.
 
 
 \newpage
@@ -1055,13 +1065,14 @@ Naturally the mobile application must be available on both Android and iOs.
     \caption{Alloy world 4}
 \end{figure}
 
-From the first world in Figure 24 it can be noticed that every Police Officer has
+\begin{itemize}
+    \item From the first world in Figure 24 it can be noticed that every Police Officer has
 a different Id, every User has a different FiscalCode and every Username is
 different from another. Both Users and Third Parties can share the password and
 there can be many Police Officer in the same Municipality, same analogy is for
 MunicipalDirector and MunicipalEmployee.
 
-From the second world in Figure 25 it can be noticed that there are two
+    \item From the second world in Figure 25 it can be noticed that there are two
 Violations, one it's a real violation that it doesn't tampered (so it has True
 as 'isValid') and the other one it's a fake violation that it has tampered (so
 it has False as 'isValid'). The ticket genereated by the Police Officer is for
@@ -1069,16 +1080,17 @@ only the real violation (omitting all the checks that led to 'true') and not for
 the other one. Moreover, the ticket is generated only one time (in this case by
 PoliceOfficer0 and not also by PoliceOfficer1 of the same Municipality).
 
-From the third world in Figure 26 it can be noticed that every PoliceOfficer have
+    \item From the third world in Figure 26 it can be noticed that every PoliceOfficer have
 the same accessRights as well as all the Users have the same accessRights and so
 on. Classes of accessRights have been created for a reason of granularity: in
 this way the accessRight can change in the future or can be added and the
 application keeps track of the privilege of everyone.
 
-From the fourth world in Figure 27 it can be noticed that every signalation is
+    \item From the fourth world in Figure 27 it can be noticed that every signalation is
 present on the list of signalation of every PoliceOfficer of the same
 Municipality and the MunicipalDirector sees the violations in his list of
 violations of all the signalations of his Municipality of competence.
+\end{itemize}
 
 \newpage
 \section{Effort spent}
