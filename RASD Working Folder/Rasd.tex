@@ -68,22 +68,21 @@
     it is and update a city wide map highlighting the areas where violations
     happen.\\
     \\
-    In addition to that, with the help of third parties (eg. municipality),
-    SafeStreets will be able to retrieve the data given by such party and
-    cross-reference them with its own data retrieved by users. By doing so, it
-    will be possible to identify unsafe areas, assess which kind of problems
-    happen more frequently and suggest possible intervention. It will also be
-    possible for third parties (municipality and police officers) to
-    automatically generate traffic tickets. This will be happening in order to
-    cross-reference all available data in order to build statistics such as the
-    most (or less) egregious offenders or the effectiveness of the SafeStreets
-    initiative \subsubsection{Goals} Follows a list of all goals that will be
-    reached with the SafeStreets initiative.
+    In addition to that, SafeStreets will be able to cross-reference its own
+    data with the one offered by the municipality. By doing so, it will be
+    possible to identify unsafe areas, assess which kind of problems happen more
+    frequently and suggest possible intervention. It will also be possible for
+    authorithy users (municipality and police officers) to automatically
+    generate traffic tickets. All available data will be cross-referenced in
+    order to build statistics such as the most (or less) egregious offenders or
+    the effectiveness of the SafeStreets initiative \subsubsection{Goals}
+    Follows a list of all goals that will be reached with the SafeStreets
+    initiative.
     \begin{itemize}
         \item $\langle$\textbf{G0}$\rangle$ The system will allow new customers
         to automatically sign up and create new accounts with the minimum
         required ID, email and password (all three will have to be valid);
-        \item $\langle$\textbf{G1}$\rangle$ The systen will allow customers to
+        \item $\langle$\textbf{G1}$\rangle$ The system will allow customers to
         sign in, upon check of the validity of email and password the customer
         inputs;
         \item $\langle$\textbf{G2}$\rangle$ The system will allow new traffic
@@ -94,7 +93,7 @@
         allow to filter the shown areas around the municipality; 
         \item $\langle$\textbf{G4}$\rangle$ The system will allow all customers
         to modify all account information and to delete the existing account; 
-        \item $\langle$\textbf{G5}$\rangle$ The system will allow third parties
+        \item $\langle$\textbf{G5}$\rangle$ The system will allow authorithy users
         to check all violations' details input in the municipality area, connect
         with an external software for photo forensics purposes and report the
         validity of the traffic violation in order to emit tickets or discard
@@ -109,33 +108,38 @@ information, must respect the standards defined for processing of sensitive
 information such as GDPR if it is used in Europe. The user sends the type of the
 violation to the municipality and direct proofs of it (like a photograph). The
 system runs an algorithm to read the license plate and also asks the user to
-directly insert the license for a better recognition. Of course other
+directly insert the license for a better recognition. Obviously, other
 information are required, like the name of the street when the violation has
 occurred, which can be retrieved from user's direct input or from the
-geographical position of the violation (using Google Maps API). Both users and
-authorities can highlight the streets with the highest frequency of violations
-or the vehicles that commit the most violations. SafeStreets crosses information
-about the accidents that occur on the territory of the municipality with his own
-data to identify potentially unsafe areas and suggest possible interventions.
-Because municipality could generates traffic tickets from the information about
+geographical position of the violation (using Google Maps API). Furthermore, the
+system, by cross referencing data from third party services, automatically can
+highlight the streets with the highest frequency of violations or the vehicles
+that commit the most violations. SafeStreets crosses information about the
+accidents that occur on the territory of the municipality with his own data to
+identify potentially unsafe areas and suggest possible interventions. Because
+municipality could generates traffic tickets from the information about
 violations SafeStreets should guarantee that information is never altered (if a
 manipulations occurs, the application should discard the information). Such
-features are made possible trough the use of two mobile applications(one for the
-citizens and one for the officers on the field). The collected information are
-sent to a back-end. All the services can also be accessed through a specific
-web-site. 
+features are made possible trough the use of one mobile application with two
+different UIs which are determined by the kind of customer that logs in (user or
+PO). The collected information are sent to a back-end and they all of those can
+be accessed by municipality employees in order to execute different actions
+(emit ticket, analyze unsafe areas, etc...).
 \subsection{Definitions, Acronyms, Abbreviations}
 \subsubsection{Definitions}
 \paragraph{User:} it is identified as a civilian customer of the product. It
 will be the main source for the SafeStreets initiative to obtain information
-about traffic violations and therefore be successful; \paragraph{Third
+about traffic violations and therefore to be successful; \paragraph{Third
 parties:}those kind of organization/company that could provide services useful
-to SafeStreets and that will be able to retrieve data in order to improve the
-streets' safety; \paragraph{Customer:} it defines both third party SafeStreets
-users (police officers or municipality employees) and civilians;
-\paragraph{Ghiro:} image manipulation detection software, used by third party
-users in order to detect any image manipulation and assess the veracity of the
-hard evidence connected to the traffic ticket
+to SafeStreets; \paragraph{Customer:} it defines both authorithy users (police
+officers or municipality employees) and civilians; \paragraph{Authority
+user:}all of those customers who have a responsibility role in regard of the
+streets' safety and the SafeStreets initiative. Example of these category are:
+police officers, municipal employees, director and basically anyone in charge
+and able to issue fines and deal with road violations; \paragraph{Ghiro:} image
+manipulation detection software, used by authorithy users in order to detect any
+image manipulation and assess the veracity of the hard evidence connected to the
+traffic ticket
 \subsubsection{Acronym}
 \paragraph{UI:} User Interface \paragraph{GDPR:} General Data Protection
 Regulation \paragraph{API:} Application Programming Interface \paragraph{GPS:}
@@ -143,17 +147,20 @@ Global Positioning System \paragraph{PO:} Police Officer \paragraph{ME:}
 Municipality Employee
 \subsubsection{Abbreviations}
 \paragraph{Gn:} nth goal; \paragraph{Dn:} nth assumption; \paragraph{Rn:} nth
-requirement; \paragraph{ID: } identifier (Fiscal Code fomunir Users, a
+requirement; \paragraph{ID: } identifier (Fiscal Code for Users, a
 municipality identifier for Third Parties)
 \subsection{Revision History}
+\begin{itemize}
+    \item \textbf{04/11/2019 :} Version 1.0 released
+\end{itemize}
 \subsection{Reference Documents}
 \begin{itemize}
     \item Specification document: "Mandatory Project Assignement AY 2019-2010"
-    \item Alloy doc:
-    http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html
-    \item UML diagrams: https://www.uml-diagrams.org/
-    \item Plate Recognizer: https://app.platerecognizer.com
-    \item Ghiro: https://www.getghiro.org/
+    \item \textbf{Alloy doc:}
+    \href{http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html}{\texttt{http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html}}
+    \item \textbf{UML diagrams:} \href{https://www.uml-diagrams.org/}{\texttt{https://www.uml-diagrams.org/}}
+    \item \textbf{Plate Recognizer:} \href{https://app.platerecognizer.com}{\texttt{https://app.platerecognizer.com}}
+    \item \textbf{Ghiro:} \href{https://www.getghiro.org/}{\texttt{https://www.getghiro.org/}}
 \end{itemize}
 \newpage
 \subsection{Document Structure}
@@ -167,7 +174,7 @@ details on the shared phenomena and the domain models. The class diagram
 describe the domain model used and the state diagrama analyzes:
 \begin{itemize}
     \item The process of collecting violations from users
-    \item The process of sharing informations with the municipality
+    \item The process of reporting violations' validity and ticket emission
 \end{itemize}
 The majority of functions of the system are more precisely specified by taking
 in mind the goals of the system.  
@@ -183,44 +190,41 @@ Includes the alloy model of some critical aspects with comments and
 documentation.
 \paragraph{Chapter 5 - Effort Spent}
 Shows the effort spent by each single group member while working on the RASD.
-\paragraph{Chapter 6 - References}
-Includes the documents we used as reference.
 
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-SafeStreets is designed to be a completely new software applications. It uses
+SafeStreets is designed to be a completely new software application. It uses
 some already proven services (like Google Maps and PlateRecognizer APIs) for its
 critical tasks. The software uses these services in order to double check
 whether both addresses and license plates are correctly standardized in order to
 be stored into the violations database.\\
-The system is composed of two different mobile applications: one for the
-citizens that want to reports violations and one for the officers acting on the
-field. It also provides a web site for third party users which allows them to
-assess and analyze potential unsafe areas, thanks also to a powerful reporting
-system.\\
+The system is composed of one mobile, with two different UIs (one for users and
+one for authorithy users). It also provides a web site for authorithy users
+which allows them to assess and analyze potential unsafe areas, thanks also to a
+powerful reporting system.\\
 Taken into consideration that the municipality could generate traffic tickets
 from the input violations, the software will be critical when it comes to
 handling chain of custody. The latter is assured to never be broken by not
-allowing any kind of customer (user, PO or employee) to modify the reported
-violation. Supposedly, when some traffic violations might be erroneous or do not
-have any reason of existence, the inputting user can warn the responsible third
-party by attaching a warning explaining why it should not be taken into
-consideration. The systems also ensures the veracity of each violation and the
-hard evidence attached to it by running a image manipulation detection software
-(Ghiro, per instance). This process is used by third parties before the emission
-of each ticket to the corresponding offender.\\
+allowing any kind of customer to modify the reported violation. Supposedly, when
+some traffic violations might be erroneous or do not have any reason of
+existence, the inputting user can warn the responsible authority by attaching
+a warning explaining why it should not be taken into consideration. The systems
+also ensures the veracity of each violation and the hard evidence attached to it
+by running a image manipulation detection software (Ghiro, per instance). This
+process is used by authority users before the emission of each ticket to the
+corresponding offender.\\
 \\
 A high-level class diagram can be found below, which provides a model of the
 application domain. The most important classes (not all of those which will be
 implemented once the software will be ready) are shown in order to define how
 the different components of SafeStreets will be communicating with each other.
-It is possible to identify two kinds of third party users: police officers and
-municipality employees. The first ones will be given access to both mobile
-application and web application; the latter will be provided access just to the
-above mentioned web application which will help these users assess the veracity
-of the hard evidence attached to the traffic violations and to further analyze
-unsafe areas around the municipality.\\
+It is possible to identify two kinds of authorithy users: police officers and
+municipality employees (including municipality director). The first ones will be
+given access to both mobile application and web application; the latter will be
+provided access just to the above mentioned web application which will help
+these users assess the veracity of the hard evidence attached to the traffic
+violations and to further analyze unsafe areas around the municipality.\\
 
 \begin{figure}[H]
     \centering
@@ -228,11 +232,11 @@ unsafe areas around the municipality.\\
     \caption{Class diagram}
 \end{figure}
 
-It is possible to notice that there are three actors that model the third party.
+It is possible to notice that there are three actors that model the Authority.
 Police Officers and municipality employees and director have access to a web
 version of the application, since this version provides the tools for checking
-input violations, emit traffic tickets and assess possible improvements to
-unsafe areas.\\
+input violations, emit traffic tickets, assess possible improvements to
+unsafe areas and analyze statistics.\\
 \\
 We will now furtherly analize some critical aspects of the system with the use
 of activity diagrams. Actual system functions will not be presented, just some
@@ -245,14 +249,14 @@ high level system main processes.
 \end{figure}
 
 It is easily understandable that for any unathorized user trying to access the
-system (those who have not correctly signed up) is not possible to input any new
+system (those who have not correctly signed in) is not possible to input any new
 violation. Furthermore, the location retrieving and the plate recognizing
 processes are a bit tricky. The system tries to execute both of them
 automatically by calling the respective API from GoogleMaps or PlateRecognizer.
 If one (or both) processes fail, the system recognizes the problem and asks the
 user to input the missing piece of information. Once all information is ready,
-everything is sent to a shared database and saved for future check by third
-party employees (PO or ME). 
+everything is sent to a shared database and saved for future check by authorithy
+users(PO or ME). 
 
 
 \begin{figure}[H]
@@ -275,74 +279,75 @@ In the following section the most important product functions of the system are
 reported.
     \subsubsection{Reporting traffic violations}
     This function is the main action that the user can use. After having logged
-    in within its application, pressing on "Report Infraction" the system will
-    ask to insert an image specifying its format and characteristics (clear
-    image, defined context, visible plate). Once the image is loaded, the system
-    will ask him to enter the type of infraction reported, the date and time, as
+    in within its application, pressing on "Signal a violation" the system will
+    ask to insert one or more image. Once the images are loaded, the system will
+    ask him/her to enter the type of infraction reported, the date and time, as
     well as the position detected by GPS signal or manually via user input. At
-    this point the user will confirm the data entered and save the report.
+    this point the user will confirm the data entered and save the signalation.
     Moreover he will see in his personal area, under the list of his reports,
     the new report with all the data he has entered. In addition, the report
     will be added to the list of reports made in the same municipality.
 
-    \subsubsection{Police Officer - Reportings Management (APP)}
+    \subsubsection{Police Officer - Reporting Management (APP)}
     This function allows the police officer to have in real time all the reports
     made in his municipality of competence. In fact, after logging into his
     application and providing his identification as a police officer, the
     application through an analysis system of the latter will identify the
     municipality of competence of the agent and will show him the list of all
     the appropriate reports. He can therefore go to the place of the report to
-    resolve the infraction manually by clicking "Resolve Live" and closing the
+    resolve the infraction manually by clicking "Go check it out" and closing the
     infraction or, in the event that the violation can no longer be assessed in
     person (i.e. the car has moved) he can leave the report opened to then
     resolve it from the website.
 
-    \subsubsection{Police Officer - Reportings Management (WEB)}
+    \subsubsection{Police Officer - Reporting Management (WEB)}
     This function allows the police officer to resolve the reports (i.e.
     generating a traffic ticket for the owner of the machine) via the website
     without being physically present on the spot. Once logged in using codes
     provided by the municipality, the police officer will be able to see all the
-    reports still open (i.e. no one has clicked "Resolve Live") and analyze
+    reports still open (i.e. no one has clicked "Go check it out") and analyze
     them. He can take the photo posted by the user and submit it to specialized
     programs to ensure that it is not tampered with and will therefore be able
     to generate the ticket and close the report.
 
     \subsubsection{Municipal Employee - Interventions Management}
     This function allows a municipal employee, after logging in through his own
-    identifier, to be able to view all the reports made in the municipality of
-    competence and be able to insert in the application the accident data that
-    occur in the territory. In this way, by pressing the "Start Analysis"
-    button, SafeStreets will identify potentially unsafe areas and show them to
-    the municipal employee and the municipal employee will be able to decide
-    whether to take precautions (i.e. insert barrier between cycle path and
-    road).
+    identifier, to be able to view and filter all areas (more or less unsafe) in
+    its area of competence. In this way, SafeStreets will automatically suggest
+    potential interventions to be made in the selected area and the municipal
+    employee will be able to decide whether to implement the suggested
+    precautions (i.e. insert barrier between cycle path and road).
+
+    \subsection{Municipal Director - Statistics analysis}
+    %implement
 
 \subsection{User characteristics}
 The actors of the application are the following:
 \begin{itemize}
-    \item \textbf{User:} a customer of the service who, after having installed the
-    application on his mobile device, having registered through univocal
+    \item \textbf{User:} a customer of the service who, after having installed
+    the application on his/her mobile device, having registered through univocal
     identification data and accepted the processing of his data and the civil
     and criminal liability of his own reports, can post an infraction report
     attaching a photo of this (with clear and legible license plate) followed by
     date, time and position (the latter acquired by GPS detection or manual
     entry)
-    \item \textbf{Authority:} a customer who uses the system based on its role;
+    \item \textbf{Authority:} a customer who uses the system based on his/her
+    role;
     \begin{itemize}
-        \item \textbf{Policeman:} after installing the application on his mobile device,
-        having registered through univocal data and codes provided by your
-        municipality, he have the possibility to see the list of reports of
-        infractions made in the Municipality of his competence and also has the
-        ability to access to the system through a website to carry out analysis
-        of the reports (image photoshop) and generate traffic ticket to the
-        accused.
-        \item \textbf{Municipal Employee:} through the website, he has access to the
-        unsafe areas of his own Municipality to decide road interventions to be
-        applied within it
-        \item \textbf{Municipal Director:} through the website, he has access to both
-        reports and traffic tickets both to unsafe areas and to statistical data
-        produced by SafeStreets in order to assess the effectiveness of the
-        application.
+        \item \textbf{Police Officer:} after installing the application on
+        his/her mobile device, having registered through univocal data and codes
+        provided by his/her municipality, he/she has the possibility to see the
+        list of reports of infractions made in the Municipality of his
+        competence and also has the ability to access to the system through a
+        website to carry out analysis of the reports (image photoshop) and
+        generate traffic ticket to the accused.
+        \item \textbf{Municipal Employee:} through the website, he/she has
+        access to the unsafe areas of his/her own Municipality to decide road
+        interventions to be applied within it
+        \item \textbf{Municipal Director:} through the website, he/she has
+        access to both reports and traffic tickets both to unsafe areas and to
+        statistical data produced by SafeStreets in order to assess the
+        effectiveness of the application.
     \end{itemize}
 \end{itemize}
 \subsection{Assumptions, dependencies and constraints}
@@ -352,14 +357,12 @@ The actors of the application are the following:
     an error of 5 meters at most.
     \item $\langle$\textbf{D1}$\rangle$ Each fiscal code is unique.
     \item $\langle$\textbf{D2}$\rangle$ Each authorithies ID is unique.
-    \item $\langle$\textbf{D5}$\rangle$ The system automatically recognizes the
-    city using the Authorities ID.
-    \item $\langle$\textbf{D3}$\rangle$ Once a violation has been saved it can't
-    be modified.
-    \item $\langle$\textbf{D4}$\rangle$ The system is always able to contact to
+    \item $\langle$\textbf{D3}$\rangle$ The system is always able to contact to
     user in order to ask him/her more information.
-    \item $\langle$\textbf{D5}$\rangle$ If the customer is connected to internet
+    \item $\langle$\textbf{D4}$\rangle$ If the customer is connected to internet
     he/she is always able to contact the system.
+    \item $\langle$\textbf{D5}$\rangle$ The system automatically recognizes the
+    municipality using the Authorities ID.
 \end{itemize}
 \subsubsection{Dependencies}
 The system uses external suitable services to make its architecture simpler.
@@ -452,20 +455,21 @@ to the service.
 The system has no hardware interfaces.
 \subsubsection{Software Interfaces}
 The system doesn't provide any API to external applications.\\
-However some softwares part of SafeStreets is developed by other companies.
+Nevertheless, Safestreets has access to some API or third party software such as:
 \begin{itemize}
-    \item Google Maps API: for localization and creation of unsafe areas.
-    \item Plate Recognizer API: for License Plate recognition.
-    \item Ghiro: a digital image forensics tool used for find out if the image
+    \item \textbf{Google Maps API:} for localization and creation of unsafe areas.
+    \item \textbf{Plate Recognizer API:} for License Plate recognition.
+    \item \textbf{Ghiro:} a digital image forensics tool used for find out if the image
     in the violation report is real.
 \end{itemize}
 \subsubsection{Communication Interfaces}
 The system only uses HTTP(more precisely HTTPS) as communication service.
 HTTP/HTTPS is used for:
 \begin{itemize}
-    \item User and third parties registration.
-    \item Sending violations both to SafeStreets and to authorities.
-    \item Using Google Maps API and Plate Recognizer API
+    \item User and third parties registration;
+    \item Sending violations both to SafeStreets and to authorities;
+    \item Using Google Maps API and Plate Recognizer API;
+    \item Access latest downloadable version of Ghiro software.
 \end{itemize}
 \subsection{Scenarios}
 \subsubsection{Scenario 1}
@@ -1039,26 +1043,29 @@ In this section an analysis of some critical aspects of the system is provided
 expoliting Alloy. The focus is on some static constraints, in particular:
 
 \begin{itemize}
-    \item It cannot happen that two different third parties have the same Id or
-    two different users have the same fiscal code;
+    \item It cannot happen that two different authority users have the same Id
+    or two different users have the same fiscal code;
     \item In case of a police officer erogates a ticket referred to a violation,
     the violation must have been verified;
-    \item Every third parties of the same Municipality can see all and only the
+    \item All authorithy users of the same Municipality can see all and only the
     signalations on the territory of competence;
     \item There may be multiple signalations referring to the same and unique
     violation.
 \end{itemize}
 
-The prove of validity of evidence and all the checks are excluded from the Alloy
+The proof of validity of evidence and all the checks are excluded from the Alloy
 analysis, they are taken for granted and after them the parameter 'isValid' of a
-violation is put on 'True'. When we says Police Officer mean not only the
-policemen but anyone in charge and able to issue fines and deal with road
-violations. Same analogy for Director and Employee Then, some other necessary,
-but less important, structural constraints are expressed and properly commented
-in the Alloy formal notation. These bonds are verified analyzing the worlds
-generated running the model and checking some relevant assertion. It's important
-to note that some numerical values that were too big for having a correct
-analysis in Alloy have been reduced. \newpage
+violation is put on 'True'.\\
+When we say Police Officer mean not only the policemen but anyone in charge and
+able to issue fines and deal with road violations. Same analogy is used for
+Director and Employee.\\
+\\
+Furthermore, some other necessary, but less important, structural constraints
+are expressed and properly commented in the Alloy formal notation. These bonds
+are verified analyzing the worlds generated running the model and checking some
+relevant assertion. It's important to notice that some numerical values that
+were too big for a correct analysis with Alloy have been reduced. 
+\newpage
 \lstinputlisting[language=alloy,basicstyle=\normalsize]{RASD.als}
 
 \newpage
@@ -1092,7 +1099,7 @@ analysis in Alloy have been reduced. \newpage
 \begin{itemize}
     \item From the first world in Figure 24 it can be noticed that every Police Officer has
 a different Id, every User has a different FiscalCode and every Username is
-different from another. Both Users and Third Parties can share the password and
+different from another. Both Users and Authorities can share the password and
 there can be many Police Officer in the same Municipality, same analogy is for
 MunicipalDirector and MunicipalEmployee.
 
