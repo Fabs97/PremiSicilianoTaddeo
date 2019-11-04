@@ -518,7 +518,14 @@ felony is taking place just 500 meters away from his actual position. He then
 decides to do an immediate inspection of what has been happening and he
 validates the veracity of the signalisation. He then closes the violation,
 reports it valid and emits the ticket to the owner of the car.
-
+\subsubsection{Scenario 4}
+Alfred is the municipal director of Florence. He has decided to use the SafeStreet 
+application to improve performance regarding traffic violations, traffic tickets, 
+public interventions etc.
+He wants to verify the real benefit deriving from the application and he wants to know
+who is the worst civilian with major infractions. 
+After logging in as Director, will see the statistics provided by SafeStreets based 
+on previous data and data subsequent to the use of the service.
 
 \newpage
 \subsection{Functional requirements}
@@ -777,8 +784,7 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
     \begin{enumerate}
         \item The user opens the Menu
         \item The user selects the "My reports" button in the Menu
-        \item The user is allowed to see all the previous reports he/she made
-        and the details about them\\
+        \item The user is allowed to see all the previous reports he/she made\\
     \end{enumerate}    
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user is provided
@@ -786,30 +792,6 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user doesn't have
     internet connection\\  \end{minipage} \\ \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[H]
-    \begin{tabular}{|l|l|}
-    \hline
-    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Report violation mistake\\}
-    \end{minipage} \\ \hline  
-     Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
-     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
-     logged in\\ \end{minipage} \\
-     \hline 
-     Events flow & \begin{minipage}[t]{0.7\textwidth} 
-    \begin{enumerate}
-        \item The user opens the Menu
-        \item The user selects the "My reports" button in the Menu
-        \item The user is allowed to report mistake\\
-    \end{enumerate}    
-    \end{minipage} \\ \hline
-     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The mistake has been
-     reported\\ \end{minipage} \\
-     \hline
-     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user closes the
-     application before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
@@ -837,7 +819,6 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
      application before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
-
 
 \subsubsection{Authority user use cases}
 
@@ -1147,13 +1128,13 @@ were too big for a correct analysis with Alloy have been reduced.
 \end{figure}
 
 \begin{itemize}
-    \item From the first world it can be noticed that every Police Officer has
+    \item From the first world in Figure 24 it can be noticed that every Police Officer has
 a different Id, every User has a different FiscalCode and every Username is
 different from another. Both Users and Authorities can share the password and
 there can be many Police Officer in the same Municipality, same analogy is for
 MunicipalDirector and MunicipalEmployee.
 
-    \item From the second world it can be noticed that there are two
+    \item From the second world in Figure 25 it can be noticed that there are two
 Violations, one it's a real violation that it doesn't tampered (so it has True
 as 'isValid') and the other one it's a fake violation that it has tampered (so
 it has False as 'isValid'). The ticket genereated by the Police Officer is for
@@ -1161,13 +1142,13 @@ only the real violation (omitting all the checks that led to 'true') and not for
 the other one. Moreover, the ticket is generated only one time (in this case by
 PoliceOfficer0 and not also by PoliceOfficer1 of the same Municipality).
 
-    \item From the third world it can be noticed that every PoliceOfficer have
+    \item From the third world in Figure 26 it can be noticed that every PoliceOfficer have
 the same accessRights as well as all the Users have the same accessRights and so
 on. Classes of accessRights have been created for a reason of granularity: in
 this way the accessRight can change in the future or can be added and the
 application keeps track of the privilege of everyone.
 
-    \item From the fourth world it can be noticed that every signalation is
+    \item From the fourth world in Figure 27 it can be noticed that every signalation is
 present on the list of signalation of every PoliceOfficer of the same
 Municipality and the MunicipalDirector sees the violations in his list of
 violations of all the signalations of his Municipality of competence.
