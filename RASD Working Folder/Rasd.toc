@@ -1,0 +1,76 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Purpose}{4}{subsection.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.1}General Purpose}{4}{subsubsection.1.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.2}Goals}{4}{subsubsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.2}Scope}{5}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{5}{subsection.1.3}% 
+\contentsline {subsubsection}{\numberline {1.3.1}Definitions}{5}{subsubsection.1.3.1}% 
+\contentsline {paragraph}{User:}{5}{section*.2}% 
+\contentsline {paragraph}{Third parties:}{5}{section*.3}% 
+\contentsline {paragraph}{Customer:}{5}{section*.4}% 
+\contentsline {paragraph}{Ghiro:}{6}{section*.5}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Acronym}{6}{subsubsection.1.3.2}% 
+\contentsline {paragraph}{UI:}{6}{section*.6}% 
+\contentsline {paragraph}{GDPR:}{6}{section*.7}% 
+\contentsline {paragraph}{API:}{6}{section*.8}% 
+\contentsline {paragraph}{GPS:}{6}{section*.9}% 
+\contentsline {paragraph}{PO:}{6}{section*.10}% 
+\contentsline {paragraph}{ME:}{6}{section*.11}% 
+\contentsline {subsubsection}{\numberline {1.3.3}Abbreviations}{6}{subsubsection.1.3.3}% 
+\contentsline {paragraph}{Gn:}{6}{section*.12}% 
+\contentsline {paragraph}{Dn:}{6}{section*.13}% 
+\contentsline {paragraph}{Rn:}{6}{section*.14}% 
+\contentsline {paragraph}{ID: }{6}{section*.15}% 
+\contentsline {subsection}{\numberline {1.4}Revision History}{6}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}Reference Documents}{6}{subsection.1.5}% 
+\contentsline {subsection}{\numberline {1.6}Document Structure}{7}{subsection.1.6}% 
+\contentsline {paragraph}{Chapter 1 - Introduction}{7}{section*.16}% 
+\contentsline {paragraph}{Chapter 2 - Overall Description}{7}{section*.17}% 
+\contentsline {paragraph}{Chapter 3 - Specific Requirements}{7}{section*.18}% 
+\contentsline {paragraph}{Chapter 4 - Formal analysis using Alloy}{7}{section*.19}% 
+\contentsline {paragraph}{Chapter 5 - Effort Spent}{7}{section*.20}% 
+\contentsline {paragraph}{Chapter 6 - References}{7}{section*.21}% 
+\contentsline {section}{\numberline {2}Overall Description}{8}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Product Perspective}{8}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Product Functions}{11}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Reporting traffic violations}{11}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Police Officer - Reportings Management (APP)}{11}{subsubsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Police Officer - Reportings Management (WEB)}{12}{subsubsection.2.2.3}% 
+\contentsline {subsubsection}{\numberline {2.2.4}Municipal Employee - Interventions Management}{12}{subsubsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.3}User characteristics}{12}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Assumptions, dependencies and constraints}{13}{subsection.2.4}% 
+\contentsline {subsubsection}{\numberline {2.4.1}Assumptions}{13}{subsubsection.2.4.1}% 
+\contentsline {subsubsection}{\numberline {2.4.2}Dependencies}{13}{subsubsection.2.4.2}% 
+\contentsline {subsubsection}{\numberline {2.4.3}Constraints}{13}{subsubsection.2.4.3}% 
+\contentsline {paragraph}{2.4.3.1 Regulatory policies}{13}{section*.22}% 
+\contentsline {paragraph}{2.4.3.2 Parallel Operations}{14}{section*.23}% 
+\contentsline {section}{\numberline {3}Specific Requirements}{15}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}External Interface Requirements}{15}{subsection.3.1}% 
+\contentsline {subsubsection}{\numberline {3.1.1}User Interfaces}{15}{subsubsection.3.1.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Hardware Interfaces}{26}{subsubsection.3.1.2}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Software Interfaces}{26}{subsubsection.3.1.3}% 
+\contentsline {subsubsection}{\numberline {3.1.4}Communication Interfaces}{26}{subsubsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.2}Scenarios}{26}{subsection.3.2}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Scenario 1}{26}{subsubsection.3.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Scenario 2}{26}{subsubsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.3}Functional requirements}{27}{subsection.3.3}% 
+\contentsline {paragraph}{User}{27}{section*.24}% 
+\contentsline {paragraph}{Sequence diagrams}{28}{section*.25}% 
+\contentsline {paragraph}{Third parties}{30}{section*.26}% 
+\contentsline {paragraph}{Sequence diagrams}{31}{section*.27}% 
+\contentsline {subsection}{\numberline {3.4}Use Cases}{33}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}User use cases}{33}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Third party use cases}{38}{subsubsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.5}Performance requirements}{44}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Design Constraints}{44}{subsection.3.6}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Standars compliance}{44}{subsubsection.3.6.1}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Hardware Limitations}{44}{subsubsection.3.6.2}% 
+\contentsline {subsubsection}{\numberline {3.6.3}Any Other Constraint}{44}{subsubsection.3.6.3}% 
+\contentsline {subsection}{\numberline {3.7}Software System Attributes}{44}{subsection.3.7}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Reliability}{44}{subsubsection.3.7.1}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Availability}{44}{subsubsection.3.7.2}% 
+\contentsline {subsubsection}{\numberline {3.7.3}Security}{44}{subsubsection.3.7.3}% 
+\contentsline {subsubsection}{\numberline {3.7.4}Mantainability}{45}{subsubsection.3.7.4}% 
+\contentsline {subsubsection}{\numberline {3.7.5}Portability}{45}{subsubsection.3.7.5}% 
+\contentsline {section}{\numberline {4}Formal Analysis using Alloy}{46}{section.4}% 
+\contentsline {section}{\numberline {5}Effort spent}{61}{section.5}% 

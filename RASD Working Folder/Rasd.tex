@@ -1,0 +1,1202 @@
+\documentclass{article}
+\usepackage{xparse}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{alloy-style}
+\usepackage{hyperref}
+
+\title{SafeStreets}
+\author{Marco Premi, Fabrizio Siciliano, Giuseppe Taddeo}
+\pagestyle{headings}
+
+\begin{document}
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Images/logo_polimi.png}\\[4ex]
+    \begingroup
+        \huge \textbf{Marco Premi} $\langle$\textbf{941388}$\rangle$ \\
+        \vfill
+        \huge \textbf{Fabrizio Siciliano} $\langle$\textbf{939895}$\rangle$\\
+        \vfill
+        \huge \textbf{Giuseppe Taddeo} $\langle$\textbf{928360}$\rangle$\\
+        \vfill
+    \endgroup
+    \vfill
+    \begingroup
+        \fontsize{15pt}{12pt}\selectfont
+        \textbf{Software engineering 2}
+    \endgroup\\[3ex]
+    \begingroup
+        \fontsize{20pt}{12pt}\selectfont \textbf{RASD}\\[1ex]
+        \fontsize{15pt}{12pt}\selectfont Requirements Analysis and Specification
+        Document \endgroup\\[8ex]
+    \normalsize \textbf{Version 1.0}\\\normalsize \today\\
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+    \textbf{Reference professor:}\\[0.2cm]
+    Matteo Giovanni Rossi\\[0cm]
+    {\small
+    \href{mailto:matteo.rossi@polimi.it}{\texttt{matteo.rossi@polimi.it}}}
+\end{flushright}
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introduction}
+\subsection{Purpose}
+\subsubsection{General Purpose}
+    The purpose of this document is to correctly analyze all requirements, goals
+    and actions needed in order to correctly develop SafeStreets.\\
+    \\
+    SafeStreets is a crowd-sourced application that intends to provide users
+    with the possibility to notify authorities when traffic violations occur
+    (eg. traffic violations) and will help to maintain stability and order
+    within the streets. A reporting system will also be available to police
+    offices and municipality employees in order to allow them to analyze (and
+    take actions accordingly) different areas of the city and assess which areas
+    have the most violations committed in.\\
+    \\
+    The core application will focus on storing useful traffic violation data
+    provided by users, mainly with the help of input forms and hard evidence
+    such as images. At any violation input, SafeStreets will also store useful
+    metadata such as date and time the violation was retrieved, geolocate where
+    it is and update a city wide map highlighting the areas where violations
+    happen.\\
+    \\
+    In addition to that, SafeStreets will be able to cross-reference its own
+    data with the one offered by the municipality. By doing so, it will be
+    possible to identify unsafe areas, assess which kind of problems happen more
+    frequently and suggest possible intervention. It will also be possible for
+    authorithy users (municipality and police officers) to automatically
+    generate traffic tickets. All available data will be cross-referenced in
+    order to build statistics such as the most (or less) egregious offenders or
+    the effectiveness of the SafeStreets initiative \subsubsection{Goals}
+    Follows a list of all goals that will be reached with the SafeStreets
+    initiative.
+    \begin{itemize}
+        \item $\langle$\textbf{G0}$\rangle$ The system will allow new customers
+        to automatically sign up and create new accounts with the minimum
+        required ID, email and password (all three will have to be valid);
+        \item $\langle$\textbf{G1}$\rangle$ The system will allow customers to
+        sign in, upon check of the validity of email and password the customer
+        inputs;
+        \item $\langle$\textbf{G2}$\rangle$ The system will allow new traffic
+        violations to be input by users, upon providing a list of required
+        information;
+        \item $\langle$\textbf{G3}$\rangle$ The system will provide an efficient
+        reporting system in order to highlight different unsafe areas and will
+        allow to filter the shown areas around the municipality; 
+        \item $\langle$\textbf{G4}$\rangle$ The system will allow all customers
+        to modify all account information and to delete the existing account; 
+        \item $\langle$\textbf{G5}$\rangle$ The system will allow authorithy users
+        to check all violations' details input in the municipality area, connect
+        with an external software for photo forensics purposes and report the
+        validity of the traffic violation in order to emit tickets or discard
+        the violation itself;
+        \item $\langle$\textbf{G6}$\rangle$ The system will provide different
+        statistics analysis in order to prove the efficiency of the SafeStreets’
+        initiative, find out who the most egregious offenders are and different
+        other analysis ad-hoc created.
+    \end{itemize}
+\subsection{Scope}
+With SafeStreets users can notify the authorities when traffic violations occur,
+and in particular parking violations. Both user and authorities must register to
+the application and agree that SafeStreets stores the information provided,
+completing it with suitable meta-data. The whole system, because it tracks users
+information, must respect the standards defined for processing of sensitive
+information such as GDPR if it is used in Europe. The user sends the type of the
+violation to the municipality and direct proofs of it (like a photograph). The
+system runs an algorithm to read the license plate and also asks the user to
+directly insert the license for a better recognition. Obviously, other
+information are required, like the name of the street when the violation has
+occurred, which can be retrieved from user's direct input or from the
+geographical position of the violation (using Google Maps API). Furthermore, the
+system, by cross referencing data from third party services, automatically can
+highlight the streets with the highest frequency of violations or the vehicles
+that commit the most violations. SafeStreets crosses information about the
+accidents that occur on the territory of the municipality with his own data to
+identify potentially unsafe areas and suggest possible interventions. Because
+municipality could generates traffic tickets from the information about
+violations SafeStreets should guarantee that information is never altered (if a
+manipulations occurs, the application should discard the information). Such
+features are made possible trough the use of one mobile application with two
+different UIs which are determined by the kind of customer that logs in (user or
+PO). The collected information are sent to a back-end and they all of those can
+be accessed by municipality employees in order to execute different actions
+(emit ticket, analyze unsafe areas, etc...).
+\subsection{Definitions, Acronyms, Abbreviations}
+\subsubsection{Definitions}
+\paragraph{User:} it is identified as a civilian customer of the product. It
+will be the main source for the SafeStreets initiative to obtain information
+about traffic violations and therefore to be successful; \paragraph{Third
+parties:}those kind of organization/company that could provide services useful
+to SafeStreets; \paragraph{Customer:} it defines both authorithy users (police
+officers or municipality employees) and civilians; \paragraph{Authority
+user:}all of those customers who have a responsibility role in regard of the
+streets' safety and the SafeStreets initiative. Example of these category are:
+police officers, municipal employees, director and basically anyone in charge
+and able to issue fines and deal with road violations; \paragraph{Ghiro:} image
+manipulation detection software, used by authorithy users in order to detect any
+image manipulation and assess the veracity of the hard evidence connected to the
+traffic ticket
+\subsubsection{Acronym}
+\paragraph{UI:} User Interface \paragraph{GDPR:} General Data Protection
+Regulation \paragraph{API:} Application Programming Interface \paragraph{GPS:}
+Global Positioning System \paragraph{PO:} Police Officer \paragraph{ME:}
+Municipality Employee
+\subsubsection{Abbreviations}
+\paragraph{Gn:} nth goal; \paragraph{Dn:} nth assumption; \paragraph{Rn:} nth
+requirement; \paragraph{ID: } identifier (Fiscal Code for Users, a
+municipality identifier for Authorithy Users)
+\subsection{Revision History}
+\begin{itemize}
+    \item \textbf{04/11/2019 :} Version 1.0 released
+\end{itemize}
+\subsection{Reference Documents}
+\begin{itemize}
+    \item Specification document: "Mandatory Project Assignement AY 2019-2010"
+    \item \textbf{Alloy doc:}
+    \href{http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html}{\texttt{http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html}}
+    \item \textbf{UML diagrams:} \href{https://www.uml-diagrams.org/}{\texttt{https://www.uml-diagrams.org/}}
+    \item \textbf{Plate Recognizer:} \href{https://app.platerecognizer.com}{\texttt{https://app.platerecognizer.com}}
+    \item \textbf{Ghiro:} \href{https://www.getghiro.org/}{\texttt{https://www.getghiro.org/}}
+\end{itemize}
+\newpage
+\subsection{Document Structure}
+\paragraph{Chapter 1 - Introduction}
+Gives an introduction to the problem by describing the purpose of SafeStreets.
+It also shows the goals and the scope of the application. \paragraph{Chapter 2 -
+Overall Description}Offers an overall description of the project. It identifies
+the actors involved in the application and lists all the assumptions in order to
+identify all the boundaries of the project. The product perspective includes
+details on the shared phenomena and the domain models. The class diagram
+describe the domain model used and the state diagrama analyzes:
+\begin{itemize}
+    \item The process of collecting violations from users
+    \item The process of reporting violations' validity and ticket emission
+\end{itemize}
+The majority of functions of the system are more precisely specified by taking
+in mind the goals of the system.  
+\paragraph{Chapter 3 - Specific Requirements}
+Contains external interface requirements which are: user interfaces, hardware
+interfaces, software interfaces and communication interfaces. Few scenarios
+describing how the system acts in real world are listed here. Furthermore it
+provides the description of the functional requirements, through the use of use
+cases and sequence diagrams. The non-functional requirements are defined through
+performance requirements, design constraints and software system attributes.
+\paragraph{Chapter 4 - Formal analysis using Alloy}
+Includes the alloy model of some critical aspects with comments and
+documentation.
+\paragraph{Chapter 5 - Effort Spent}
+Shows the effort spent by each single group member while working on the RASD.
+
+\newpage
+\section{Overall Description}
+\subsection{Product Perspective}
+SafeStreets is designed to be a completely new software application. It uses
+some already proven services (like Google Maps and PlateRecognizer APIs) for its
+critical tasks. The software uses these services in order to double check
+whether both addresses and license plates are correctly standardized in order to
+be stored into the violations database.\\
+The system is composed of one mobile, with two different UIs (one for users and
+one for authorithy users). It also provides a web site for authorithy users
+which allows them to assess and analyze potential unsafe areas, thanks also to a
+powerful reporting system.\\
+Taken into consideration that the municipality could generate traffic tickets
+from the input violations, the software will be critical when it comes to
+handling chain of custody. The latter is assured to never be broken by not
+allowing any kind of customer to modify the reported violation. Supposedly, when
+some traffic violations might be erroneous or do not have any reason of
+existence, the inputting user can warn the responsible authority by attaching
+a warning explaining why it should not be taken into consideration. The systems
+also ensures the veracity of each violation and the hard evidence attached to it
+by running a image manipulation detection software (Ghiro, per instance). This
+process is used by authority users before the emission of each ticket to the
+corresponding offender.\\
+\\
+A high-level class diagram can be found below, which provides a model of the
+application domain. The most important classes (not all of those which will be
+implemented once the software will be ready) are shown in order to define how
+the different components of SafeStreets will be communicating with each other.
+It is possible to identify two kinds of authorithy users: police officers and
+municipality employees (including municipality director). The first ones will be
+given access to both mobile application and web application; the latter will be
+provided access just to the above mentioned web application which will help
+these users assess the veracity of the hard evidence attached to the traffic
+violations and to further analyze unsafe areas around the municipality.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.38,angle=90]{Images/umlmodel}
+    \caption{Class diagram}
+\end{figure}
+
+It is possible to notice that there are three actors that model the Authority.
+Police Officers and municipality employees and director have access to a web
+version of the application, since this version provides the tools for checking
+input violations, emit traffic tickets, assess possible improvements to
+unsafe areas and analyze statistics.\\
+\\
+We will now furtherly analize some critical aspects of the system with the use
+of activity diagrams. Actual system functions will not be presented, just some
+high level system main processes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.36]{Images/ActivityInputViolation}
+    \caption{Activity Diagram: Input violation}
+\end{figure}
+
+It is easily understandable that for any unathorized user trying to access the
+system (those who have not correctly signed in) is not possible to input any new
+violation. Furthermore, the location retrieving and the plate recognizing
+processes are a bit tricky. The system tries to execute both of them
+automatically by calling the respective API from GoogleMaps or PlateRecognizer.
+If one (or both) processes fail, the system recognizes the problem and asks the
+user to input the missing piece of information. Once all information is ready,
+everything is sent to a shared database and saved for future check by authorithy
+users(PO or ME). 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.36]{Images/ActivityCheckViolation}
+    \caption{Activity Diagram: Checking violation}
+\end{figure}
+
+As it is mentioned by the description above this one, no user can access the
+system without a proper username and password. What is interesting in this part
+of the process, is the possibility to end the whole process only once the
+traffic violation has been checked, which means that the hard evidence attached
+to it has to be approved as not being counterfeited or else. A running version
+of the Ghiro software has to be already installed on the machine which is
+accessing the system through a web browser; if not, the system itself will
+automatically redirect to the latest downloadable version of it. 
+
+\subsection{Product Functions}
+In the following section the most important product functions of the system are
+reported.
+    \subsubsection{Reporting traffic violations}
+    This function is the main action that the user can use. After having logged
+    in within its application, pressing on "Signal a violation" the system will
+    ask to insert one or more image. Once the images are loaded, the system will
+    ask him/her to enter the type of infraction reported, the date and time, as
+    well as the position detected by GPS signal or manually via user input. At
+    this point the user will confirm the data entered and save the signalation.
+    Moreover he will see in his personal area, under the list of his reports,
+    the new report with all the data he has entered. In addition, the report
+    will be added to the list of reports made in the same municipality.
+
+    \subsubsection{Police Officer - Reporting Management (APP)}
+    This function allows the police officer to have in real time all the reports
+    made in his municipality of competence. In fact, after logging into his
+    application and providing his identification as a police officer, the
+    application through an analysis system of the latter will identify the
+    municipality of competence of the agent and will show him the list of all
+    the appropriate reports. He can therefore go to the place of the report to
+    resolve the infraction manually by clicking "Go check it out" and closing the
+    infraction or, in the event that the violation can no longer be assessed in
+    person (i.e. the car has moved) he can leave the report opened to then
+    resolve it from the website.
+
+    \subsubsection{Police Officer - Reporting Management (WEB)}
+    This function allows the police officer to resolve the reports (i.e.
+    generating a traffic ticket for the owner of the machine) via the website
+    without being physically present on the spot. Once logged in using codes
+    provided by the municipality, the police officer will be able to see all the
+    reports still open (i.e. no one has clicked "Go check it out") and analyze
+    them. He can take the photo posted by the user and submit it to specialized
+    programs to ensure that it is not tampered with and will therefore be able
+    to generate the ticket and close the report.
+
+    \subsubsection{Municipal Employee - Interventions Management}
+    This function allows a municipal employee, after logging in through his own
+    identifier, to be able to view and filter all areas (more or less unsafe) in
+    its area of competence. In this way, SafeStreets will automatically suggest
+    potential interventions to be made in the selected area and the municipal
+    employee will be able to decide whether to implement the suggested
+    precautions (i.e. insert barrier between cycle path and road).
+
+    \subsubsection{Municipal Director - Statistics analysis}
+    This function allows a Municipal Director, after logging in through his/her
+    own identifier, to be able to view all the statistics made by SafeStreets
+    within the Municipality of said Director. Based on this, he/she can have a
+    total overview over the effectiveness of Safestreets' initiative, the most
+    egregious offenders and other different statistics.
+
+\subsection{User characteristics}
+The actors of the application are the following:
+\begin{itemize}
+    \item \textbf{User:} a customer of the service who, after having installed
+    the application on his/her mobile device, having registered through univocal
+    identification data and accepted the processing of his data and the civil
+    and criminal liability of his own reports, can post an infraction report
+    attaching a photo of this (with clear and legible license plate) followed by
+    date, time and position (the latter acquired by GPS detection or manual
+    entry)
+    \item \textbf{Authority:} a customer who uses the system based on his/her
+    role;
+    \begin{itemize}
+        \item \textbf{Police Officer:} after installing the application on
+        his/her mobile device, having registered through univocal data and codes
+        provided by his/her municipality, he/she has the possibility to see the
+        list of reports of infractions made in the Municipality of his
+        competence and also has the ability to access to the system through a
+        website to carry out analysis of the reports (image photoshop) and
+        generate traffic ticket to the accused.
+        \item \textbf{Municipal Employee:} through the website, he/she has
+        access to the unsafe areas of his/her own Municipality to decide road
+        interventions to be applied within it
+        \item \textbf{Municipal Director:} through the website, he/she has
+        access to both reports and traffic tickets both to unsafe areas and to
+        statistical data produced by SafeStreets in order to assess the
+        effectiveness of the application.
+    \end{itemize}
+\end{itemize}
+\subsection{Assumptions, dependencies and constraints}
+\subsubsection{Assumptions}
+\begin{itemize}
+    \item $\langle$\textbf{D0}$\rangle$ The device acquires users' location with
+    an error of 5 meters at most.
+    \item $\langle$\textbf{D1}$\rangle$ Each fiscal code is unique.
+    \item $\langle$\textbf{D2}$\rangle$ Each authorithies ID is unique.
+    \item $\langle$\textbf{D3}$\rangle$ The system is always able to contact to
+    user in order to ask him/her more information.
+    \item $\langle$\textbf{D4}$\rangle$ If the customer is connected to internet
+    he/she is always able to contact the system.
+    \item $\langle$\textbf{D5}$\rangle$ The system automatically recognizes the
+    municipality using the Authorities ID.
+\end{itemize}
+\subsubsection{Dependencies}
+The system uses external suitable services to make its architecture simpler.
+\begin{itemize}
+    \item PlateRecognizer API
+    \item Google Maps API
+    \item Ghiro
+\end{itemize}
+\subsubsection{Constraints}
+\paragraph{2.4.3.1 Regulatory policies}\mbox{}\\
+SafeStreets uses sensitive data which handling differs from nation to nation.
+For example, in UE, GDPR provides the guidelines to transmit, store and analyze
+information.\\ SafeStreets personalizes the process according to the country in
+which the services are used. \paragraph{2.4.3.2 Parallel Operations}\mbox{}\\
+The system must provide support for multiple parallel operations from a big
+number of different users. The user must not wait in order to be able to connect
+to the service.
+\newpage
+\section{Specific Requirements}
+\subsection{External Interface Requirements}
+\subsubsection{User Interfaces}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignUpAuthoritiesApp}
+    \caption{SignUp authority user}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignUpUtenteAPP}
+    \caption{SignUp user}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignInAPP}
+    \caption{SignIn}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/MenuAPP}
+    \caption{User menu}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/MyReportsApp}
+    \caption{My reports user}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/SignalAViolationAPP}
+    \caption{Signal a violation}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/UnsafeAreaAnalysisAPP}
+    \caption{Unsafe area analysis}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/MenuOfficerAPP}
+    \caption{Officer authority menu}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Images/ViolationsAPP}
+    \caption{Authority violations check}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBSignUp}
+    \caption{Authority SignUp}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBSignIn}
+    \caption{Authority SignIn}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBViolations}
+    \caption{Violations}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBViolationChecking}
+    \caption{Violations checking}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/WEBUnsafeAreas}
+    \caption{Unsafe Areas}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{Images/StatisticsWeb}
+    \caption{Statistics}
+\end{figure}
+\newpage
+\newpage
+\subsubsection{Hardware Interfaces}
+The system has no hardware interfaces.
+\subsubsection{Software Interfaces}
+The system doesn't provide any API to external applications.\\
+Nevertheless, Safestreets has access to some API or third party software such as:
+\begin{itemize}
+    \item \textbf{Google Maps API:} for localization and creation of unsafe areas.
+    \item \textbf{Plate Recognizer API:} for License Plate recognition.
+    \item \textbf{Ghiro:} a digital image forensics tool used for find out if the image
+    in the violation report is real.
+\end{itemize}
+\subsubsection{Communication Interfaces}
+The system only uses HTTP(more precisely HTTPS) as communication service.
+HTTP/HTTPS is used for:
+\begin{itemize}
+    \item Customers registration;
+    \item Sending violations both to SafeStreets and to authorities;
+    \item Using Google Maps API and Plate Recognizer API;
+    \item Access latest downloadable version of Ghiro software.
+\end{itemize}
+
+\newpage
+\subsection{Functional requirements}
+\subsubsection{User}
+\paragraph{Scenario 1}\mbox{}\\
+Bob is a cyclist and he usually rides along Via Dante where there is a bicycle
+lane. Many cars often park on the bicycle lane hindering the passage to bikes.
+Therefore he decides to download SafeStreets application on his smartphone in
+order to sign up and signal the problem to the authorithies.\\ Just today, he
+notices a car parked on the bike lane and he immediately sends a signalation of
+the violation and a photo of the license plate.
+\paragraph{Use cases}\mbox{}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Images/UseCaseUserView}
+    \caption{Use Case Diagram: User}
+\end{figure}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage} \\
+    \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth}User\\\end{minipage}\\ \hline 
+    Entry conditions &  \begin{minipage}[t]{0.7\textwidth}The user has
+    downloaded the application on his/her device\\ \end{minipage}\\ \hline 
+    Events flow & 
+    \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The user opens the application on his/her device
+        \item The user clicks on "Sign Up" button
+        \item The user fills the registration form with all the mandatory fields
+        \item The user clicks the confirmation button
+        \item The system saves the data\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth}The system has stored
+    user data, the user is registered and now is able to use te application\\
+    \end{minipage}\\ \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth} \begin{enumerate}
+        \item The user was already signed up
+        \item The user doesn't fill all the mandatory fields with valid data
+        \item The email or the fiscal code is already registered
+        \item The user closes the application before the process has ended\\
+    \end{enumerate}\end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name &\begin{minipage}[t]{0.7\textwidth} \textbf{Sign In\\} \end{minipage}
+    \\
+    \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} \begin{enumerate}
+        \item The user has already downloaded the the application on his/her
+        device
+        \item The user has already signed up\\
+    \end{enumerate}
+    \end{minipage} \\ \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The user opens the application on his/her device
+        \item The user inserts his/her credentials in the "Email" and "Password"
+        fields.
+        \item The user clicks on the "Sign In" button\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user is
+    successfully signed in \\ \end{minipage} \\ \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The user inserts invalid Email
+        \item The user inserts invalid Password   
+        \item The user closes the application before the process has ended \\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Signal a
+    violation\\}\end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+    logged in\\  \end{minipage} \\ \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The user opens the Menu
+        \item The user clicks on "Signal a violation" button in the Menu
+        \item The user uploads one or more photos
+        \item The user adds additional information
+        \item The user adds one or more violation types
+        \item The user clicks "Send"
+        \item SafeStreets receives the violation\\ 
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth}The user has
+    successfully reported a violation\\ \end{minipage} \\ \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The user closes the application before the process has ended 
+        \item The user doesn't have internet connection\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize unsafe areas\\}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+    logged in\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The user opens the Menu
+        \item The user clicks on the "Unsafe area analysis" button in the Menu
+        \item The user is allowed to select different filters and the area
+        he/she wants to see\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user can see all
+    the unsafe areas proposed by SafeStreets\\
+    \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}  The user doesn't have
+    internet connection\\ \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Visualize previous
+    reports\\}\end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+    logged in\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The user opens the Menu
+        \item The user selects the "My reports" button in the Menu
+        \item The user is allowed to see all the previous reports he/she made
+        and the details about them\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user is provided
+    with the requested data\\ \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth} The user doesn't have
+    internet connection\\  \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Report violation mistake\\}
+    \end{minipage} \\ \hline  
+     Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+     logged in\\ \end{minipage} \\
+     \hline 
+     Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The user opens the Menu
+        \item The user selects the "My reports" button in the Menu
+        \item The user is allowed to report mistake\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The mistake has been
+     reported\\ \end{minipage} \\
+     \hline
+     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user closes the
+     application before the process has ended\\ \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Manage Account\\}
+    \end{minipage} \\ \hline  
+     Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+     logged in\\ \end{minipage} \\
+     \hline 
+     Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The user opens the Menu
+        \item The user selects the "Settings" button in the Menu
+        \item The user is allowed to change his/her adress, the password, the
+        email or to delete the account\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+     Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
+     saved to his/her account or the account is deleted\\ \end{minipage} \\
+     \hline
+     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user closes the
+     application before the process has ended\\ \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+\newpage
+\paragraph{Goals and requirements}\mbox{}\\
+\begin{itemize}   
+    \item $\langle$\textbf{G0}$\rangle$ SignUp to the system
+    \begin{description}
+        \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
+        registered  in the system
+        \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
+        email
+        \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
+    Use \end{description}
+    \item $\langle$\textbf{G1}$\rangle$ SignIn to the system
+    \begin{description}
+        \item $\langle$\textbf{R4}$\rangle$ the customer must be already sign up
+        \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
+        password \end{description}
+    \item $\langle$\textbf{G2}$\rangle$ Signal a violation
+    \begin{description}
+        \item $\langle$\textbf{R6}$\rangle$ the user must be able to insert one or
+        more photos of the violation
+        \item $\langle$\textbf{R7}$\rangle$ the user must send information about its
+        location
+        \item $\langle$\textbf{R8}$\rangle$ the user can add the type of violation
+        that is being reported
+    \end{description}
+    \item $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
+    \begin{description}
+        \item $\langle$\textbf{R9}$\rangle$ the user is shown the unsafe areas
+        around him
+        \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
+        unsafe areas
+        \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
+        unsafe areas 
+    \end{description}    
+    \item $\langle$\textbf{G4}$\rangle$ Manage Account
+    \begin{description}
+        \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
+        account information
+        \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
+        his/her account
+    \end{description}
+\end{itemize}
+\newpage
+\paragraph{Sequence diagrams}\mbox{}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{Images/SequenceReportViolation}
+    \caption{Sequence diagram: input traffic violation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Images/SequenceUserAnalyseUnsafeAreas} 
+    \caption{Sequence diagram: analyse unsafe areas}
+\end{figure}
+\newpage
+\subsubsection{Authorithy user}
+\paragraph{Scenario 2}\mbox{}\\
+David is a police officer of the city of Milan. He decided to apply to the
+SafeStreets’ initiative in order to have an useful work support tool. Once
+logged in, he immediatly notices that there is a traffic violation that has been
+signaled by a user and, by looking at the violation’s position with the
+application’s integrated map, he realizes that the fellony is taking place just
+1km away from his actual position. He then decides to do an immediate inspection
+of what has been happening, but when he reaches the indicated position, the car
+with that license plate is not there anymore. He chooses to leave the violation
+open and unchecked, knowing that he will check the authenticity of it by using
+the web site and that he will, eventually, emit the proper ticket in the future.
+\paragraph{Scenario 3}\mbox{}\\
+Wilbur is a police officer from Rome. He decided to
+apply to the SafeStreets’ initiative in order to have an useful work support
+tool. Once logged in, as one of his colleagues in Milan, he notices that there
+is a traffic violation that has been signaled by a user and, by looking at the
+violation’s position with the application’s integrated map, he realizes that the
+felony is taking place just 500 meters away from his actual position. He then
+decides to do an immediate inspection of what has been happening and he
+validates the veracity of the signalisation. He then closes the violation,
+reports it valid and emits the ticket to the owner of the car.
+\paragraph{Scenario 4}\mbox{}\\
+Alfred is the municipal director of Florence. He has decided to use the SafeStreet 
+application to improve performance regarding traffic violations, traffic tickets, 
+public interventions etc.
+He wants to verify the real benefit deriving from the application and he wants to know
+who is the worst civilian with major infractions. 
+After logging in as Director, will see the statistics provided by SafeStreets based 
+on previous data and data subsequent to the use of the service.
+
+\newpage
+
+\paragraph{Use cases}\mbox{}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Images/UseCaseThirdPartyView}
+    \caption{Use Case Diagram: Authorithy user}
+\end{figure}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage}
+     \\
+     \hline  
+     Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
+     \hline 
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user is
+     not already registered\\ \end{minipage} \\
+     \hline 
+     Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The authorithy user accesses SafeStreets website
+        \item The authorithy user is asked to sign in
+        \item The authorithy user clicks on "Sign Up"
+        \item The authorithy user fills the registration form with all the mandatory
+        fields
+        \item The authorithy user clicks the confirmation button
+        \item The system saves the data\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The system has stored
+     authority user's data, he/she is registered and now is able to use the
+     website\\ \end{minipage} \\
+     \hline
+     Exceptions & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user was already signed up
+        \item The authorithy user doesn't fill all the mandatory fields with valid
+        data
+        \item The email or the AuthoritiesID is already registered
+        \item The authorithy user closed the application beforse the process has
+        ended\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In\\} \end{minipage}
+    \\
+    \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
+    already signed up\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user accesses SafeStreets website
+        \item The authorithy user is asked to sign in
+        \item The authorithy user inserts the credentials in the "Email" and
+        "Password" fields.
+        \item The authorithy user clicks on "Sign In"\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user is
+    successfully signed in\\ \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user inserts invalid Email
+        \item The authorithy user inserts invalid Password
+        \item The authorithy user closes the website before the process has ended\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas\\}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
+    already logged in\\\end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user click on "Unsafe areas"
+        \item The authorithy user is allowed create and delete unsafe areas, to
+        select different filters and to search different areas\\
+    \end{enumerate} 
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The unsafe areas editor
+    is presented to the authorithy user\\\end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations\\}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
+    already logged in\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user clicks on "Violations"
+        \item The authorithy user is allowed to see the list of previous and actual
+        violations (checked or not)
+        \item The authorithy user click on "Open Details" of one particular not
+        checked violation
+        \item The authorithy user is allowed to see information about the particular
+        violation
+        \item The authorithy user can click "Use" on Ghiro card to find out if the
+        image is real
+        \item The authorithy user can click "Report not valid" if the image is fake
+        or "Report valid" if the image is real\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user can
+    manage the violations\\ \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The authorithy user closes the
+    website before the process has ended\\ \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account\\}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth}Authorithy user\\\end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
+    already logged in\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user click on "Manage Account"
+        \item The authorithy user is allowed to change the email, the password or to
+        delete the account\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
+    saved to the authorithy user account or the account is deleted\\ \end{minipage}
+    \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The authorithy user closes the
+    website before the process has ended\\ \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check violations on the
+    field\\} \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user(officer)\\
+    \end{minipage} \\ \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth}The authorithy user has
+    already logged in\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The authorithy user opens the Menu
+        \item The authorithy user clicks on "Violations" button in the Menu
+        \item The authorithy user is allowed to see the list of violations
+        \item The authorithy user clicks on "Go check it out" button
+        \item SafeStreets opens Google Maps or one other turn-by-turn navigation
+        app to reach the violation location
+        \item The authorithy user reports the violation valid or not valid\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The officer can reach
+    the violation location and report the violation\\\end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The officer closes the application before the process has ended
+        \item The officer doesn't have internet connection \\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\newpage
+\paragraph{Goals and requirements}
+\begin{itemize}
+\item $\langle$\textbf{G0}$\rangle$ SignUp to the system
+\begin{description}
+    \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
+    registered  in the system
+    \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
+    email
+    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
+Use \end{description}
+\item $\langle$\textbf{G1}$\rangle$ SignIn to the system
+\begin{description}
+    \item $\langle$\textbf{R4}$\rangle$ the customer must be already signed up
+    \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
+    password\\
+\end{description}
+\item $\langle$\textbf{G2}$\rangle$ Check Violations
+\begin{description}
+    \item $\langle$\textbf{R14}$\rangle$ the authorithy user must be able to check
+    all the new and past violations details
+    \item $\langle$\textbf{R15}$\rangle$ the authorithy user must be able to use
+    Ghiro
+    \item $\langle$\textbf{R16}$\rangle$ the authorithy user must be able to report
+    the validity of the violation \end{description}
+\item $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
+\begin{description}
+    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
+    unsafe areas
+    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
+    unsafe areas 
+    \item $\langle$\textbf{R17}$\rangle$ the authorithy user is shown a list of
+    possible improvements to be made to the shown areas by the system
+\end{description}
+\item $\langle$\textbf{G4}$\rangle$ Manage Account
+\begin{description}
+    \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
+    account information
+    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
+    his/her account
+\end{description}  
+\item $\langle$\textbf{G5}$\rangle$ Statistics analysis
+\begin{description}
+    \item $\langle$\textbf{R18}$\rangle$ the authorithy user must be able to
+    visualize ad-hoc analysis of the Safestreets initiative created by the
+    system
+\end{description}
+\end{itemize}  
+\newpage  
+\paragraph{Sequence diagrams}\mbox{}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.47]{Images/SequenceThirdPartyCheckViolation} 
+    \caption{Sequence diagram: check violation and report its validity}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.47]{Images/SequenceThirdPartyUnsafeAreas} 
+    \caption{Sequence diagram: analyse unsafe areas}
+\end{figure}
+
+\newpage
+\subsection{Performance requirements}
+The system is provided to serve a great number of customers simultaneously. The
+back-end must be powerful enough to accept thousands of requests at same time
+during all the day.\\
+The front-end applications (mobile and web) don't have particular performance
+requirements.
+\subsection{Design Constraints}
+\subsubsection{Standars compliance}
+With regard to the privacy, security for the mobile application and the back-end
+is a big issue, so the whole project is subject to the the GDPR. Furthermore
+it's a good practice to apply W3C's Standards to ensure intercompatibility.
+\subsubsection{Hardware Limitations}
+Even if SafeStreets is a software-based service there are some hardware
+limitations regarding the smartphones.
+\begin{itemize}
+    \item must be able to make HTTPS requests (connection to internet
+    4G/3G/2G/Wi-Fi)
+    \item must have on board GPS (mobile devices only)
+\end{itemize}
+\subsection{Software System Attributes}
+\subsubsection{Reliability}
+The system must be able to run 24/7 without any interruptions. Only small
+concessions from this requirement might be tolerated. The system must also be
+fault tolerant. In order to exploit this last point the data saved on the
+servers should be duplicated.
+\subsubsection{Availability}
+Maximum availability is a necessity because users should be able to report
+violations 24/7. One or two days per year may be used for maintainance, so
+availability of 99\% is expected.
+\subsubsection{Security}
+Users and authorithy users provide data that contains sensitive information, so
+the security aspect is of primary relevance.\\ Communications between user,
+third party and SafeStreets must be encrypted and the database with all the data
+must be protected from any possibile internal or external attack.
+\subsubsection{Mantainability}
+The system shoule be flexibile and easy to mantain. For this purpose the whole
+system will be developed using a modular architecture. \\
+Fixing and modifying the system will be easy with the modular architecture.
+
+\subsubsection{Portability}
+SafeStreets in order to be useful, must be used by a very large number of people.
+It is for this reason that authority users' registration website must be available
+on the majority of browsers (Firefox, Google Chrome, Safari, Opera, Microsoft
+Edge and Internet Explorer 11).\\
+It follows that the mobile application must be available on both Android and iOs.
+
+\newpage
+\section{Formal Analysis using Alloy}
+In this section an analysis of some critical aspects of the system is provided
+expoliting Alloy. The focus is on some static constraints, in particular:
+
+\begin{itemize}
+    \item It cannot happen that two different authority users have the same Id
+    or two different users have the same fiscal code;
+    \item In case of a police officer erogates a ticket referred to a violation,
+    the violation must have been verified;
+    \item All authorithy users of the same Municipality can see all and only the
+    signalations on the territory of competence;
+    \item There may be multiple signalations referring to the same and unique
+    violation.
+\end{itemize}
+
+The proof of validity of evidence and all the checks are excluded from the Alloy
+analysis, they are taken for granted and after them the parameter 'isValid' of a
+violation is put on 'True'.\\
+When we say Police Officer mean not only the policemen but anyone in charge and
+able to issue fines and deal with road violations. Same analogy is used for
+Director and Employee.\\
+\\
+Furthermore, some other necessary, but less important, structural constraints
+are expressed and properly commented in the Alloy formal notation. These bonds
+are verified analyzing the worlds generated running the model and checking some
+relevant assertion. It's important to notice that some numerical values that
+were too big for a correct analysis with Alloy have been reduced. 
+\newpage
+\lstinputlisting[language=alloy,basicstyle=\normalsize]{RASD.als}
+
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1]{Images/Alloy-Assertions}
+    \caption{Alloy assertions}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.25]{Images/Alloy-World1}
+    \caption{Alloy world 1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.25]{Images/Alloy-World2}
+    \caption{Alloy world 2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,scale=0.23]{Images/Alloy-World3}
+    \caption{Alloy world 3}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90, scale=0.22]{Images/Alloy-World4}
+    \caption{Alloy world 4}
+\end{figure}
+
+\begin{itemize}
+    \item From the first world it can be noticed that every Police Officer has
+a different Id, every User has a different FiscalCode and every Username is
+different from another. Both Users and Authorities can share the password and
+there can be many Police Officer in the same Municipality, same analogy is for
+MunicipalDirector and MunicipalEmployee.
+
+    \item From the second world it can be noticed that there are two
+Violations, one it's a real violation that it doesn't tampered (so it has True
+as 'isValid') and the other one it's a fake violation that it has tampered (so
+it has False as 'isValid'). The ticket genereated by the Police Officer is for
+only the real violation (omitting all the checks that led to 'true') and not for
+the other one. Moreover, the ticket is generated only one time (in this case by
+PoliceOfficer0 and not also by PoliceOfficer1 of the same Municipality).
+
+    \item From the third world it can be noticed that every PoliceOfficer have
+the same accessRights as well as all the Users have the same accessRights and so
+on. Classes of accessRights have been created for a reason of granularity: in
+this way the accessRight can change in the future or can be added and the
+application keeps track of the privilege of everyone.
+
+    \item From the fourth world it can be noticed that every signalation is
+present on the list of signalation of every PoliceOfficer of the same
+Municipality and the MunicipalDirector sees the violations in his list of
+violations of all the signalations of his Municipality of competence.
+\end{itemize}
+
+\newpage
+\section{Effort spent}
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Description of the task} & \textbf{MP} & \textbf{FS} &
+        \textbf{GT} \\
+        \hline
+        Introduction                    & 6   & 4     & 5     \\
+        Overall Description             & 10  & 9     & 6     \\
+        Specific requirements           & 12  & 13    & 6     \\
+        Formal analysis using Alloy     & 2   & 2     & 13    \\
+        \hline
+    \end{tabular}
+\end{center}
+
+    
+\end{document}  
