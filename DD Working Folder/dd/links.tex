@@ -1,0 +1,21 @@
+\xforeach{RASD,UUID,GDPR,GUI,LE,API,REST,MVC}{
+    \expandafter\newcommand\csname#1\endcsname[1][]{
+        \ifthenelse{\isempty{##1}}
+            {\hyperlink{#1}{#1}}
+            {\hyperlink{#1}{##1}}
+    }
+}
+\xforeach{Introduction,ArchitecturalDesign,AlgorithmDesign,UserInterfaceDesign,RequirementsTraceability,ImplementationIntegrationAndTestPlan,EffortSpent,References}{
+    \expandafter\newcommand\csname chap#1\endcsname[1][]{
+        \ifthenelse{\isempty{##1}}
+            {\hyperlink{chap#1}{#1}}
+            {\hyperlink{chap#1}{##1}}
+    }
+}
+\xforeach{}{
+    \expandafter\newcommand\csname sec#1\endcsname[1][]{
+        \ifthenelse{\isempty{##1}}
+            {\hyperlink{sec#1}{#1}}
+            {\hyperlink{sec#1}{##1}}
+    }
+}

@@ -1,0 +1,37 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Purpose}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Scope}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Definitions, Acronyms, Abbreviations}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Definitions}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Acronyms}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Abbreviations}{section.1.3}% 7
+\BOOKMARK [1][-]{section.1.4}{Revision history}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Reference Documents}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Document Structure}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Architectural design}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{High-level architecture}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Component view}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Deployment view}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.5}{Run-time view}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.5.1}{Synchronization}{section.2.5}% 17
+\BOOKMARK [2][-]{subsection.2.5.2}{Request data regarding a group of people}{section.2.5}% 18
+\BOOKMARK [2][-]{subsection.2.5.3}{Request data regarding a particular user by providing his/her UUID}{section.2.5}% 19
+\BOOKMARK [1][-]{section.2.6}{Component interface}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.7}{Selected architectural styles and patterns}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.7.1}{Design Patterns}{section.2.7}% 22
+\BOOKMARK [1][-]{section.2.8}{Other design decisions}{chapter.2}% 23
+\BOOKMARK [0][-]{chapter.3}{User interface design}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Interface mockups}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{UX Diagrams}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.2.1}{Mobile application}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.2}{Web application}{section.3.2}% 28
+\BOOKMARK [0][-]{chapter.4}{Requirements traceability}{}% 29
+\BOOKMARK [0][-]{chapter.5}{Implementation, integration and test plan}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Implementation plan}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{Integration and testing}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.2.1}{Entry criteria}{section.5.2}% 33
+\BOOKMARK [2][-]{subsection.5.2.2}{Elements to be integrated}{section.5.2}% 34
+\BOOKMARK [2][-]{subsection.5.2.3}{Integration testing strategy}{section.5.2}% 35
+\BOOKMARK [2][-]{subsection.5.2.4}{Sequence of component/function integration}{section.5.2}% 36
+\BOOKMARK [0][-]{chapter.6}{Effort spent}{}% 37

@@ -1,0 +1,35 @@
+\documentclass[draft]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\newwrite\outputstream
+\immediate\openout\outputstream=ddreferences.ref
+
+\input{commands.tex}
+\input{dd/links.tex}
+
+\begin{document}
+
+\input{dd/title.tex}
+
+\tableofcontents
+
+\input{dd/chapters/01Introduction.tex}
+\input{dd/chapters/02ArchitecturalDesign.tex}
+\input{dd/chapters/03UserInterfaceDesign.tex}
+\input{dd/chapters/04RequirementsTraceability.tex}
+\input{dd/chapters/05ImplementationIntegrationAndTestPlan.tex}
+\input{dd/chapters/06EffortSpent.tex}
+
+\immediate\closeout\outputstream
+
+\ifnum\value{referencesCounter} > 1
+    \newread\inputstream
+    \immediate\openin\inputstream=ddreferences.ref
+    
+    \input{dd/chapters/07References.tex}
+    
+    \immediate\closein\inputstream
+\fi
+
+\end{document}

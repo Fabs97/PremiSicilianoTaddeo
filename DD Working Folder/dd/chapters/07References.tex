@@ -1,0 +1,9 @@
+\defChapterTarget{References}
+
+\addtocounter{referencesCounter}{-1}
+\begin{enumerate}[align=left,label={$\left[\arabic*\right]$},start=1,leftmargin=*]
+    \foreach \x in {1,...,\arabic{referencesCounter}}{
+        \immediate\read\inputstream to \auxcommand
+        \item \hypertarget{label::text::\x}{\auxcommand}
+    }
+\end{enumerate}
