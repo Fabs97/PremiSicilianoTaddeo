@@ -32,7 +32,7 @@
         \fontsize{20pt}{12pt}\selectfont \textbf{RASD}\\[1ex]
         \fontsize{15pt}{12pt}\selectfont Requirements Analysis and Specification
         Document \endgroup\\[8ex]
-    \normalsize \today\\
+    \normalsize \textbf{Version 1.0}\\\normalsize \today\\
 \end{center}
 
 \vspace*{\fill}
@@ -322,7 +322,7 @@ reported.
     employee will be able to decide whether to implement the suggested
     precautions (i.e. insert barrier between cycle path and road).
 
-    \subsection{Municipal Director - Statistics analysis}
+    \subsubsection{Municipal Director - Statistics analysis}
     This function allows a Municipal Director, after logging in through his/her
     own identifier, to be able to view all the statistics made by SafeStreets
     within the Municipality of said Director. Based on this, he/she can have a
@@ -489,162 +489,18 @@ HTTP/HTTPS is used for:
     \item Using Google Maps API and Plate Recognizer API;
     \item Access latest downloadable version of Ghiro software.
 \end{itemize}
-\subsection{Scenarios}
-\subsubsection{Scenario 1}
+
+\newpage
+\subsection{Functional requirements}
+\subsubsection{User}
+\paragraph{Scenario 1}\mbox{}\\
 Bob is a cyclist and he usually rides along Via Dante where there is a bicycle
 lane. Many cars often park on the bicycle lane hindering the passage to bikes.
 Therefore he decides to download SafeStreets application on his smartphone in
 order to sign up and signal the problem to the authorithies.\\ Just today, he
 notices a car parked on the bike lane and he immediately sends a signalation of
 the violation and a photo of the license plate.
-\subsubsection{Scenario 2}
-David is a police officer of the city of Milan. He decided to apply to the
-SafeStreets’ initiative in order to have an useful work support tool. Once
-logged in, he immediatly notices that there is a traffic violation that has been
-signaled by a user and, by looking at the violation’s position with the
-application’s integrated map, he realizes that the fellony is taking place just
-1km away from his actual position. He then decides to do an immediate inspection
-of what has been happening, but when he reaches the indicated position, the car
-with that license plate is not there anymore. He chooses to leave the violation
-open and unchecked, knowing that he will check the authenticity of it by using
-the web site and that he will, eventually, emit the proper ticket in the future.
-\subsubsection{Scenario 3}
-Wilbur is a police officer from Rome. He decided to
-apply to the SafeStreets’ initiative in order to have an useful work support
-tool. Once logged in, as one of his colleagues in Milan, he notices that there
-is a traffic violation that has been signaled by a user and, by looking at the
-violation’s position with the application’s integrated map, he realizes that the
-felony is taking place just 500 meters away from his actual position. He then
-decides to do an immediate inspection of what has been happening and he
-validates the veracity of the signalisation. He then closes the violation,
-reports it valid and emits the ticket to the owner of the car.
-\subsubsection{Scenario 4}
-Alfred is the municipal director of Florence. He has decided to use the SafeStreet 
-application to improve performance regarding traffic violations, traffic tickets, 
-public interventions etc.
-He wants to verify the real benefit deriving from the application and he wants to know
-who is the worst civilian with major infractions. 
-After logging in as Director, will see the statistics provided by SafeStreets based 
-on previous data and data subsequent to the use of the service.
-
-\newpage
-\subsection{Functional requirements}
-\paragraph{User}\mbox{}\\
-$\langle$\textbf{G0}$\rangle$ SignUp to the system
-\begin{description}
-    \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
-    registered  in the system
-    \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
-    email
-    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
-Use \end{description}\mbox{}\\
-$\langle$\textbf{G1}$\rangle$ SignIn to the system
-\begin{description}
-    \item $\langle$\textbf{R4}$\rangle$ the customer must be already sign up
-    \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
-    password \end{description}\mbox{}\\\\
-$\langle$\textbf{G2}$\rangle$ Signal a violation
-\begin{description}
-    \item $\langle$\textbf{R6}$\rangle$ the user must be able to insert one or
-    more photos of the violation
-    \item $\langle$\textbf{R7}$\rangle$ the user must send information about its
-    location
-    \item $\langle$\textbf{R8}$\rangle$ the user can add the type of violation
-    that is being reported
-\end{description}
-$\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
-\begin{description}
-    \item $\langle$\textbf{R9}$\rangle$ the user is shown the unsafe areas
-    around him
-    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
-    unsafe areas
-    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
-    unsafe areas 
-\end{description}    
-$\langle$\textbf{G4}$\rangle$ Manage Account
-\begin{description}
-    \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
-    account information
-    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
-    his/her account
-\end{description}
-
-\newpage
-\paragraph{Sequence diagrams}\mbox{}\\
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.45]{Images/SequenceReportViolation}
-    \caption{Sequence diagram: input traffic violation}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.5]{Images/SequenceUserAnalyseUnsafeAreas} 
-    \caption{Sequence diagram: analyse unsafe areas}
-\end{figure}
-\newpage
-\paragraph{Authorithy user}\mbox{}\\
-$\langle$\textbf{G0}$\rangle$ SignUp to the system
-\begin{description}
-    \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
-    registered  in the system
-    \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
-    email
-    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
-Use \end{description}\mbox{}\\
-$\langle$\textbf{G1}$\rangle$ SignIn to the system
-\begin{description}
-    \item $\langle$\textbf{R4}$\rangle$ the customer must be already signed up
-    \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
-    password\\
-\end{description}
-$\langle$\textbf{G5}$\rangle$ Check Violations
-\begin{description}
-    \item $\langle$\textbf{R14}$\rangle$ the authorithy user must be able to check
-    all the new and past violations details
-    \item $\langle$\textbf{R15}$\rangle$ the authorithy user must be able to use
-    Ghiro
-    \item $\langle$\textbf{R16}$\rangle$ the authorithy user must be able to report
-    the validity of the violation \end{description}\mbox{}\\
-$\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
-\begin{description}
-    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
-    unsafe areas
-    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
-    unsafe areas 
-    \item $\langle$\textbf{R17}$\rangle$ the authorithy user is shown a list of
-    possible improvements to be made to the shown areas by the system
-\end{description}
-$\langle$\textbf{G4}$\rangle$ Manage Account
-\begin{description}
-    \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
-    account information
-    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
-    his/her account
-\end{description}  
-$\langle$\textbf{G6}$\rangle$ Statistics analysis
-\begin{description}
-    \item $\langle$\textbf{R18}$\rangle$ the authorithy user must be able to
-    visualize ad-hoc analysis of the Safestreets initiative created by the
-    system
-\end{description}  
-\newpage  
-\paragraph{Sequence diagrams}\mbox{}\\
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.47]{Images/SequenceThirdPartyCheckViolation} 
-    \caption{Sequence diagram: check violation and report its validity}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.47]{Images/SequenceThirdPartyUnsafeAreas} 
-    \caption{Sequence diagram: analyse unsafe areas}
-\end{figure}
-
-
-\subsection{Use Cases}
-\subsubsection{User use cases}
+\paragraph{Use cases}\mbox{}\\
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{Images/UseCaseUserView}
@@ -784,7 +640,8 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
     \begin{enumerate}
         \item The user opens the Menu
         \item The user selects the "My reports" button in the Menu
-        \item The user is allowed to see all the previous reports he/she made\\
+        \item The user is allowed to see all the previous reports he/she made
+        and the details about them\\
     \end{enumerate}    
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user is provided
@@ -792,6 +649,29 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user doesn't have
     internet connection\\  \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
+    Name & \begin{minipage}[t]{0.7\textwidth} \textbf{Report violation mistake\\}
+    \end{minipage} \\ \hline  
+     Actor & \begin{minipage}[t]{0.7\textwidth} User\\ \end{minipage} \\ \hline 
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The user has already
+     logged in\\ \end{minipage} \\
+     \hline 
+     Events flow & \begin{minipage}[t]{0.7\textwidth} 
+    \begin{enumerate}
+        \item The user opens the Menu
+        \item The user selects the "My reports" button in the Menu
+        \item The user is allowed to report mistake\\
+    \end{enumerate}    
+    \end{minipage} \\ \hline
+     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The mistake has been
+     reported\\ \end{minipage} \\
+     \hline
+     Exceptions & \begin{minipage}[t]{0.7\textwidth} The user closes the
+     application before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
 
@@ -819,8 +699,96 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
      application before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
+\newpage
+\paragraph{Goals and requirements}\mbox{}\\
+\begin{itemize}   
+    \item $\langle$\textbf{G0}$\rangle$ SignUp to the system
+    \begin{description}
+        \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
+        registered  in the system
+        \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
+        email
+        \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
+    Use \end{description}
+    \item $\langle$\textbf{G1}$\rangle$ SignIn to the system
+    \begin{description}
+        \item $\langle$\textbf{R4}$\rangle$ the customer must be already sign up
+        \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
+        password \end{description}
+    \item $\langle$\textbf{G2}$\rangle$ Signal a violation
+    \begin{description}
+        \item $\langle$\textbf{R6}$\rangle$ the user must be able to insert one or
+        more photos of the violation
+        \item $\langle$\textbf{R7}$\rangle$ the user must send information about its
+        location
+        \item $\langle$\textbf{R8}$\rangle$ the user can add the type of violation
+        that is being reported
+    \end{description}
+    \item $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
+    \begin{description}
+        \item $\langle$\textbf{R9}$\rangle$ the user is shown the unsafe areas
+        around him
+        \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
+        unsafe areas
+        \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
+        unsafe areas 
+    \end{description}    
+    \item $\langle$\textbf{G4}$\rangle$ Manage Account
+    \begin{description}
+        \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
+        account information
+        \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
+        his/her account
+    \end{description}
+\end{itemize}
+\newpage
+\paragraph{Sequence diagrams}\mbox{}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{Images/SequenceReportViolation}
+    \caption{Sequence diagram: input traffic violation}
+\end{figure}
 
-\subsubsection{Authority user use cases}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Images/SequenceUserAnalyseUnsafeAreas} 
+    \caption{Sequence diagram: analyse unsafe areas}
+\end{figure}
+\newpage
+\subsubsection{Authorithy user}
+\paragraph{Scenario 2}\mbox{}\\
+David is a police officer of the city of Milan. He decided to apply to the
+SafeStreets’ initiative in order to have an useful work support tool. Once
+logged in, he immediatly notices that there is a traffic violation that has been
+signaled by a user and, by looking at the violation’s position with the
+application’s integrated map, he realizes that the fellony is taking place just
+1km away from his actual position. He then decides to do an immediate inspection
+of what has been happening, but when he reaches the indicated position, the car
+with that license plate is not there anymore. He chooses to leave the violation
+open and unchecked, knowing that he will check the authenticity of it by using
+the web site and that he will, eventually, emit the proper ticket in the future.
+\paragraph{Scenario 3}\mbox{}\\
+Wilbur is a police officer from Rome. He decided to
+apply to the SafeStreets’ initiative in order to have an useful work support
+tool. Once logged in, as one of his colleagues in Milan, he notices that there
+is a traffic violation that has been signaled by a user and, by looking at the
+violation’s position with the application’s integrated map, he realizes that the
+felony is taking place just 500 meters away from his actual position. He then
+decides to do an immediate inspection of what has been happening and he
+validates the veracity of the signalisation. He then closes the violation,
+reports it valid and emits the ticket to the owner of the car.
+\paragraph{Scenario 4}\mbox{}\\
+Alfred is the municipal director of Florence. He has decided to use the SafeStreet 
+application to improve performance regarding traffic violations, traffic tickets, 
+public interventions etc.
+He wants to verify the real benefit deriving from the application and he wants to know
+who is the worst civilian with major infractions. 
+After logging in as Director, will see the statistics provided by SafeStreets based 
+on previous data and data subsequent to the use of the service.
+
+\newpage
+
+\paragraph{Use cases}\mbox{}
 
 \begin{figure}[H]
     \centering
@@ -1020,6 +988,68 @@ $\langle$\textbf{G6}$\rangle$ Statistics analysis
 \end{table}
 
 \newpage
+\paragraph{Goals and requirements}
+\begin{itemize}
+\item $\langle$\textbf{G0}$\rangle$ SignUp to the system
+\begin{description}
+    \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
+    registered  in the system
+    \item $\langle$\textbf{R2}$\rangle$ the customer must provide a valid ID and
+    email
+    \item $\langle$\textbf{R3}$\rangle$ the customer must agree to the Terms of
+Use \end{description}
+\item $\langle$\textbf{G1}$\rangle$ SignIn to the system
+\begin{description}
+    \item $\langle$\textbf{R4}$\rangle$ the customer must be already signed up
+    \item $\langle$\textbf{R5}$\rangle$ the customer must insert its email and
+    password\\
+\end{description}
+\item $\langle$\textbf{G2}$\rangle$ Check Violations
+\begin{description}
+    \item $\langle$\textbf{R14}$\rangle$ the authorithy user must be able to check
+    all the new and past violations details
+    \item $\langle$\textbf{R15}$\rangle$ the authorithy user must be able to use
+    Ghiro
+    \item $\langle$\textbf{R16}$\rangle$ the authorithy user must be able to report
+    the validity of the violation \end{description}
+\item $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
+\begin{description}
+    \item $\langle$\textbf{R10}$\rangle$ the customer is allowed to filter the
+    unsafe areas
+    \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
+    unsafe areas 
+    \item $\langle$\textbf{R17}$\rangle$ the authorithy user is shown a list of
+    possible improvements to be made to the shown areas by the system
+\end{description}
+\item $\langle$\textbf{G4}$\rangle$ Manage Account
+\begin{description}
+    \item $\langle$\textbf{R12}$\rangle$ the customer must be able to modify its
+    account information
+    \item $\langle$\textbf{R13}$\rangle$ the customer must be able to delete
+    his/her account
+\end{description}  
+\item $\langle$\textbf{G5}$\rangle$ Statistics analysis
+\begin{description}
+    \item $\langle$\textbf{R18}$\rangle$ the authorithy user must be able to
+    visualize ad-hoc analysis of the Safestreets initiative created by the
+    system
+\end{description}
+\end{itemize}  
+\newpage  
+\paragraph{Sequence diagrams}\mbox{}\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.47]{Images/SequenceThirdPartyCheckViolation} 
+    \caption{Sequence diagram: check violation and report its validity}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.47]{Images/SequenceThirdPartyUnsafeAreas} 
+    \caption{Sequence diagram: analyse unsafe areas}
+\end{figure}
+
+\newpage
 \subsection{Performance requirements}
 The system is provided to serve a great number of customers simultaneously. The
 back-end must be powerful enough to accept thousands of requests at same time
@@ -1039,8 +1069,6 @@ limitations regarding the smartphones.
     4G/3G/2G/Wi-Fi)
     \item must have on board GPS (mobile devices only)
 \end{itemize}
-\subsubsection{Any Other Constraint}
-%probabilmente da cancellare (Secondo me non ci sono, a parere mio)
 \subsection{Software System Attributes}
 \subsubsection{Reliability}
 The system must be able to run 24/7 without any interruptions. Only small
@@ -1128,13 +1156,13 @@ were too big for a correct analysis with Alloy have been reduced.
 \end{figure}
 
 \begin{itemize}
-    \item From the first world in Figure 24 it can be noticed that every Police Officer has
+    \item From the first world it can be noticed that every Police Officer has
 a different Id, every User has a different FiscalCode and every Username is
 different from another. Both Users and Authorities can share the password and
 there can be many Police Officer in the same Municipality, same analogy is for
 MunicipalDirector and MunicipalEmployee.
 
-    \item From the second world in Figure 25 it can be noticed that there are two
+    \item From the second world it can be noticed that there are two
 Violations, one it's a real violation that it doesn't tampered (so it has True
 as 'isValid') and the other one it's a fake violation that it has tampered (so
 it has False as 'isValid'). The ticket genereated by the Police Officer is for
@@ -1142,13 +1170,13 @@ only the real violation (omitting all the checks that led to 'true') and not for
 the other one. Moreover, the ticket is generated only one time (in this case by
 PoliceOfficer0 and not also by PoliceOfficer1 of the same Municipality).
 
-    \item From the third world in Figure 26 it can be noticed that every PoliceOfficer have
+    \item From the third world it can be noticed that every PoliceOfficer have
 the same accessRights as well as all the Users have the same accessRights and so
 on. Classes of accessRights have been created for a reason of granularity: in
 this way the accessRight can change in the future or can be added and the
 application keeps track of the privilege of everyone.
 
-    \item From the fourth world in Figure 27 it can be noticed that every signalation is
+    \item From the fourth world it can be noticed that every signalation is
 present on the list of signalation of every PoliceOfficer of the same
 Municipality and the MunicipalDirector sees the violations in his list of
 violations of all the signalations of his Municipality of competence.
@@ -1162,10 +1190,10 @@ violations of all the signalations of his Municipality of competence.
         \textbf{Description of the task} & \textbf{MP} & \textbf{FS} &
         \textbf{GT} \\
         \hline
-        Introduction                    & 2.5   & 2     & 0     \\
-        Overall Description             & 3     & 8     & 2     \\
-        Specific requirements           & 0     & 4     & 0     \\
-        Formal analysis using Alloy     & 0     & 0     & 10    \\
+        Introduction                    & 6   & 4     & 5     \\
+        Overall Description             & 10  & 9     & 6     \\
+        Specific requirements           & 12  & 13    & 6     \\
+        Formal analysis using Alloy     & 2   & 2     & 13    \\
         \hline
     \end{tabular}
 \end{center}
