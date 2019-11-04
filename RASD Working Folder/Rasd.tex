@@ -148,7 +148,7 @@ Municipality Employee
 \subsubsection{Abbreviations}
 \paragraph{Gn:} nth goal; \paragraph{Dn:} nth assumption; \paragraph{Rn:} nth
 requirement; \paragraph{ID: } identifier (Fiscal Code for Users, a
-municipality identifier for Third Parties)
+municipality identifier for Authorithy Users)
 \subsection{Revision History}
 \begin{itemize}
     \item \textbf{04/11/2019 :} Version 1.0 released
@@ -562,7 +562,7 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \caption{Sequence diagram: analyse unsafe areas}
 \end{figure}
 \newpage
-\paragraph{Third parties}\mbox{}\\
+\paragraph{Authorithy user}\mbox{}\\
 $\langle$\textbf{G0}$\rangle$ SignUp to the system
 \begin{description}
     \item $\langle$\textbf{R1}$\rangle$ the customer must not be already
@@ -736,7 +736,7 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The user can see all
-    the unsafe areas proposed by SafeStreets and the third party\\
+    the unsafe areas proposed by SafeStreets\\
     \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}  The user doesn't have
@@ -793,12 +793,12 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \end{tabular}
 \end{table}
 
-\subsubsection{Third party use cases}
+\subsubsection{Authority user use cases}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{Images/UseCaseThirdPartyView}
-    \caption{Use Case Diagram: Third Party}
+    \caption{Use Case Diagram: Authorithy user}
 \end{figure}
 
 \begin{table}[H]
@@ -807,33 +807,33 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
      Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign Up\\}\end{minipage}
      \\
      \hline  
-     Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
+     Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
      \hline 
-     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
+     Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user is
      not already registered\\ \end{minipage} \\
      \hline 
      Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
-        \item The third party accesses SafeStreets website
-        \item The third party is asked to sign in
-        \item The third party clicks on "Sign Up"
-        \item The third party fills the registration form with all the mandatory
+        \item The authorithy user accesses SafeStreets website
+        \item The authorithy user is asked to sign in
+        \item The authorithy user clicks on "Sign Up"
+        \item The authorithy user fills the registration form with all the mandatory
         fields
-        \item The third party clicks the confirmation button
+        \item The authorithy user clicks the confirmation button
         \item The system saves the data\\
     \end{enumerate}
     \end{minipage} \\ \hline
      Exit conditions & \begin{minipage}[t]{0.7\textwidth} The system has stored
-     third party data, the third party is registered and now is able to use the
+     authority user's data, he/she is registered and now is able to use the
      website\\ \end{minipage} \\
      \hline
      Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party was already signed up
-        \item The third party doesn't fill all the mandatory fields with valid
+        \item The authorithy user was already signed up
+        \item The authorithy user doesn't fill all the mandatory fields with valid
         data
         \item The email or the AuthoritiesID is already registered
-        \item The third party closed the application beforse the process has
+        \item The authorithy user closed the application beforse the process has
         ended\\
     \end{enumerate}    
     \end{minipage} \\ \hline
@@ -846,28 +846,28 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Sign In\\} \end{minipage}
     \\
     \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
     \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
     already signed up\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party accesses SafeStreets website
-        \item The third party is asked to sign in
-        \item The third party inserts the credentials in the "Email" and
+        \item The authorithy user accesses SafeStreets website
+        \item The authorithy user is asked to sign in
+        \item The authorithy user inserts the credentials in the "Email" and
         "Password" fields.
-        \item The third party clicks on "Sign In"\\
+        \item The authorithy user clicks on "Sign In"\\
     \end{enumerate}    
     \end{minipage} \\ \hline
-    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party is
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user is
     successfully signed in\\ \end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party inserts invalid Email
-        \item The third party inserts invalid Password
-        \item The third party closes the website before the process has ended\\
+        \item The authorithy user inserts invalid Email
+        \item The authorithy user inserts invalid Password
+        \item The authorithy user closes the website before the process has ended\\
     \end{enumerate}
     \end{minipage} \\ \hline
     \end{tabular}
@@ -878,21 +878,21 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Unsafe Areas\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
     \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
     already logged in\\\end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party clicks on the menu icon
-        \item The third party click on "Unsafe ares"
-        \item The third party is allowed create and delete unsafe areas, to
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user click on "Unsafe areas"
+        \item The authorithy user is allowed create and delete unsafe areas, to
         select different filters and to search different areas\\
     \end{enumerate} 
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The unsafe areas editor
-    is presented to the third party\\\end{minipage} \\
+    is presented to the authorithy user\\\end{minipage} \\
     \hline
     Exceptions & \begin{minipage}[t]{0.7\textwidth} \end{minipage} \\ \hline
     \end{tabular}
@@ -903,31 +903,31 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check Violations\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party\\ \end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
     \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
     already logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party clicks on the menu icon
-        \item The third party clicks on "Violations"
-        \item The third party is allowed to see the list of previous and actual
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user clicks on "Violations"
+        \item The authorithy user is allowed to see the list of previous and actual
         violations (checked or not)
-        \item The third party click on "Open Details" of one particular not
+        \item The authorithy user click on "Open Details" of one particular not
         checked violation
-        \item The third party is allowed to see information about the particular
+        \item The authorithy user is allowed to see information about the particular
         violation
-        \item The third party can click "Use" on Ghiro card to find out if the
+        \item The authorithy user can click "Use" on Ghiro card to find out if the
         image is real
-        \item The third party can click "Report not valid" if the image is fake
+        \item The authorithy user can click "Report not valid" if the image is fake
         or "Report valid" if the image is real\\
     \end{enumerate}
     \end{minipage} \\ \hline
-    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The third party can
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user can
     manage the violations\\ \end{minipage} \\
     \hline
-    Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The authorithy user closes the
     website before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
@@ -937,24 +937,24 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account\\}
     \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth}Third party\\\end{minipage} \\
+    Actor & \begin{minipage}[t]{0.7\textwidth}Authorithy user\\\end{minipage} \\
     \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The third party has
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
     already logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth}
     \begin{enumerate}
-        \item The third party clicks on the menu icon
-        \item The third party click on "Manage Account"
-        \item The third party is allowed to change the email, the password or to
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user click on "Manage Account"
+        \item The authorithy user is allowed to change the email, the password or to
         delete the account\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} New user settings are
-    saved to the third party account or the account is deleted\\ \end{minipage}
+    saved to the authorithy user account or the account is deleted\\ \end{minipage}
     \\
     \hline
-    Exceptions & \begin{minipage}[t]{0.7\textwidth}The third party closes the
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The authorithy user closes the
     website before the process has ended\\ \end{minipage} \\ \hline
     \end{tabular}
 \end{table}
@@ -964,20 +964,20 @@ $\langle$\textbf{G4}$\rangle$ Manage Account
     \hline
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Check violations on the
     field\\} \end{minipage} \\ \hline  
-    Actor & \begin{minipage}[t]{0.7\textwidth} Third party(officer)\\
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user(officer)\\
     \end{minipage} \\ \hline 
-    Entry conditions & \begin{minipage}[t]{0.7\textwidth}The third party has
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth}The authorithy user has
     already logged in\\ \end{minipage} \\
     \hline 
     Events flow & \begin{minipage}[t]{0.7\textwidth} 
     \begin{enumerate}
-        \item The third party opens the Menu
-        \item The third party clicks on "Violations" button in the Menu
-        \item The third party is allowed to see the list of violations
-        \item The third party clicks on "Go check it out" button
+        \item The authorithy user opens the Menu
+        \item The authorithy user clicks on "Violations" button in the Menu
+        \item The authorithy user is allowed to see the list of violations
+        \item The authorithy user clicks on "Go check it out" button
         \item SafeStreets opens Google Maps or one other turn-by-turn navigation
         app to reach the violation location
-        \item The third party reports the violation valid or not valid\\
+        \item The authorithy user reports the violation valid or not valid\\
     \end{enumerate}
     \end{minipage} \\ \hline
     Exit conditions & \begin{minipage}[t]{0.7\textwidth} The officer can reach
