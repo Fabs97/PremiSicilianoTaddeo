@@ -6,7 +6,7 @@ one sig False extends Bool{}
 
 sig FiscalCode{}
 
-sig ThirdPartyId{}
+sig AuthorityId{}
 
 sig Username{}
 
@@ -22,7 +22,7 @@ abstract sig AccessRights{}
 --This right allows to see the list of my reports (User right)
 one sig MySignalViolations extends AccessRights{}
 
---This right allows to see unsafe areas (User and Third Parties right)
+--This right allows to see unsafe areas (User and Authorities right)
 one sig UnsafeAreaAnalysis extends AccessRights{}
 
 --This right allows to make a report (User's right)
@@ -49,8 +49,8 @@ sig User extends Customer{
 }
 
 --The system automatically assigns the municipality to the third party based on its Id
-abstract sig ThirdParty extends Customer{
-    id: one ThirdPartyId,
+abstract sig Authority extends Customer{
+    id: one AuthorityId,
     municipal : one Municipality
 }
 
@@ -63,14 +63,14 @@ sig Signalation{
     spotter: one User,
 }
 
-sig PoliceOfficer extends ThirdParty{
+sig PoliceOfficer extends Authority{
     listSignalations: set Signalation 
 }
 
-sig MunicipalEmployee extends ThirdParty{
+sig MunicipalEmployee extends Authority{
 }
 
-sig MunicipalDirector extends ThirdParty{
+sig MunicipalDirector extends Authority{
     listViolations: set Violation
 }
 
@@ -152,9 +152,9 @@ fact FiscalCodeUserConnection{
     all f : FiscalCode | some u : User | f in u.fiscalCode
 }
 
---All ThirdPartyId must be associated to a ThirdParty
+--All ThirdPartyId must be associated to an Authority
 fact IdThirdPartyConnection{
-    all i : ThirdPartyId | some t : ThirdParty | i in t.id
+    all i : AuthorityId | some t : Authority | i in t.id
 }
 
 --The Fiscal Code can be associated to only one user
@@ -162,9 +162,9 @@ fact OneUserFiscalCode{
     no disj u1,u2 : User | u1.fiscalCode = u2.fiscalCode
 } 
 
---The id can be associated to only one third party
+--The id can be associated to only one authority
 fact OneThirdPartyUserId{
-    no disj t1, t2 : ThirdParty | t1.id = t2.id
+    no disj t1, t2 : Authority | t1.id = t2.id
 }
 
 --All Date have to be associated to a TimeStamp
@@ -269,7 +269,7 @@ fact TicketsForValidViolation{
 
 --All Municipalities are referred to a Third Party or Violation
 fact MunicipalityToThirdPartyOrViolation{
-    all m : Municipality | some t : ThirdParty | m in t.municipal
+    all m : Municipality | some t : Authority | m in t.municipal
 }
 
 fact SameViolationSameId{
