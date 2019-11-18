@@ -29,6 +29,35 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
+INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
 OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/ddreferences.ref
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/commands.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/commands.tex
@@ -197,10 +226,7 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aer.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aer.fd
-INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer10.tfm
-INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
@@ -246,32 +272,6 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/xifthen/xifthen.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/xifthen/xifthen.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
-INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
-INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
-INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/nul
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
-INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
