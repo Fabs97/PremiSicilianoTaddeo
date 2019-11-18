@@ -17,6 +17,18 @@ INPUT c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/ddreferences.ref
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/commands.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/commands.tex
@@ -34,18 +46,6 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/todonotes/todonotes.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/todonotes/todonotes.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
@@ -301,11 +301,18 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/title.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/title.tex
-INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
-INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aett10.tfm
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/logo_polimi.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/logo_polimi.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/logo_polimi.png
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aebx12.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aess.fd
@@ -313,20 +320,20 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aess.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aessbx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer9.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aett9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aebx12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aebx12.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/vf/public/ae/aett10.vf
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aebx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/vf/public/ae/aessbx10.vf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2019/texmf-dist/fonts/vf/public/ae/aer12.vf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -357,9 +364,9 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmu10.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aebx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/vf/public/ae/aebx10.vf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
@@ -409,6 +416,9 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/02ArchitecturalDesign.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/02ArchitecturalDesign.tex
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex
@@ -418,6 +428,8 @@ INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilian
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.aux
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
+INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -425,5 +437,4 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
