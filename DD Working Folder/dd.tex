@@ -1,7 +1,8 @@
-\documentclass[draft]{report}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-
+\usepackage{graphicx}
+\graphicspath{ {chapters/resources/images} }
 \newwrite\outputstream
 \immediate\openout\outputstream=ddreferences.ref
 
@@ -9,7 +10,6 @@
 \input{dd/links.tex}
 
 \begin{document}
-
 \input{dd/title.tex}
 
 \tableofcontents
