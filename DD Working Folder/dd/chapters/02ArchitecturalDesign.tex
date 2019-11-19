@@ -22,10 +22,70 @@
     The following image shows the high-level architecture of the system without
     providing any detail of the components which will form the structure of the
     software itself, which will be tackled later in this document.
+    
     \begin{figure}[H]
         \includegraphics[scale=0.45]{dd/resources/images/HighLevelStructure.png}
         \caption{High-level architecture}        
     \end{figure}
+ 
+    The introduction of the \textbf{P}resentation layer has been considered in
+    order to allow a thin client architecture and let less performing devices
+    access SafeStreets initiative and give a smoother feeling when using either
+    the mobile or web version of the software. By doing so, this allows also for
+    an high reusability of the code, since the logic is all implemented in the
+    single \textbf{A}pplication layer, which allows different devices to access
+    the same logic. The latter is the only tier which deals with two other tiers
+    at the same time and is in charge of accessing data from the
+    \textbf{D}atabase layer and pass it to the clients back and forth. In
+    addition, the \emph{man in the middle} communicates with the Data tier
+    synchronously when it comes to access the needed data, but asynchronously
+    when storing and writing actions are required.\\
+    \\
+    The software will exploit a \textbf{P}latform \textbf{a}s \textbf{a}
+    \textbf{S}ervice (\textbf{\emph{PaaS}}) provided by
+    Amazon\textsuperscript{\textcopyright}. It has been chosen to create a
+    \textbf{V}\textbf{P}\textbf{C} in order to attend the requirements stated in
+    section 3.5 \emph{"Software System Attributes"} of the RASD. This will help
+    also to augment the system scalability and improve the perfomances, as well
+    as the reliability and security of the information stored in the system. \\
+    The system is going to be modeled on a \emph{scale out} architecture: this
+    will be improve the performance, as well as the failure management, by
+    replicating nodes. This kind of architecture has been chosen, instead of a
+    scale up architecture, as the latter is not suitable for a system thatplans
+    to be eventually expanded and furtherly serve more and more customers. It
+    comes without saying that the chosen kind of architecture will require the
+    implementation of a \emph{load-balancing system} as well as a
+    \emph{\textbf{S}hared \textbf{D}isk \textbf{C}onfiguration} (\textbf{SDC})
+    in order to let all hardware write and read the same information at any
+    moment. The latter has been chosen over a Shared Memory Configuration as it
+    provides a certain degree of fault tolerance and does not create a
+    bottleneck on the memory bus.\\
+    Furthermore, in order to comply to the correct chain of custody that the
+    system requires and to protect all sensible information of all customers,
+    the installation of a proper \textbf{D}e\textbf{M}ilitarized \textbf{Z}one
+    (\textbf{\emph{DMZ}}) is needed. This is accomplished by a series of
+    firewalls created around the core tier of the software, the
+    \emph{Application Tier}, the one that, if compromised by malicious users,
+    could provide access to both other layers.\\ 
+    \\ 
+    The following image shows a detailed representation of the concepts above
+    explained. Thanks to the decision of exploiting
+    Amazon\textsuperscript{\textcopyright}'s services and its VPC, all the above
+    mentioned architectural characteristics are automatically implemented, as
+    the whole service is customizable and easily implementable.
+
+    \begin{figure}[H]
+        \includegraphics[scale=0.3]{dd/resources/images/ArchitecturalStructure.png}
+        \caption{Architectural structure} 
+    \end{figure}
+
+    It is easily noticeable that there is no mention of the photo forensic
+    software (\emph{Ghiro, per instance}) as this general architecture focuses
+    on the software itself. Any additional photo forensic software, like the one
+    proposed, has to be considered part of the "package" sold, but not needed to
+    be developed as an already functioning software has been chosen. The sole
+    purpose of SafeStreets is to ensure that the program is actually used and
+    allow an automatic redirection to it. 
 
     \section{Component view}
     \begin{figure}[H]
@@ -73,7 +133,7 @@
     to deployment targets(node). Artifacts represents elements obtained with a
     development process. Nodes can represent either hardware or software environments.
     \begin{figure}[H]
-        \includegraphics[scale=0.4]{dd/resources/images/Deployment Diagram.png}
+        \includegraphics[scale=0.35]{dd/resources/images/DeploymentDiagram.png}
         \caption{Deployment view}        
     \end{figure}
     The three tiers contain:
@@ -142,3 +202,26 @@
             MVC is also very useful because the decoupling of these three
             components allows parallel development and code reuse.
     \section{Other design decisions}
+    \subsection{Virtual Private Cloud}
+    It has been chosen to exploit the services of
+    Amazon\textsuperscript{\textcopyright} in order to simplify the process of
+    creation and future modification of the architecture, in case any of the
+    constraints should be needed to adapt to the constantly changing market's
+    requirements. \emph{Amazon\textsuperscript{\textcopyright} VPC} is the
+    networking layer for Amazon\textsuperscript{\textcopyright} \textbf{EC2}
+    (\textbf{A}mazon\textsuperscript{\textcopyright} \textbf{E}lastic
+    \textbf{C}ompute \textbf{C}loud), which provides scalable computing capacity
+    on the \textbf{A}mazon\textsuperscript{\textcopyright} \textbf{W}eb
+    \textbf{S}ervices cloud (\textbf{AWS}). This service provides a series of
+    features as, for example, the ones important to SafeStreets' initiative:
+    \begin{itemize}
+        \item Virtual computing environments (\emph{or instances});
+        \item Various configurations of CPU, memory, storage and networking
+        capacity (\emph{instance types});
+        \item Firewalls that enable developers to specify protocols, ports and
+        source IP ranges that can reach the \emph{instances} using
+        \emph{security groups};
+        \item Static IPv4 addresses for dynamic cloud computing, known as
+        Elastic IP addresses. This is used in case of failure of an instance by
+        rapidly remapping the failed address to another existing instance;
+    \end{itemize}
