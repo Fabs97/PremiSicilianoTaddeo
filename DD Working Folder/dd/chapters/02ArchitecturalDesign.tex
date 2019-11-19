@@ -97,7 +97,42 @@
         \subsection{Request data regarding a group of people}
         \subsection{Request data regarding a particular user by providing his/her UUID}
     \section{Component interface}
-    \section{Selected architectural styles and patterns}    
+    \section{Selected architectural styles and patterns}  
+    The architecture of SafeStreets is multilayered, composed of three tiers:
+    \begin{itemize}
+        \item \textbf{Presentation layer}: is used to present the data in a way
+        that the user can understand. It enables the usage of the services
+        offered to the user. The presentation layer of the the users is the
+        smartphone and for authority users are both the smartphone and the browser.
+        \item \textbf{Application layer}: is used to coordinate the application.
+        It receives and computes the requests send by the presentation layer and
+        it also interacts with the database.
+        \item \textbf{Database layer}: stores the information provided by the
+        application layer. The information is also passed back to the
+        application tier for processing.
+    \end{itemize}    
+    Three tier architecture is very useful because it allows to change or upgrade
+    one of the three tiers without any problem and so it makes the system more
+    flexible and reusable. Furthermore it makes the system safer because it
+    separates the access to data from the other layers.
+  
         \subsection{Design Patterns}
             \subsubsection*{Model View Controller (MVC)}
+            \begin{figure}[H]
+                \includegraphics[scale=0.9]{dd/resources/images/MVC.png}
+                \caption{Model view controller}        
+            \end{figure}
+            Model view controller is a very useful and quoted design pattern.
+            MVC is used to separate the fundamental parts of the application and
+            in particular it  emphasizes a separation between the software’s
+            business logic and display.
+            The three parts of Model View Controller design pattern are:
+            \begin{itemize}
+                \item \textbf{Model}: manages all the data and the business logic
+                \item \textbf{View}: handles the GUI used by all the users
+                \item \textbf{Controller}: acts on both model and view, it
+                routes commands to the view and model elements  
+            \end{itemize}    
+            MVC is also very useful because the decoupling of these three
+            components allows parallel development and code reuse.
     \section{Other design decisions}

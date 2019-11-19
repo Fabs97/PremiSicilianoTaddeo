@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  18 NOV 2019 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  19 NOV 2019 10:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -983,7 +983,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...}Integration and testing}{13}{section.5.2}
+l.32 ...}Integration and testing}{15}{section.5.2}
                                                   % [1
 
 ])
@@ -1025,9 +1025,20 @@ Overfull \hbox (113.10338pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
-[9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png>]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [10]
+[9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png>] [10]
+<dd/resources/images/MVC.png, id=296, 481.8pt x 361.35pt>
+File: dd/resources/images/MVC.png Graphic file (type png)
+<use dd/resources/images/MVC.png>
+Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 122.
+(pdftex.def)             Requested size: 433.61598pt x 325.21199pt.
+
+Overfull \hbox (88.61598pt too wide) in paragraph at lines 122--123
+[][] 
+ []
+
+[11 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [12]
 Chapter 3.
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex [11
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex [13
 
 ]
 Chapter 4.
@@ -1036,7 +1047,7 @@ Overfull \hbox (6.84218pt too wide) in paragraph at lines 1--1
 |[]\T1/aer/bx/n/24.88 Requirements trace-abil-
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/05ImplementationIntegrationAndTestPlan.tex [12
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/05ImplementationIntegrationAndTestPlan.tex [14
 
 ]
 Chapter 5.
@@ -1045,7 +1056,7 @@ Overfull \hbox (19.28183pt too wide) in paragraph at lines 1--1
 |[]\T1/aer/bx/n/24.88 Implementation, in-te-gra-
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [13
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [15
 
 ]
 Chapter 6.
@@ -1088,7 +1099,7 @@ New spreadtab: \begin{tabular}{|l|l|}
 * building tab: ok
 End of spreadtab: \end{tabular}
 
-) [14
+) [16
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
@@ -1101,20 +1112,20 @@ Package rerunfilecheck Info: File `dd.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
- 32115 strings out of 492167
- 595941 string characters out of 6129158
+ 32124 strings out of 492167
+ 596160 string characters out of 6129158
  690976 words of memory out of 5000000
- 35862 multiletter control sequences out of 15000+600000
+ 35868 multiletter control sequences out of 15000+600000
  579027 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,98p,603b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{chapReferences} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (15 pages, 224656 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (17 pages, 296337 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
- 61 named destinations out of 1000 (max. 500000)
- 412 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 
