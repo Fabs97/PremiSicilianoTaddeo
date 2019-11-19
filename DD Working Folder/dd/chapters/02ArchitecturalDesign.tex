@@ -28,7 +28,10 @@
     \end{figure}
 
     \section{Component view}
-    %inserire immagine component view uml
+    \begin{figure}[H]
+        \includegraphics[scale=0.19,angle=90]{dd/resources/images/ComponentDiagram.png}
+        \caption{Component Diagram}        
+    \end{figure}
     \begin{itemize}
         \item \textbf{Router}:it manages messages and function calls coming from
         other subsystems in order to pass the data to the correct element of the
@@ -43,6 +46,8 @@
         \item \textbf{SignInManager}: it contains all the logic devoted to the
         authentication of the customers. It check the authentication parameters
         using the data stored on the DBMS.
+        \item \textbf{AccountManager}: this component provides all the
+        procedures to manage the account
         \item \textbf{SignalViolationManager}: it deals with the signalations of
         violations made by the users. This component has to verify that all the
         inserted data are correct and if not has to immediately ask the user to
@@ -53,10 +58,11 @@
         \item \textbf{ViolationsListManager}: with this component the user can
         see all the violations he/she has reported. The authority user can see
         all the violations reported in his/her area.
-        \item \textbf{ViolationsCheckingManager}: this component provides the authority user 
+        \item \textbf{ViolationsCheckingManager}: this component provides the
+        authority user the ability to check che violations.
         \item \textbf{StatisticsManager}: this component provides the authority
         user the possibility to see all the statistic generated crossing the
-        data on violations. It receives all the information from the DBMS.
+        data on violations. 
         \item \textbf{CrossDataManager}: it crosses data from SafeStreets
         database and from the municipality database to generate the statistics
         and the unsafe areas.

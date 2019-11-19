@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  19 NOV 2019 10:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  19 NOV 2019 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -900,20 +900,20 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/links.tex) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.aux)
 \openout1 = `dd.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count346
@@ -940,7 +940,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box74
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 16.
  (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -948,9 +948,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
  (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.out)
 \@outlinefile=\write5
 \openout5 = `dd.out'.
@@ -983,7 +983,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...}Integration and testing}{15}{section.5.2}
+l.32 ...}Integration and testing}{18}{section.5.2}
                                                   % [1
 
 ])
@@ -1014,31 +1014,40 @@ Package pdftex.def Info: dd/resources/images/HighLevelStructure.png  used on inp
 (pdftex.def)             Requested size: 344.63437pt x 150.86223pt.
 [7
 
-] [8 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/HighLevelStructure.png>]
-<dd/resources/images/Deployment Diagram.png, id=285, 1145.27875pt x 876.27374pt>
+]
+<dd/resources/images/ComponentDiagram.png, id=279, 2590.67876pt x 1386.17876pt>
+File: dd/resources/images/ComponentDiagram.png Graphic file (type png)
+<use dd/resources/images/ComponentDiagram.png>
+Package pdftex.def Info: dd/resources/images/ComponentDiagram.png  used on input line 32.
+(pdftex.def)             Requested size: 492.23409pt x 263.3767pt.
+ [8 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/HighLevelStructure.png>]
+Overfull \vbox (3.12392pt too high) has occurred while \output is active []
+
+ [9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/ComponentDiagram.png>]
+<dd/resources/images/Deployment Diagram.png, id=292, 1145.27875pt x 876.27374pt>
 File: dd/resources/images/Deployment Diagram.png Graphic file (type png)
 <use dd/resources/images/Deployment Diagram.png>
-Package pdftex.def Info: dd/resources/images/Deployment Diagram.png  used on input line 70.
+Package pdftex.def Info: dd/resources/images/Deployment Diagram.png  used on input line 76.
 (pdftex.def)             Requested size: 458.10338pt x 350.50328pt.
 
-Overfull \hbox (113.10338pt too wide) in paragraph at lines 70--71
+Overfull \hbox (113.10338pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-[9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png>] [10]
-<dd/resources/images/MVC.png, id=296, 481.8pt x 361.35pt>
+[10] [11 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Deployment Diagram.png>]
+<dd/resources/images/MVC.png, id=303, 481.8pt x 361.35pt>
 File: dd/resources/images/MVC.png Graphic file (type png)
 <use dd/resources/images/MVC.png>
-Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 122.
+Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 128.
 (pdftex.def)             Requested size: 433.61598pt x 325.21199pt.
 
-Overfull \hbox (88.61598pt too wide) in paragraph at lines 122--123
+Overfull \hbox (88.61598pt too wide) in paragraph at lines 128--129
 [][] 
  []
 
-[11 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [12]
+[12]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [13 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>] [14]
 Chapter 3.
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex [13
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex [15
 
 ]
 Chapter 4.
@@ -1047,16 +1056,16 @@ Overfull \hbox (6.84218pt too wide) in paragraph at lines 1--1
 |[]\T1/aer/bx/n/24.88 Requirements trace-abil-
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/05ImplementationIntegrationAndTestPlan.tex [14
+[16
 
-]
+]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/05ImplementationIntegrationAndTestPlan.tex [17]
 Chapter 5.
 
 Overfull \hbox (19.28183pt too wide) in paragraph at lines 1--1
 |[]\T1/aer/bx/n/24.88 Implementation, in-te-gra-
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [15
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [18
 
 ]
 Chapter 6.
@@ -1099,33 +1108,33 @@ New spreadtab: \begin{tabular}{|l|l|}
 * building tab: ok
 End of spreadtab: \end{tabular}
 
-) [16
+) [19
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `dd.out' has not changed.
 (rerunfilecheck)             Checksum: CCEB3F56ABDBFCDE51771DA0B5255434;2498.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 32124 strings out of 492167
- 596160 string characters out of 6129158
+ 32135 strings out of 492167
+ 596480 string characters out of 6129158
  690976 words of memory out of 5000000
- 35868 multiletter control sequences out of 15000+600000
+ 35874 multiletter control sequences out of 15000+600000
  579027 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,98p,603b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,98p,603b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{chapReferences} has been referenced but does not exist, replaced by a fixed one
 
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (17 pages, 296337 bytes).
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (20 pages, 398524 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

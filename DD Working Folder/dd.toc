@@ -11,27 +11,27 @@
 \contentsline {section}{\numberline {1.6}Document Structure}{6}{section.1.6}% 
 \contentsline {chapter}{\numberline {2}Architectural design}{7}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}\textit {Overview}: High-level components and their interaction}{7}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Component view}{8}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Deployment view}{9}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Run-time view}{10}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Synchronization}{10}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Request data regarding a group of people}{10}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}Request data regarding a particular user by providing his/her UUID}{10}{subsection.2.4.3}% 
-\contentsline {section}{\numberline {2.5}Component interface}{10}{section.2.5}% 
-\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{10}{section.2.6}% 
-\contentsline {subsection}{\numberline {2.6.1}Design Patterns}{11}{subsection.2.6.1}% 
-\contentsline {section}{\numberline {2.7}Other design decisions}{12}{section.2.7}% 
-\contentsline {chapter}{\numberline {3}User interface design}{13}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Interface mockups}{13}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}UX Diagrams}{13}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Mobile application}{13}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Web application}{13}{subsection.3.2.2}% 
-\contentsline {chapter}{\numberline {4}Requirements traceability}{14}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{15}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Implementation plan}{15}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Integration and testing}{15}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Entry criteria}{15}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{15}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{15}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{15}{subsection.5.2.4}% 
-\contentsline {chapter}{\numberline {6}Effort spent}{16}{chapter.6}% 
+\contentsline {section}{\numberline {2.2}Component view}{9}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Deployment view}{10}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Run-time view}{12}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Synchronization}{12}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Request data regarding a group of people}{12}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Request data regarding a particular user by providing his/her UUID}{12}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}Component interface}{12}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{12}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Design Patterns}{13}{subsection.2.6.1}% 
+\contentsline {section}{\numberline {2.7}Other design decisions}{14}{section.2.7}% 
+\contentsline {chapter}{\numberline {3}User interface design}{15}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Interface mockups}{15}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}UX Diagrams}{15}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Mobile application}{15}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Web application}{15}{subsection.3.2.2}% 
+\contentsline {chapter}{\numberline {4}Requirements traceability}{16}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{18}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Implementation plan}{18}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Integration and testing}{18}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Entry criteria}{18}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{18}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{18}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{18}{subsection.5.2.4}% 
+\contentsline {chapter}{\numberline {6}Effort spent}{19}{chapter.6}% 
