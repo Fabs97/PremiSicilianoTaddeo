@@ -196,3 +196,26 @@
             MVC is also very useful because the decoupling of these three
             components allows parallel development and code reuse.
     \section{Other design decisions}
+    \subsection{Virtual Private Cloud}
+    It has been chosen to exploit the services of
+    Amazon\textsuperscript{\textcopyright} in order to simplify the process of
+    creation and future modification of the architecture, in case any of the
+    constraints should be needed to adapt to the constantly changing market's
+    requirements. \emph{Amazon\textsuperscript{\textcopyright} VPC} is the
+    networking layer for Amazon\textsuperscript{\textcopyright} \textbf{EC2}
+    (\textbf{A}mazon\textsuperscript{\textcopyright} \textbf{E}lastic
+    \textbf{C}ompute \textbf{C}loud), which provides scalable computing capacity
+    on the \textbf{A}mazon\textsuperscript{\textcopyright} \textbf{W}eb
+    \textbf{S}ervices cloud (\textbf{AWS}). This service provides a series of
+    features as, for example, the ones important to SafeStreets' initiative:
+    \begin{itemize}
+        \item Virtual computing environments (\emph{or instances});
+        \item Various configurations of CPU, memory, storage and networking
+        capacity (\emph{instance types});
+        \item Firewalls that enable developers to specify protocols, ports and
+        source IP ranges that can reach the \emph{instances} using
+        \emph{security groups};
+        \item Static IPv4 addresses for dynamic cloud computing, known as
+        Elastic IP addresses. This is used in case of failure of an instance by
+        rapidly remapping the failed address to another existing instance;
+    \end{itemize}
