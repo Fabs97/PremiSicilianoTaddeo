@@ -22,7 +22,7 @@
     The following image shows the high-level architecture of the system without
     providing any detail of the components which will form the structure of the
     software itself, which will be tackled later in this document.
-    
+
     \begin{figure}[H]
         \includegraphics[scale=0.45]{dd/resources/images/HighLevelStructure.png}
         \caption{High-level architecture}        
@@ -225,3 +225,14 @@
         Elastic IP addresses. This is used in case of failure of an instance by
         rapidly remapping the failed address to another existing instance;
     \end{itemize}
+    \subsection{Thin Client}
+    In a "Thin Client" architecture the server does most of the work while the
+    client is lightweight. In this architecture the client is designed to be
+    online all the time and to communicate with a server. If network connection is down
+    the application of course doesn't work, but we don't need to implement any
+    offline modules because the core idea of the application is comunication
+    itself. Furthermore thin client architecture allows the application to keep
+    all the real business logic protected on the server. \\Google Maps APIs could
+    be considered an exception to this paradigm because are used directly by the
+    client.
+     
