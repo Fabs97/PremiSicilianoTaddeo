@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  21 NOV 2019 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  21 NOV 2019 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -983,7 +983,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ... integration and test plan}{20}{chapter.5}
+l.32 ... integration and test plan}{21}{chapter.5}
                                                   % [1
 
 ])
@@ -1065,22 +1065,33 @@ Overfull \hbox (55.85356pt too wide) in paragraph at lines 136--137
  []
 
 [11] [12 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/DeploymentDiagram.png>]
-<dd/resources/images/MVC.png, id=325, 481.8pt x 361.35pt>
-File: dd/resources/images/MVC.png Graphic file (type png)
-<use dd/resources/images/MVC.png>
-Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 188.
-(pdftex.def)             Requested size: 433.61598pt x 325.21199pt.
+<dd/resources/images/ComponentInterfaces.png, id=325, 1476.51625pt x 1125.20375pt>
+File: dd/resources/images/ComponentInterfaces.png Graphic file (type png)
+<use dd/resources/images/ComponentInterfaces.png>
+Package pdftex.def Info: dd/resources/images/ComponentInterfaces.png  used on input line 167.
+(pdftex.def)             Requested size: 442.9583pt x 337.56374pt.
 
-Overfull \hbox (88.61598pt too wide) in paragraph at lines 188--189
+Overfull \hbox (97.9583pt too wide) in paragraph at lines 167--168
 [][] 
  []
 
-[13]
+[13 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/ComponentInterfaces.png>]
+<dd/resources/images/MVC.png, id=333, 481.8pt x 361.35pt>
+File: dd/resources/images/MVC.png Graphic file (type png)
+<use dd/resources/images/MVC.png>
+Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 192.
+(pdftex.def)             Requested size: 433.61598pt x 325.21199pt.
+
+Overfull \hbox (88.61598pt too wide) in paragraph at lines 192--193
+[][] 
+ []
+
+[14]
 LaTeX Font Info:    Font shape `OMS/aer/m/it' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
- [14 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [15]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 214.
+ [15 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [16]
 Chapter 3.
-<dd/resources/images/UX-diagram-mobile-user.png, id=341, 1155.31625pt x 442.65375pt>
+<dd/resources/images/UX-diagram-mobile-user.png, id=348, 1155.31625pt x 442.65375pt>
 File: dd/resources/images/UX-diagram-mobile-user.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-mobile-user.png>
 Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-user.png  used on input line 12.
@@ -1090,7 +1101,7 @@ Overfull \hbox (117.11832pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
-<dd/resources/images/UX-diagram-mobile-authorityUser.png, id=342, 1135.24126pt x 403.5075pt>
+<dd/resources/images/UX-diagram-mobile-authorityUser.png, id=349, 1135.24126pt x 403.5075pt>
 File: dd/resources/images/UX-diagram-mobile-authorityUser.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-mobile-authorityUser.png>
 Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-authorityUser.png  used on input line 16.
@@ -1100,10 +1111,10 @@ Overfull \hbox (109.08846pt too wide) in paragraph at lines 16--17
 [][] 
  []
 
-[16
+[17
 
  <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/UX-diagram-mobile-user.png>]
-<dd/resources/images/UX-diagram-web.png, id=349, 1135.24126pt x 412.54124pt>
+<dd/resources/images/UX-diagram-web.png, id=356, 1135.24126pt x 412.54124pt>
 File: dd/resources/images/UX-diagram-web.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-web.png>
 Package pdftex.def Info: dd/resources/images/UX-diagram-web.png  used on input line 21.
@@ -1113,23 +1124,23 @@ Overfull \hbox (109.08846pt too wide) in paragraph at lines 21--22
 [][] 
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex [17 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/UX-diagram-mobile-authorityUser.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/UX-diagram-web.png>]
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/04RequirementsTraceability.tex [18 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/UX-diagram-mobile-authorityUser.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/UX-diagram-web.png>]
 Chapter 4.
 
 Overfull \hbox (6.84218pt too wide) in paragraph at lines 1--1
 |[]\T1/aer/bx/n/24.88 Requirements trace-abil-
  []
 
-[18
+[19
 
-]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/05ImplementationIntegrationAndTestPlan.tex [19]
+]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/05ImplementationIntegrationAndTestPlan.tex [20]
 Chapter 5.
 
 Overfull \hbox (19.28183pt too wide) in paragraph at lines 1--1
 |[]\T1/aer/bx/n/24.88 Implementation, in-te-gra-
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [20
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [21
 
 ]
 Chapter 6.
@@ -1172,7 +1183,7 @@ New spreadtab: \begin{tabular}{|l|l|}
 * building tab: ok
 End of spreadtab: \end{tabular}
 
-) [21
+) [22
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
@@ -1181,24 +1192,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `dd.out' has not changed.
-(rerunfilecheck)             Checksum: E3697DF4C4D6CD6E6FE2FCB6B461C4FE;2638.
+(rerunfilecheck)             Checksum: 27161E631ACD9250CA7B883861775283;2639.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 32190 strings out of 492167
- 598086 string characters out of 6129158
+ 32199 strings out of 492167
+ 598414 string characters out of 6129158
  689976 words of memory out of 5000000
- 35908 multiletter control sequences out of 15000+600000
+ 35914 multiletter control sequences out of 15000+600000
  585812 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,98p,603b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{chapReferences} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (22 pages, 553296 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (23 pages, 645417 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 463 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -16,7 +16,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Synchronization}{section.2.4}% 16
 \BOOKMARK [2][-]{subsection.2.4.2}{Request data regarding a group of people}{section.2.4}% 17
 \BOOKMARK [2][-]{subsection.2.4.3}{Request data regarding a particular user by providing his/her UUID}{section.2.4}% 18
-\BOOKMARK [1][-]{section.2.5}{Component interface}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{Component interfaces}{chapter.2}% 19
 \BOOKMARK [1][-]{section.2.6}{Selected architectural styles and patterns}{chapter.2}% 20
 \BOOKMARK [2][-]{subsection.2.6.1}{Design Patterns}{section.2.6}% 21
 \BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter.2}% 22
