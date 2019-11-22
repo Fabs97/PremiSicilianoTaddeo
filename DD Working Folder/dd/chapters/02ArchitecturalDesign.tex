@@ -159,9 +159,70 @@
         the municipality database for cross references.
     \end{itemize}    
     \section{Run-time view}
-        \subsection{Synchronization}
-        \subsection{Request data regarding a group of people}
-        \subsection{Request data regarding a particular user by providing his/her UUID}
+        \subsection{Make a report}
+        ***
+        Immagine da caricare
+        ***
+        In this sequence diagram the process through which a user, already logged 
+        in, can signal a violation to the authorities is shown. Once the web app 
+        has rendered the page to report a violation, the user can insert all the
+        needed input data to perform the action (the position, photos of hard evidence, 
+        type of violation are here thought to be contained in the request object. 
+        The position is assumed to be entered by the user manually, the detection of 
+        the online location by Google Maps is neglected). When submitted, the request 
+        is sent to the Router, which forwards it to the right component, i.e. the 
+        'SignalViolationManager'. The latter is responsible for checking the input 
+        inserted by the user: if there are some missing or invalid input, an error 
+        message is sent back to the user who can recompile the form and resubmit the 
+        new data. Otherwise, if all the inputs are valid, the request with all data of 
+        the violation and the parameter user set to the user who have done the report 
+        is sent to 'ViolationListsManager', which forwards it to the DBMS (which adds 
+        it to the list of reports of that municipality). At this point, the DBMS send 
+        the confirm of the operation to the components up to the user who it's ready to 
+        send other reports or to return to his menu.
+
+        \subsection{SignUp and SignIn}
+        ***
+        Immagine da caricare
+        ***
+        In this sequence diagram the process of sign up and subsequently sign in is shown. 
+        Once the WebApp has rendered the page to signup, the Police Officer insert his data 
+        (AuthorityId, email, password). When submitted, the request is sent to the Router, 
+        which forwards it to the right component, i.e. the 'SignUpManager'. The latter is 
+        responsible for checking the input inserted by the Police Officer: if there are some 
+        missing or invalid input or the Authority results already registered, an error message 
+        is sent back to the user. Otherwise, if all the inputs are valid, SignUpManager analyze 
+        the AuthorityId and understand the municipality of competence of the Police Officer 
+        and his rights, so it adds the parameters of municipality and rights to the other data 
+        and send them to the DBMS which add a new AuthorityUser. At this point, the DBMS send 
+        the confirm of the operation to the components up to the user who can, if he want, 
+        sign in to the service. He therefore, once the WebApp has rendered the page to signin, 
+        inserts his Id and password. When submitted, the request is sent to the Router, which 
+        forwards it to the right component, i.e. the 'SignInManager'. The latter is responsible 
+        for checking the input and asks to the DBMS if there exists a couple <Id,password> into 
+        the database. If there no exists, SignInManager send an error to the user, otherwise, 
+        once understand the right of the user (i.e. PoliceOfficerRights) and his municipality, 
+        he send these data to the WebApp which shows the personal menu to the Police Officer. 
+
+        \subsection{Analyze Unsafe Areas}
+        ***
+        Immagine da caricare
+        ***
+        In this sequence diagram the process of analyze the Unsafe Areas is shown. The Municipal 
+        Employee request the UnsafeAreaPage to the WebApp which forwards the request to the Router 
+        adding the Id of the municipal employee. The Routher forwards it to the right component, 
+        i.e. the 'UnsafeAreaManager'. The latter understand, through the Id, the municipality of 
+        competence of the Municipal Employee and asks the map to Google Maps. Therefore the map 
+        of the municipality is sent up to the employee. At this point, the employee can add filters 
+        to his maps and, through the same chain, UnsafeAreaManager receives the map from Google 
+        Maps and forwards it and the filters to CrossDataManager. The latter forwards all the data 
+        to the Municipality Database which responds with the map filtered. Moreover the CrossDataManager 
+        forwards all the data to the DBMS of SafeStreets which responds with the map and signalation. 
+        Now CrossDataManager has all the data that it needs to cross the data and he sends the resulting 
+        map up to the employee. The employee can decide to update or delete or add suggestions and he 
+        send them to UnsafeAreaManager which forwards them to the DBMS of Safestreets, the process ends 
+        with the confirm of the DBMS sent up to the employee.
+
     \newpage
     \section{Component interfaces}
     \begin{figure}[H]
