@@ -1,7 +1,48 @@
 \defChapterTarget[ImplementationIntegrationAndTestPlan]{Implementation, integration and test plan}
     \section{Implementation plan}
+    SafeStreets system is composed by different subsystems:
+    \begin{itemize}
+        \item MobileApp
+        \item WebServerApp
+        \item AuhtorityUserWebApp
+        \item ApplicationServer
+        \item SafeStreets DBMS
+    \end{itemize}   
+    All SafeStreets subsystems need to be implemented, tested and integrated
+    using a bottom-up approach. With a bottom-up strategy it's possible to
+    develop lower level components first and then to reuse them in order to
+    create higher level elements. Bottom-up approach also allows better testing
+    of all the different components. It's important to show a visible
+    application feature during all the steps of the development.\\
+    There also are some external subsystems: 
+    \begin{itemize}
+        \item Municipality DBMS
+        \item Google Maps
+        \item Plate Recognizer
+        \item Ghiro
+    \end{itemize}   
+    All the external subsystems, of course, are not implemented and tested
+    because are develope by other people and they can be considered trustworthy.\\
+    It's useful to create a list with all the features, their importance for the
+    customer and their difficulty of Implementation in order to have a better
+    estimation of the order and the time needed to meet clients requirements.
+    \begin{table}[]
+        \begin{tabular}{|l|l|l|}
+        \hline
+         \textbf{Feature} & \textbf{Importance for the customer}  & \textbf{Implementation difficulty}  \\ \hline
+         SignUp and SignIn & Low  & Low  \\ \hline
+         Signal a violation & High  & High  \\ \hline
+         Manage previous reports & Medium  & Medium  \\ \hline
+         Visualize unsafe areas & High & High  \\ \hline
+         Manage Account Settings & High & Low  \\ \hline
+         Violation Checking & High & High  \\ \hline
+         Visualize Statistics & High & High  \\ \hline
+        \end{tabular}
+        \end{table}
+    
     \section{Integration and testing}
         \subsection{Entry criteria}
         \subsection{Elements to be integrated}
         \subsection{Integration testing strategy}
         \subsection{Sequence of component/function integration}
+    
