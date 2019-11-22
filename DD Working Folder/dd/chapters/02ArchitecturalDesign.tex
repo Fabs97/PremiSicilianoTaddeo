@@ -159,10 +159,11 @@
         the municipality database for cross references.
     \end{itemize}    
     \section{Run-time view}
-        \subsection{Make a report}
-        ***
-        Immagine da caricare
-        ***
+        \subsection{Signal a violation}
+        \begin{figure}[H]
+            \includegraphics[scale=0.35]{dd/resources/images/RuntimeView-SignalViolation}
+            \caption{Runtime View - Signal a violation}        
+        \end{figure}
         In this sequence diagram the process through which a user, already logged 
         in, can signal a violation to the authorities is shown. Once the web app 
         has rendered the page to report a violation, the user can insert all the
@@ -182,9 +183,10 @@
         send other reports or to return to his menu.
 
         \subsection{SignUp and SignIn}
-        ***
-        Immagine da caricare
-        ***
+        \begin{figure}[H]
+            \includegraphics[scale=0.35]{dd/resources/images/RuntimeView-SignUp+SignIn}
+            \caption{Runtime View - SignUp and SignIn}        
+        \end{figure}
         In this sequence diagram the process of sign up and subsequently sign in is shown. 
         Once the WebApp has rendered the page to signup, the Police Officer insert his data 
         (AuthorityId, email, password). When submitted, the request is sent to the Router, 
@@ -205,9 +207,10 @@
         he send these data to the WebApp which shows the personal menu to the Police Officer. 
 
         \subsection{Analyze Unsafe Areas}
-        ***
-        Immagine da caricare
-        ***
+        \begin{figure}[H]
+            \includegraphics[scale=0.28]{dd/resources/images/RuntimeView-UnsafeAreas}
+            \caption{Runtime View - Unsafe Areas}        
+        \end{figure}
         In this sequence diagram the process of analyze the Unsafe Areas is shown. The Municipal 
         Employee request the UnsafeAreaPage to the WebApp which forwards the request to the Router 
         adding the Id of the municipal employee. The Routher forwards it to the right component, 
