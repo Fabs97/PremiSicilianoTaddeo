@@ -162,11 +162,28 @@
         \subsection{Synchronization}
         \subsection{Request data regarding a group of people}
         \subsection{Request data regarding a particular user by providing his/her UUID}
+    \newpage
     \section{Component interfaces}
     \begin{figure}[H]
-        \includegraphics[scale = 0.3]{dd/resources/images/ComponentInterfaces.png}
-        \caption{Component Interfaces}        
-    \end{figure}   
+        \includegraphics[scale = 0.331, angle=90]{dd/resources/images/ComponentInterfaces.png}
+        \caption{Component Interfaces} 
+    \end{figure}
+    The above picture shows an ideal representation of how the main component
+    interfaces, which main functions they should be implementing and how they
+    should be communicating with each other.\\
+    The first thing that jumps to the eye is the existence of the two biggest
+    interfaces: \emph{ManageMobileApp} and \emph{ManageWebApp}. Both of them
+    will work as connectors by taking input from the customers and forward them
+    the actual logic tier which processes those inputs and returns the correct
+    outputs, which are once again forwarded by these two components to the UI.\\ 
+    Furthermore, the \emph{ManageCrossData} component is worth of mention as it
+    is a critical point for the correct functioning of two main parts of the
+    SafeStreets initiative. This component manages all interactions that are
+    going to happen with third party databases and the information they hold,
+    cross reference it with the SafeStreets' acquired info and redirects the
+    output to either the \emph{ManageUnsafeAreas} or \emph{ManageStatistics}
+    components. 
+
     \section{Selected architectural styles and patterns}  
     The architecture of SafeStreets is multilayered, composed of three tiers:
     \begin{itemize}
