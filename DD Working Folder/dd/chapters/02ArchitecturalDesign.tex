@@ -127,11 +127,13 @@
         database and from the municipality database to generate the statistics
         and the unsafe areas.
     \end{itemize}    
+    \newpage
     \section{Deployment view}
     The following image is a deployment diagram which represents the
     architecture of the system as distribution(deployment) of software artifacts
     to deployment targets(node). Artifacts represents elements obtained with a
-    development process. Nodes can represent either hardware or software environments.
+    development process. Nodes can represent either hardware or software
+    environments.
     \begin{figure}[H]
         \includegraphics[scale=0.35]{dd/resources/images/DeploymentDiagram.png}
         \caption{Deployment view}        
@@ -146,6 +148,7 @@
         Android version). Both user and authority user ask to communicate to the
         application server in order to retrieve data, signal a violation, check
         violations or unsafe areas.
+        \newpage
         \item \textbf{Application tier}: in this thier the application logic is
         deployed. The application server allows the mobile application and the
         web application to access data stored into the SafeStreets database. The
@@ -157,74 +160,85 @@
         \item \textbf{Database tier}: in this tier data access must be deployed.
         The application has to handle data both on SafeStreets database and on
         the municipality database for cross references.
-    \end{itemize}    
+    \end{itemize} 
+    \newpage   
     \section{Run-time view}
         \subsection{Signal a violation}
         \begin{figure}[H]
             \includegraphics[scale=0.35]{dd/resources/images/RuntimeView-SignalViolation}
             \caption{Runtime View - Signal a violation}        
         \end{figure}
-        In this sequence diagram the process through which a user, already logged 
-        in, can signal a violation to the authorities is shown. Once the web app 
-        has rendered the page to report a violation, the user can insert all the
-        needed input data to perform the action (the position, photos of hard evidence, 
-        type of violation are here thought to be contained in the request object. 
-        The position is assumed to be entered by the user manually, the detection of 
-        the online location by Google Maps is neglected). When submitted, the request 
-        is sent to the Router, which forwards it to the right component, i.e. the 
-        'SignalViolationManager'. The latter is responsible for checking the input 
-        inserted by the user: if there are some missing or invalid input, an error 
-        message is sent back to the user who can recompile the form and resubmit the 
-        new data. Otherwise, if all the inputs are valid, the request with all data of 
-        the violation and the parameter user set to the user who have done the report 
-        is sent to 'ViolationListsManager', which forwards it to the DBMS (which adds 
-        it to the list of reports of that municipality). At this point, the DBMS send 
-        the confirm of the operation to the components up to the user who it's ready to 
-        send other reports or to return to his menu.
+        In this sequence diagram the process through which a user, already
+        logged in, can signal a violation to the authorities is shown. Once the
+        web app has rendered the page to report a violation, the user can insert
+        all the needed input data to perform the action (the position, photos of
+        hard evidence, type of violation are here thought to be contained in the
+        request object. The position is assumed to be entered by the user
+        manually, the detection of the online location by Google Maps is
+        neglected). When submitted, the request is sent to the Router, which
+        forwards it to the right component, i.e. the 'SignalViolationManager'.
+        The latter is responsible for checking the input inserted by the user:
+        if there are some missing or invalid input, an error message is sent
+        back to the user who can recompile the form and resubmit the new data.
+        Otherwise, if all the inputs are valid, the request with all data of the
+        violation and the parameter user set to the user who have done the
+        report is sent to 'ViolationListsManager', which forwards it to the DBMS
+        (which adds it to the list of reports of that municipality). At this
+        point, the DBMS send the confirm of the operation to the components up
+        to the user who it's ready to send other reports or to return to his
+        menu.
 
         \subsection{SignUp and SignIn}
         \begin{figure}[H]
             \includegraphics[scale=0.35]{dd/resources/images/RuntimeView-SignUp+SignIn}
             \caption{Runtime View - SignUp and SignIn}        
         \end{figure}
-        In this sequence diagram the process of sign up and subsequently sign in is shown. 
-        Once the WebApp has rendered the page to signup, the Police Officer insert his data 
-        (AuthorityId, email, password). When submitted, the request is sent to the Router, 
-        which forwards it to the right component, i.e. the 'SignUpManager'. The latter is 
-        responsible for checking the input inserted by the Police Officer: if there are some 
-        missing or invalid input or the Authority results already registered, an error message 
-        is sent back to the user. Otherwise, if all the inputs are valid, SignUpManager analyze 
-        the AuthorityId and understand the municipality of competence of the Police Officer 
-        and his rights, so it adds the parameters of municipality and rights to the other data 
-        and send them to the DBMS which add a new AuthorityUser. At this point, the DBMS send 
-        the confirm of the operation to the components up to the user who can, if he want, 
-        sign in to the service. He therefore, once the WebApp has rendered the page to signin, 
-        inserts his Id and password. When submitted, the request is sent to the Router, which 
-        forwards it to the right component, i.e. the 'SignInManager'. The latter is responsible 
-        for checking the input and asks to the DBMS if there exists a couple <Id,password> into 
-        the database. If there no exists, SignInManager send an error to the user, otherwise, 
-        once understand the right of the user (i.e. PoliceOfficerRights) and his municipality, 
-        he send these data to the WebApp which shows the personal menu to the Police Officer. 
+        In this sequence diagram the process of sign up and subsequently sign in
+        is shown. Once the WebApp has rendered the page to signup, the Police
+        Officer insert his data (AuthorityId, email, password). When submitted,
+        the request is sent to the Router, which forwards it to the right
+        component, i.e. the 'SignUpManager'. The latter is responsible for
+        checking the input inserted by the Police Officer: if there are some
+        missing or invalid input or the Authority results already registered, an
+        error message is sent back to the user. Otherwise, if all the inputs are
+        valid, SignUpManager analyze the AuthorityId and understand the
+        municipality of competence of the Police Officer and his rights, so it
+        adds the parameters of municipality and rights to the other data and
+        send them to the DBMS which add a new AuthorityUser. At this point, the
+        DBMS send the confirm of the operation to the components up to the user
+        who can, if he want, sign in to the service. He therefore, once the
+        WebApp has rendered the page to signin, inserts his Id and password.
+        When submitted, the request is sent to the Router, which forwards it to
+        the right component, i.e. the 'SignInManager'. The latter is responsible
+        for checking the input and asks to the DBMS if there exists a couple
+        <Id,password> into the database. If there no exists, SignInManager send
+        an error to the user, otherwise, once understand the right of the user
+        (i.e. PoliceOfficerRights) and his municipality, he send these data to
+        the WebApp which shows the personal menu to the Police Officer. 
 
         \subsection{Analyze Unsafe Areas}
         \begin{figure}[H]
             \includegraphics[scale=0.28]{dd/resources/images/RuntimeView-UnsafeAreas}
             \caption{Runtime View - Unsafe Areas}        
         \end{figure}
-        In this sequence diagram the process of analyze the Unsafe Areas is shown. The Municipal 
-        Employee request the UnsafeAreaPage to the WebApp which forwards the request to the Router 
-        adding the Id of the municipal employee. The Routher forwards it to the right component, 
-        i.e. the 'UnsafeAreaManager'. The latter understand, through the Id, the municipality of 
-        competence of the Municipal Employee and asks the map to Google Maps. Therefore the map 
-        of the municipality is sent up to the employee. At this point, the employee can add filters 
-        to his maps and, through the same chain, UnsafeAreaManager receives the map from Google 
-        Maps and forwards it and the filters to CrossDataManager. The latter forwards all the data 
-        to the Municipality Database which responds with the map filtered. Moreover the CrossDataManager 
-        forwards all the data to the DBMS of SafeStreets which responds with the map and signalation. 
-        Now CrossDataManager has all the data that it needs to cross the data and he sends the resulting 
-        map up to the employee. The employee can decide to update or delete or add suggestions and he 
-        send them to UnsafeAreaManager which forwards them to the DBMS of Safestreets, the process ends 
-        with the confirm of the DBMS sent up to the employee.
+        In this sequence diagram the process of analyze the Unsafe Areas is
+        shown. The Municipal Employee request the UnsafeAreaPage to the WebApp
+        which forwards the request to the Router adding the Id of the municipal
+        employee. The Routher forwards it to the right component, i.e. the
+        'UnsafeAreaManager'. The latter understand, through the Id, the
+        municipality of competence of the Municipal Employee and asks the map to
+        Google Maps. Therefore the map of the municipality is sent up to the
+        employee. At this point, the employee can add filters to his maps and,
+        through the same chain, UnsafeAreaManager receives the map from Google
+        Maps and forwards it and the filters to CrossDataManager. The latter
+        forwards all the data to the Municipality Database which responds with
+        the map filtered. Moreover the CrossDataManager forwards all the data to
+        the DBMS of SafeStreets which responds with the map and signalation. Now
+        CrossDataManager has all the data that it needs to cross the data and he
+        sends the resulting map up to the employee. The employee can decide to
+        update or delete or add suggestions and he send them to
+        UnsafeAreaManager which forwards them to the DBMS of Safestreets, the
+        process ends with the confirm of the DBMS sent up to the employee.
 
     \newpage
     \section{Component interfaces}
@@ -239,7 +253,8 @@
     interfaces: \emph{ManageMobileApp} and \emph{ManageWebApp}. Both of them
     will work as connectors by taking input from the customers and forward them
     the actual logic tier which processes those inputs and returns the correct
-    outputs, which are once again forwarded by these two components to the UI.\\ 
+    outputs, which are once again forwarded by these two components to the UI.\\
+    
     Furthermore, the \emph{ManageCrossData} component is worth of mention as it
     is a critical point for the correct functioning of two main parts of the
     SafeStreets initiative. This component manages all interactions that are
@@ -248,24 +263,65 @@
     output to either the \emph{ManageUnsafeAreas} or \emph{ManageStatistics}
     components. 
 
+    \newpage
     \section{Selected architectural styles and patterns}  
-    The architecture of SafeStreets is multilayered, composed of three tiers:
-    \begin{itemize}
-        \item \textbf{Presentation layer}: is used to present the data in a way
-        that the user can understand. It enables the usage of the services
-        offered to the user. The presentation layer of the the users is the
-        smartphone and for authority users are both the smartphone and the browser.
-        \item \textbf{Application layer}: is used to coordinate the application.
-        It receives and computes the requests send by the presentation layer and
-        it also interacts with the database.
-        \item \textbf{Database layer}: stores the information provided by the
-        application layer. The information is also passed back to the
-        application tier for processing.
-    \end{itemize}    
-    Three tier architecture is very useful because it allows to change or upgrade
-    one of the three tiers without any problem and so it makes the system more
-    flexible and reusable. Furthermore it makes the system safer because it
-    separates the access to data from the other layers.
+        \subsection{Architectural styles}
+    
+            \subsubsection{RESTful architecture}
+            We decided to user RESTful architecture in order to develop
+            SafeStreets website. REST stands for REpresentational State Transfer
+            and API stands for Application Program Interface. REST architectural
+            style allows requesting systems to access and manipulate web
+            resources by using a uniform and predefined set of rules. REST is
+            very useful in systems like SafeStreets where there are different
+            clients who request resources and a server which provides the
+            resources.
+            In a RESTful architecture we must satisfy some different constraints:
+            \begin{itemize}
+                \item \textbf{Uniform Interface}: there exists a uniform way to
+                interact with SafeStreets server regardless user's device or
+                application.
+                \item \textbf{Stateless}: the client hanldes the state for the
+                request and the server doesn't store anything related to the
+                session. This constraint allows simple server design.
+                \item \textbf{Cacheable}: this constraint accellerates
+                client-server communications because it completely eliminates
+                some interations.
+                \item \textbf{Client-server}: client doesn't know anything about
+                the business logic and server doesn't know anything aboyt the
+                client. and it's UI. In SafeStreets system authority users uses
+                a web app that communicates with the web server which in turns
+                communicates with the application server where is located the
+                business logic.
+                \item \textbf{Layered system}: an application architecture with
+                multiple layers allows the presence of a lot of multiple servers
+                between the client and the end server. The architecture is then
+                more flexible and secure because each layer doesn't know
+                anything about any layer other than that of immediate layer.
+                \item \textbf{Code on demand}: is an optional feature and it
+                isn't used in SafeStreets system.
+            \end{itemize}    
+
+            \subsubsection{Three tier}
+            The architecture of SafeStreets is multilayered, composed of three tiers:
+            \begin{itemize}
+                \item \textbf{Presentation layer}: is used to present the data in a way
+                that the user can understand. It enables the usage of the services
+                offered to the user. The presentation layer of the the users is the
+                smartphone and for authority users are both the smartphone and the
+                browser.
+                \item \textbf{Application layer}: is used to coordinate the application.
+                It receives and computes the requests send by the presentation layer and
+                it also interacts with the database.
+                \item \textbf{Database layer}: stores the information provided by the
+                application layer. The information is also passed back to the
+                application tier for processing.
+            \end{itemize}    
+            Three tier architecture is very useful because it allows to change or
+            upgrade one of the three tiers without any problem and so it makes the
+            system more flexible and reusable. Furthermore it makes the system safer
+            because it separates the access to data from the other layers.
+                
   
         \subsection{Design Patterns}
             \subsubsection*{Model View Controller (MVC)}
@@ -276,10 +332,11 @@
             Model view controller is a very useful and quoted design pattern.
             MVC is used to separate the fundamental parts of the application and
             in particular it  emphasizes a separation between the software’s
-            business logic and display.
-            The three parts of Model View Controller design pattern are:
+            business logic and display. The three parts of Model View Controller
+            design pattern are:
             \begin{itemize}
-                \item \textbf{Model}: manages all the data and the business logic
+                \item \textbf{Model}: manages all the data and the business
+                logic
                 \item \textbf{View}: handles the GUI used by all the users
                 \item \textbf{Controller}: acts on both model and view, it
                 routes commands to the view and model elements  
@@ -313,11 +370,11 @@
     \subsection{Thin Client}
     In a "Thin Client" architecture the server does most of the work while the
     client is lightweight. In this architecture the client is designed to be
-    online all the time and to communicate with a server. If network connection is down
-    the application of course doesn't work, but we don't need to implement any
-    offline modules because the core idea of the application is comunication
-    itself. Furthermore thin client architecture allows the application to keep
-    all the real business logic protected on the server. \\Google Maps APIs could
-    be considered an exception to this paradigm because are used directly by the
-    client.
+    online all the time and to communicate with a server. If network connection
+    is down the application of course doesn't work, but we don't need to
+    implement any offline modules because the core idea of the application is
+    comunication itself. Furthermore thin client architecture allows the
+    application to keep all the real business logic protected on the server.
+    \\Google Maps APIs could be considered an exception to this paradigm because
+    are used directly by the client.
      
