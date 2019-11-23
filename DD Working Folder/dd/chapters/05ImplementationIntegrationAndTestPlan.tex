@@ -28,19 +28,32 @@
     estimation of the order and the time needed to meet clients requirements.
     \begin{table}[]
         \begin{tabular}{|l|l|l|}
-        \hline
-         \textbf{Feature} & \textbf{Importance for the customer}  & \textbf{Implementation difficulty}  \\ \hline
-         SignUp and SignIn & Low  & Low  \\ \hline
-         Signal a violation & High  & High  \\ \hline
-         Manage previous reports & Medium  & Medium  \\ \hline
-         Visualize unsafe areas & High & High  \\ \hline
-         Manage Account Settings & High & Low  \\ \hline
-         Violation Checking & High & High  \\ \hline
-         Visualize Statistics & High & High  \\ \hline
+            \hline
+            \textbf{Feature} & \textbf{Importance for the customer}  & \textbf{Implementation difficulty}  \\ \hline
+            SignUp and SignIn & Low  & Low  \\ \hline
+            Signal a violation & High  & High  \\ \hline
+            Manage previous reports & Medium  & Medium  \\ \hline
+            Visualize unsafe areas & High & High  \\ \hline
+            Manage Account Settings & High & Low  \\ \hline
+            Violation Checking & High & High  \\ \hline
+            Visualize Statistics & High & High  \\ \hline
         \end{tabular}
-        \end{table}
+    \end{table}
     
     \section{Integration and testing}
+    \begin{table}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            \textbf{Component} & \textbf{Implementation percentage} & \textbf{Comments}\\ \hline
+            Manage Account settings & 90-95 & This functionality is important
+            for the user but we can see it as an extra accessory that does not
+            affect the other features of the system, and for this reason the
+            corresponding component 'AccountManager' can be implemented and
+            tested later than the others.\\\hline
+            
+        \end{tabular}
+        
+    \end{table}
         \subsection{Entry criteria}
         \subsection{Elements to be integrated}
         \subsection{Integration testing strategy}
