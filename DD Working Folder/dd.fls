@@ -58,6 +58,10 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 OUTPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/ddreferences.ref
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/commands.tex
 INPUT c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/commands.tex
@@ -227,10 +231,6 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aer.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ae/t1aer.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/ae/aer10.tfm
-INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
-INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/easy/easytable.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/easy/easytable.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/easy/easy.sty
