@@ -23,17 +23,18 @@
 \BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter.2}% 23
 \BOOKMARK [2][-]{subsection.2.7.1}{Virtual Private Cloud}{section.2.7}% 24
 \BOOKMARK [2][-]{subsection.2.7.2}{Thin Client}{section.2.7}% 25
-\BOOKMARK [0][-]{chapter.3}{User interface design}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Interface mockups}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{UX Diagrams}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.2.1}{Mobile application}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.2}{Web application}{section.3.2}% 30
-\BOOKMARK [0][-]{chapter.4}{Requirements traceability}{}% 31
-\BOOKMARK [0][-]{chapter.5}{Implementation, integration and test plan}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Implementation plan}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{Integration and testing}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.2.1}{Entry criteria}{section.5.2}% 35
-\BOOKMARK [2][-]{subsection.5.2.2}{Elements to be integrated}{section.5.2}% 36
-\BOOKMARK [2][-]{subsection.5.2.3}{Integration testing strategy}{section.5.2}% 37
-\BOOKMARK [2][-]{subsection.5.2.4}{Sequence of component/function integration}{section.5.2}% 38
-\BOOKMARK [0][-]{chapter.6}{Effort spent}{}% 39
+\BOOKMARK [2][-]{subsection.2.7.3}{Relational Database}{section.2.7}% 26
+\BOOKMARK [0][-]{chapter.3}{User interface design}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Interface mockups}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.2}{UX Diagrams}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Mobile application}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{Web application}{section.3.2}% 31
+\BOOKMARK [0][-]{chapter.4}{Requirements traceability}{}% 32
+\BOOKMARK [0][-]{chapter.5}{Implementation, integration and test plan}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Implementation plan}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Integration and testing}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.2.1}{Entry criteria}{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.2}{Elements to be integrated}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.3}{Integration testing strategy}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.4}{Sequence of component/function integration}{section.5.2}% 39
+\BOOKMARK [0][-]{chapter.6}{Effort spent}{}% 40

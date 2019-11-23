@@ -26,17 +26,18 @@
 \contentsline {section}{\numberline {2.7}Other design decisions}{23}{section.2.7}% 
 \contentsline {subsection}{\numberline {2.7.1}Virtual Private Cloud}{23}{subsection.2.7.1}% 
 \contentsline {subsection}{\numberline {2.7.2}Thin Client}{23}{subsection.2.7.2}% 
-\contentsline {chapter}{\numberline {3}User interface design}{24}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Interface mockups}{24}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}UX Diagrams}{24}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Mobile application}{24}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Web application}{25}{subsection.3.2.2}% 
-\contentsline {chapter}{\numberline {4}Requirements traceability}{26}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{28}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Implementation plan}{28}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Integration and testing}{29}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Entry criteria}{29}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{29}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{29}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{29}{subsection.5.2.4}% 
-\contentsline {chapter}{\numberline {6}Effort spent}{30}{chapter.6}% 
+\contentsline {subsection}{\numberline {2.7.3}Relational Database}{24}{subsection.2.7.3}% 
+\contentsline {chapter}{\numberline {3}User interface design}{25}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Interface mockups}{25}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}UX Diagrams}{25}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Mobile application}{25}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Web application}{26}{subsection.3.2.2}% 
+\contentsline {chapter}{\numberline {4}Requirements traceability}{27}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{29}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Implementation plan}{29}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Integration and testing}{30}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Entry criteria}{30}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{30}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{30}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{30}{subsection.5.2.4}% 
+\contentsline {chapter}{\numberline {6}Effort spent}{31}{chapter.6}% 
