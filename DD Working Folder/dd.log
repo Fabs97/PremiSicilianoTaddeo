@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  23 NOV 2019 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  23 NOV 2019 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1188,104 +1188,209 @@ Overfull \hbox (19.28183pt too wide) in paragraph at lines 1--1
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 29.
+               Default added (so using `tbp') on input line 30.
 
 
-Overfull \hbox (77.39551pt too wide) in paragraph at lines 30--41
-[][] 
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 48--52
-\T1/aer/m/n/10 the cor-re-spond-ing com-po-nent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-
- []
-
-
-Overfull \hbox (78.47499pt too wide) in paragraph at lines 45--55
+Overfull \hbox (77.39551pt too wide) in paragraph at lines 31--43
 [][] 
  []
 
 [29
 
 ]
-<dd/resources/images/Integration-Router.png, id=432, 522.95375pt x 226.8475pt>
+Underfull \hbox (badness 1888) in paragraph at lines 57--62
+\T1/aer/m/n/10 the cor-re-spond-ing com-po-nent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
+
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 63--63
+[]\T1/aer/m/n/10 SignUpManager and Sign-In-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 64--69
+\T1/aer/m/n/10 of the sys-tem, but they are
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 64--69
+\T1/aer/m/n/10 not core fea-tures and they
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
+
+ []
+
+
+Overfull \hbox (106.17413pt too wide) in paragraph at lines 53--71
+[][] 
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+\T1/aer/m/n/10 'Statis-tic-s-Man-ager' can just
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]\T1/aer/m/n/10 UnsafeAreasManager and
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 86--91
+\T1/aer/m/n/10 can just post-pone a bit its
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--91
+
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 93--99
+\T1/aer/m/n/10 needs this com-po-nent to do
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 93--99
+\T1/aer/m/n/10 his job and the user needs
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 93--99
+\T1/aer/m/n/10 this com-po-nent to track his
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
+\T1/aer/m/n/10 Vi-o-la-tion-sCheck-ing-Man-ager
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
+
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 101--105
+\T1/aer/m/n/10 Check-ing' is very im-por-tant
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 101--105
+\T1/aer/m/n/10 so it's cru-cial to im-ple-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+\T1/aer/m/n/10 'Vi-o-la-tionCheck-ing-Man-ager'
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Overfull \hbox (106.5937pt too wide) in paragraph at lines 76--108
+[][] 
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+\T1/aer/m/n/10 com-po-nent 'Sig-nalVi-o-la-tion-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+
+ []
+
+
+Overfull \hbox (73.53462pt too wide) in paragraph at lines 115--125
+[][] 
+ []
+
+<dd/resources/images/Integration-Router.png, id=444, 522.95375pt x 226.8475pt>
 File: dd/resources/images/Integration-Router.png Graphic file (type png)
 <use dd/resources/images/Integration-Router.png>
-Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 64.
+Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 134.
 (pdftex.def)             Requested size: 366.06512pt x 158.79216pt.
 
-Overfull \hbox (21.06512pt too wide) in paragraph at lines 64--65
+Overfull \hbox (21.06512pt too wide) in paragraph at lines 134--135
 [][] 
  []
 
-<dd/resources/images/Integration-Web.png, id=433, 573.14125pt x 91.34125pt>
+<dd/resources/images/Integration-Web.png, id=445, 573.14125pt x 91.34125pt>
 File: dd/resources/images/Integration-Web.png Graphic file (type png)
 <use dd/resources/images/Integration-Web.png>
-Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 68.
+Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 138.
 (pdftex.def)             Requested size: 372.5374pt x 59.3711pt.
 
-Overfull \hbox (27.5374pt too wide) in paragraph at lines 68--69
+Overfull \hbox (27.5374pt too wide) in paragraph at lines 138--139
 [][] 
  []
 
-
-Overfull \vbox (27.13133pt too high) has occurred while \output is active []
-
- [30 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-Router.png>]
-<dd/resources/images/Integration-DBMS.png, id=444, 663.47874pt x 975.645pt>
+<dd/resources/images/Integration-DBMS.png, id=446, 663.47874pt x 975.645pt>
 File: dd/resources/images/Integration-DBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-DBMS.png>
-Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 74.
+Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 144.
 (pdftex.def)             Requested size: 331.73856pt x 487.8213pt.
-<dd/resources/images/Integration-MunicipalityDBMS.png, id=445, 512.91624pt x 91.34125pt>
+<dd/resources/images/Integration-MunicipalityDBMS.png, id=447, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-MunicipalityDBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-MunicipalityDBMS.png>
-Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 78.
+Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 148.
 (pdftex.def)             Requested size: 359.03893pt x 63.93843pt.
 
-Overfull \hbox (14.03893pt too wide) in paragraph at lines 78--79
+Overfull \hbox (14.03893pt too wide) in paragraph at lines 148--149
 [][] 
  []
 
-[31 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-Web.png>]
-<dd/resources/images/Integration-GoogleMaps.png, id=453, 593.21625pt x 533.995pt>
+[32 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-Router.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-Web.png>]
+<dd/resources/images/Integration-GoogleMaps.png, id=459, 593.21625pt x 533.995pt>
 File: dd/resources/images/Integration-GoogleMaps.png Graphic file (type png)
 <use dd/resources/images/Integration-GoogleMaps.png>
-Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 82.
+Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 152.
 (pdftex.def)             Requested size: 415.24854pt x 373.79395pt.
 
-Overfull \hbox (70.24854pt too wide) in paragraph at lines 82--83
+Overfull \hbox (70.24854pt too wide) in paragraph at lines 152--153
 [][] 
  []
 
-[32 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-DBMS.png>]
-<dd/resources/images/Integration-PlateRecognizer.png, id=461, 512.91624pt x 91.34125pt>
+[33 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-DBMS.png>]
+<dd/resources/images/Integration-PlateRecognizer.png, id=467, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-PlateRecognizer.png Graphic file (type png)
 <use dd/resources/images/Integration-PlateRecognizer.png>
-Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 86.
+Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 156.
 (pdftex.def)             Requested size: 359.03893pt x 63.93843pt.
 
-Overfull \hbox (14.03893pt too wide) in paragraph at lines 86--87
+Overfull \hbox (14.03893pt too wide) in paragraph at lines 156--157
 [][] 
  []
 
-[33 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-MunicipalityDBMS.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-GoogleMaps.png>]
-<dd/resources/images/Integration-CrossDataManager.png, id=470, 522.95375pt x 231.86626pt>
+[34 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-MunicipalityDBMS.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-GoogleMaps.png>]
+<dd/resources/images/Integration-CrossDataManager.png, id=476, 522.95375pt x 231.86626pt>
 File: dd/resources/images/Integration-CrossDataManager.png Graphic file (type png)
 <use dd/resources/images/Integration-CrossDataManager.png>
-Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 92.
+Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 162.
 (pdftex.def)             Requested size: 366.06512pt x 162.30525pt.
 
-Overfull \hbox (21.06512pt too wide) in paragraph at lines 92--93
+Overfull \hbox (21.06512pt too wide) in paragraph at lines 162--163
 [][] 
  []
 
-) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [34 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-PlateRecognizer.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-CrossDataManager.png>]
+) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/06EffortSpent.tex [35 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-PlateRecognizer.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-CrossDataManager.png>]
 Chapter 6.
 
 New spreadtab: \begin{tabular}{|l|l|}
@@ -1326,7 +1431,7 @@ New spreadtab: \begin{tabular}{|l|l|}
 * building tab: ok
 End of spreadtab: \end{tabular}
 
-) [35
+) [36
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
@@ -1339,20 +1444,20 @@ Package rerunfilecheck Info: File `dd.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 32301 strings out of 492167
- 602327 string characters out of 6129158
+ 32305 strings out of 492167
+ 602375 string characters out of 6129158
  689858 words of memory out of 5000000
- 35973 multiletter control sequences out of 15000+600000
+ 35974 multiletter control sequences out of 15000+600000
  585812 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,85p,603b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{chapReferences} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (36 pages, 938892 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (37 pages, 941946 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 460 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
  529 words of extra memory for PDF output out of 10000 (max. 10000000)
 

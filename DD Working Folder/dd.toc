@@ -36,11 +36,11 @@
 \contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{29}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Implementation plan}{29}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}Integration and testing}{30}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Entry criteria}{30}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{30}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{30}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{30}{subsection.5.2.4}% 
-\contentsline {subsubsection}{\numberline {5.2.4.1}Integration of frontend and backend}{30}{subsubsection.5.2.4.1}% 
-\contentsline {subsubsection}{\numberline {5.2.4.2}External services integration}{32}{subsubsection.5.2.4.2}% 
-\contentsline {subsubsection}{\numberline {5.2.4.3}External services integration}{34}{subsubsection.5.2.4.3}% 
-\contentsline {chapter}{\numberline {6}Effort spent}{35}{chapter.6}% 
+\contentsline {subsection}{\numberline {5.2.1}Entry criteria}{32}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{32}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{32}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{32}{subsection.5.2.4}% 
+\contentsline {subsubsection}{\numberline {5.2.4.1}Integration of frontend and backend}{32}{subsubsection.5.2.4.1}% 
+\contentsline {subsubsection}{\numberline {5.2.4.2}External services integration}{33}{subsubsection.5.2.4.2}% 
+\contentsline {subsubsection}{\numberline {5.2.4.3}External services integration}{35}{subsubsection.5.2.4.3}% 
+\contentsline {chapter}{\numberline {6}Effort spent}{36}{chapter.6}% 
