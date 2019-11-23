@@ -268,15 +268,13 @@
         \subsection{Architectural styles}
     
             \subsubsection{RESTful architecture}
-            We decided to user RESTful architecture in order to develop
-            SafeStreets website. REST stands for REpresentational State Transfer
-            and API stands for Application Program Interface. REST architectural
-            style allows requesting systems to access and manipulate web
-            resources by using a uniform and predefined set of rules. REST is
-            very useful in systems like SafeStreets where there are different
-            clients who request resources and a server which provides the
-            resources.
-            In a RESTful architecture we must satisfy some different constraints:
+            It has been decided to use a RESTful architecture in order to
+            develop SafeStreets website. REST architectural style allows
+            requesting systems to access and manipulate web resources by using a
+            uniform and predefined set of rules. REST is very useful in systems
+            like SafeStreets where there are different clients who request
+            resources and a server which provides the resources. In a RESTful
+            architecture we must satisfy some different constraints:
             \begin{itemize}
                 \item \textbf{Uniform Interface}: there exists a uniform way to
                 interact with SafeStreets server regardless user's device or
@@ -380,11 +378,17 @@
     are used directly by the client.
 
     \subsection{Relational Database}
-    Relational databases are the most common type of databases. The model is
-    solid, avoids duplication of data and enenables developers to work with safe
-    and predictable results. Furthermore they allows to handle higly structured
-    data and provides support for ACID transactions. The structure is very
-    flexible and it can be scaled up without problems becaus adding data without
-    modifying the existing ones is simple. In addition relational databases use
-    very expressive and mature query languages such as SQL.
+    Relational databases are the most common type of digital databases. The
+    model is based on relations between data and it is solid, avoids duplication
+    of data and enables developers to work with safe and predictable results. By
+    building the relational model, the data are organized into one (or more)
+    tables (or \emph{relations}) of columns and rows, with a unique key
+    identifying each row (or \emph{tuples}) which can be linked between to each
+    other. By doing so, this model allows to handle higly structured data and
+    provides support for ACID transactions. The structure is very flexible and
+    it can be scaled up without problems because adding data without modifying
+    the existing ones is simple. In addition relational databases use very
+    expressive and mature query languages such as SQL and the whole management
+    of the database is left to handle to the DBMS (\textbf{D}ata\textbf{B}ase
+    \textbf{M}anagement \textbf{S}ystem).
      
