@@ -45,6 +45,7 @@
 \contentsline {subsubsection}{\numberline {2.4.3}Constraints}{15}{subsubsection.2.4.3}% 
 \contentsline {paragraph}{2.4.3.1 Regulatory policies}{15}{section*.22}% 
 \contentsline {paragraph}{2.4.3.2 Parallel Operations}{15}{section*.23}% 
+\contentsline {paragraph}{2.4.3.3 Ghiro}{15}{section*.24}% 
 \contentsline {section}{\numberline {3}Specific Requirements}{16}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}External Interface Requirements}{16}{subsection.3.1}% 
 \contentsline {subsubsection}{\numberline {3.1.1}User Interfaces}{16}{subsubsection.3.1.1}% 
@@ -53,17 +54,17 @@
 \contentsline {subsubsection}{\numberline {3.1.4}Communication Interfaces}{28}{subsubsection.3.1.4}% 
 \contentsline {subsection}{\numberline {3.2}Functional requirements}{29}{subsection.3.2}% 
 \contentsline {subsubsection}{\numberline {3.2.1}User}{29}{subsubsection.3.2.1}% 
-\contentsline {paragraph}{Scenario 1}{29}{section*.24}% 
-\contentsline {paragraph}{Use cases}{29}{section*.25}% 
-\contentsline {paragraph}{Goals and requirements}{35}{section*.26}% 
-\contentsline {paragraph}{Sequence diagrams}{36}{section*.27}% 
+\contentsline {paragraph}{Scenario 1}{29}{section*.25}% 
+\contentsline {paragraph}{Use cases}{29}{section*.26}% 
+\contentsline {paragraph}{Goals and requirements}{35}{section*.27}% 
+\contentsline {paragraph}{Sequence diagrams}{36}{section*.28}% 
 \contentsline {subsubsection}{\numberline {3.2.2}Authorithy user}{38}{subsubsection.3.2.2}% 
-\contentsline {paragraph}{Scenario 2}{38}{section*.28}% 
-\contentsline {paragraph}{Scenario 3}{38}{section*.29}% 
-\contentsline {paragraph}{Scenario 4}{38}{section*.30}% 
-\contentsline {paragraph}{Use cases}{39}{section*.31}% 
-\contentsline {paragraph}{Goals and requirements}{45}{section*.32}% 
-\contentsline {paragraph}{Sequence diagrams}{46}{section*.33}% 
+\contentsline {paragraph}{Scenario 2}{38}{section*.29}% 
+\contentsline {paragraph}{Scenario 3}{38}{section*.30}% 
+\contentsline {paragraph}{Scenario 4}{38}{section*.31}% 
+\contentsline {paragraph}{Use cases}{39}{section*.32}% 
+\contentsline {paragraph}{Goals and requirements}{45}{section*.33}% 
+\contentsline {paragraph}{Sequence diagrams}{46}{section*.34}% 
 \contentsline {subsection}{\numberline {3.3}Performance requirements}{48}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}Design Constraints}{48}{subsection.3.4}% 
 \contentsline {subsubsection}{\numberline {3.4.1}Standars compliance}{48}{subsubsection.3.4.1}% 

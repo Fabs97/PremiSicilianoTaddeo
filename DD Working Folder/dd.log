@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  23 NOV 2019 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  24 NOV 2019 10:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,20 +1140,20 @@ Chapter 3.
 <dd/resources/images/UX-diagram-mobile-user.png, id=403, 1155.31625pt x 442.65375pt>
 File: dd/resources/images/UX-diagram-mobile-user.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-mobile-user.png>
-Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-user.png  used on input line 12.
-(pdftex.def)             Requested size: 462.11832pt x 177.05835pt.
+Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-user.png  used on input line 15.
+(pdftex.def)             Requested size: 404.36674pt x 154.93112pt.
 
-Overfull \hbox (117.11832pt too wide) in paragraph at lines 12--13
+Overfull \hbox (59.36674pt too wide) in paragraph at lines 15--16
 [][] 
  []
 
 <dd/resources/images/UX-diagram-mobile-authorityUser.png, id=404, 1135.24126pt x 403.5075pt>
 File: dd/resources/images/UX-diagram-mobile-authorityUser.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-mobile-authorityUser.png>
-Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-authorityUser.png  used on input line 16.
-(pdftex.def)             Requested size: 454.08846pt x 161.40013pt.
+Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-authorityUser.png  used on input line 19.
+(pdftex.def)             Requested size: 397.3404pt x 141.22974pt.
 
-Overfull \hbox (109.08846pt too wide) in paragraph at lines 16--17
+Overfull \hbox (52.3404pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
@@ -1163,10 +1163,10 @@ Overfull \hbox (109.08846pt too wide) in paragraph at lines 16--17
 <dd/resources/images/UX-diagram-web.png, id=411, 1135.24126pt x 412.54124pt>
 File: dd/resources/images/UX-diagram-web.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-web.png>
-Package pdftex.def Info: dd/resources/images/UX-diagram-web.png  used on input line 21.
-(pdftex.def)             Requested size: 454.08846pt x 165.01357pt.
+Package pdftex.def Info: dd/resources/images/UX-diagram-web.png  used on input line 24.
+(pdftex.def)             Requested size: 397.3404pt x 144.39159pt.
 
-Overfull \hbox (109.08846pt too wide) in paragraph at lines 21--22
+Overfull \hbox (52.3404pt too wide) in paragraph at lines 24--25
 [][] 
  []
 
@@ -1188,172 +1188,172 @@ Overfull \hbox (19.28183pt too wide) in paragraph at lines 1--1
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 30.
+               Default added (so using `tbp') on input line 31.
 
 
-Overfull \hbox (77.39551pt too wide) in paragraph at lines 31--43
+Overfull \hbox (77.39551pt too wide) in paragraph at lines 32--44
 [][] 
  []
 
 [29
 
 ]
-Underfull \hbox (badness 1888) in paragraph at lines 57--62
+Underfull \hbox (badness 1888) in paragraph at lines 58--63
 \T1/aer/m/n/10 the cor-re-spond-ing com-po-nent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--62
+Underfull \hbox (badness 10000) in paragraph at lines 58--63
 
  []
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 63--63
+Underfull \hbox (badness 7326) in paragraph at lines 64--64
 []\T1/aer/m/n/10 SignUpManager and Sign-In-
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 64--69
+Underfull \hbox (badness 1097) in paragraph at lines 65--70
 \T1/aer/m/n/10 of the sys-tem, but they are
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 64--69
+Underfull \hbox (badness 4156) in paragraph at lines 65--70
 \T1/aer/m/n/10 not core fea-tures and they
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--69
+Underfull \hbox (badness 10000) in paragraph at lines 65--70
 
  []
 
 
-Overfull \hbox (106.17413pt too wide) in paragraph at lines 53--71
+Overfull \hbox (106.17413pt too wide) in paragraph at lines 54--72
 [][] 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 79--84
 \T1/aer/m/n/10 'Statis-tic-s-Man-ager' can just
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 79--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 []\T1/aer/m/n/10 UnsafeAreasManager and
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 86--91
+Underfull \hbox (badness 2042) in paragraph at lines 87--92
 \T1/aer/m/n/10 can just post-pone a bit its
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--91
+Underfull \hbox (badness 10000) in paragraph at lines 87--92
 
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 93--99
+Underfull \hbox (badness 1810) in paragraph at lines 94--100
 \T1/aer/m/n/10 needs this com-po-nent to do
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 93--99
+Underfull \hbox (badness 2343) in paragraph at lines 94--100
 \T1/aer/m/n/10 his job and the user needs
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 93--99
+Underfull \hbox (badness 1803) in paragraph at lines 94--100
 \T1/aer/m/n/10 this com-po-nent to track his
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
+Underfull \hbox (badness 10000) in paragraph at lines 94--100
 \T1/aer/m/n/10 Vi-o-la-tion-sCheck-ing-Man-ager
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
+Underfull \hbox (badness 10000) in paragraph at lines 94--100
 
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 101--105
+Underfull \hbox (badness 3354) in paragraph at lines 102--106
 \T1/aer/m/n/10 Check-ing' is very im-por-tant
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 101--105
+Underfull \hbox (badness 2277) in paragraph at lines 102--106
 \T1/aer/m/n/10 so it's cru-cial to im-ple-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
 \T1/aer/m/n/10 'Vi-o-la-tionCheck-ing-Man-ager'
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
 
  []
 
 
-Overfull \hbox (106.5937pt too wide) in paragraph at lines 76--108
+Overfull \hbox (106.5937pt too wide) in paragraph at lines 77--109
 [][] 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
 \T1/aer/m/n/10 com-po-nent 'Sig-nalVi-o-la-tion-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
 
  []
 
 
-Overfull \hbox (73.53462pt too wide) in paragraph at lines 115--125
+Overfull \hbox (73.53462pt too wide) in paragraph at lines 114--124
 [][] 
  []
 
 <dd/resources/images/Integration-Router.png, id=444, 522.95375pt x 226.8475pt>
 File: dd/resources/images/Integration-Router.png Graphic file (type png)
 <use dd/resources/images/Integration-Router.png>
-Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 134.
+Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 133.
 (pdftex.def)             Requested size: 366.06512pt x 158.79216pt.
 
-Overfull \hbox (21.06512pt too wide) in paragraph at lines 134--135
+Overfull \hbox (21.06512pt too wide) in paragraph at lines 133--134
 [][] 
  []
 
 <dd/resources/images/Integration-Web.png, id=445, 573.14125pt x 91.34125pt>
 File: dd/resources/images/Integration-Web.png Graphic file (type png)
 <use dd/resources/images/Integration-Web.png>
-Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 138.
+Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 137.
 (pdftex.def)             Requested size: 372.5374pt x 59.3711pt.
 
-Overfull \hbox (27.5374pt too wide) in paragraph at lines 138--139
+Overfull \hbox (27.5374pt too wide) in paragraph at lines 137--138
 [][] 
  []
 
 <dd/resources/images/Integration-DBMS.png, id=446, 663.47874pt x 975.645pt>
 File: dd/resources/images/Integration-DBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-DBMS.png>
-Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 144.
+Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 143.
 (pdftex.def)             Requested size: 331.73856pt x 487.8213pt.
 <dd/resources/images/Integration-MunicipalityDBMS.png, id=447, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-MunicipalityDBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-MunicipalityDBMS.png>
-Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 148.
+Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 147.
 (pdftex.def)             Requested size: 359.03893pt x 63.93843pt.
 
-Overfull \hbox (14.03893pt too wide) in paragraph at lines 148--149
+Overfull \hbox (14.03893pt too wide) in paragraph at lines 147--148
 [][] 
  []
 
@@ -1361,10 +1361,10 @@ Overfull \hbox (14.03893pt too wide) in paragraph at lines 148--149
 <dd/resources/images/Integration-GoogleMaps.png, id=459, 593.21625pt x 533.995pt>
 File: dd/resources/images/Integration-GoogleMaps.png Graphic file (type png)
 <use dd/resources/images/Integration-GoogleMaps.png>
-Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 152.
+Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 151.
 (pdftex.def)             Requested size: 415.24854pt x 373.79395pt.
 
-Overfull \hbox (70.24854pt too wide) in paragraph at lines 152--153
+Overfull \hbox (70.24854pt too wide) in paragraph at lines 151--152
 [][] 
  []
 
@@ -1372,10 +1372,10 @@ Overfull \hbox (70.24854pt too wide) in paragraph at lines 152--153
 <dd/resources/images/Integration-PlateRecognizer.png, id=467, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-PlateRecognizer.png Graphic file (type png)
 <use dd/resources/images/Integration-PlateRecognizer.png>
-Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 156.
+Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 155.
 (pdftex.def)             Requested size: 359.03893pt x 63.93843pt.
 
-Overfull \hbox (14.03893pt too wide) in paragraph at lines 156--157
+Overfull \hbox (14.03893pt too wide) in paragraph at lines 155--156
 [][] 
  []
 
@@ -1383,10 +1383,10 @@ Overfull \hbox (14.03893pt too wide) in paragraph at lines 156--157
 <dd/resources/images/Integration-CrossDataManager.png, id=476, 522.95375pt x 231.86626pt>
 File: dd/resources/images/Integration-CrossDataManager.png Graphic file (type png)
 <use dd/resources/images/Integration-CrossDataManager.png>
-Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 162.
+Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 161.
 (pdftex.def)             Requested size: 366.06512pt x 162.30525pt.
 
-Overfull \hbox (21.06512pt too wide) in paragraph at lines 162--163
+Overfull \hbox (21.06512pt too wide) in paragraph at lines 161--162
 [][] 
  []
 
@@ -1454,7 +1454,7 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{chapReferences} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (37 pages, 941946 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (37 pages, 942134 bytes).
 PDF statistics:
  583 PDF objects out of 1000 (max. 8388607)
  468 compressed objects within 5 object streams
