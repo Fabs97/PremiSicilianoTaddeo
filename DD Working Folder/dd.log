@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  27 NOV 2019 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  27 NOV 2019 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1207,39 +1207,44 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 31.
 
 
-Overfull \hbox (77.39551pt too wide) in paragraph at lines 32--44
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+
+ []
+
+
+Overfull \hbox (11.51086pt too wide) in paragraph at lines 32--46
 [][] 
  []
 
 [31
 
 ]
-Underfull \hbox (badness 1888) in paragraph at lines 59--64
+Underfull \hbox (badness 1888) in paragraph at lines 61--66
 \T1/aer/m/n/10 the cor-re-spond-ing com-po-nent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--64
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 66--67
+Underfull \hbox (badness 7326) in paragraph at lines 68--69
 []\T1/aer/m/n/10 SignUpManager and Sign-In-
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 69--74
+Underfull \hbox (badness 1097) in paragraph at lines 71--76
 \T1/aer/m/n/10 of the sys-tem, but they are
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 69--74
+Underfull \hbox (badness 4156) in paragraph at lines 71--76
 \T1/aer/m/n/10 not core fea-tures and they
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--74
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 
  []
 
@@ -1254,102 +1259,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--93
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []\T1/aer/m/n/10 UnsafeAreasManager and
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 98--103
+Underfull \hbox (badness 2042) in paragraph at lines 96--101
 \T1/aer/m/n/10 can just post-pone a bit its
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 106--113
+Underfull \hbox (badness 1810) in paragraph at lines 104--111
 \T1/aer/m/n/10 needs this com-po-nent to do
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 106--113
+Underfull \hbox (badness 2343) in paragraph at lines 104--111
 \T1/aer/m/n/10 his job and the user needs
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 106--113
+Underfull \hbox (badness 1803) in paragraph at lines 104--111
 \T1/aer/m/n/10 this com-po-nent to track his
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--113
+Underfull \hbox (badness 10000) in paragraph at lines 104--111
 \T1/aer/m/n/10 Vi-o-la-tion-sCheck-ing-Man-ager
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--113
+Underfull \hbox (badness 10000) in paragraph at lines 104--111
 
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 116--121
+Underfull \hbox (badness 3354) in paragraph at lines 114--119
 \T1/aer/m/n/10 Check-ing' is very im-por-tant
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 116--121
+Underfull \hbox (badness 2277) in paragraph at lines 114--119
 \T1/aer/m/n/10 so it's cru-cial to im-ple-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 10000) in paragraph at lines 114--119
 \T1/aer/m/n/10 'Vi-o-la-tionCheck-ing-Man-ager'
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--121
+Underfull \hbox (badness 10000) in paragraph at lines 114--119
 
- []
-
-
-Overfull \hbox (106.5937pt too wide) in paragraph at lines 81--124
-[][] 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 136--141
+Underfull \hbox (badness 10000) in paragraph at lines 132--137
 \T1/aer/m/n/10 com-po-nent 'Sig-nalVi-o-la-tion-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--141
+Underfull \hbox (badness 10000) in paragraph at lines 132--137
 
- []
-
-
-Overfull \hbox (73.53462pt too wide) in paragraph at lines 129--143
-[][] 
  []
 
 <dd/resources/images/Integration-Router.png, id=462, 522.95375pt x 226.8475pt>
 File: dd/resources/images/Integration-Router.png Graphic file (type png)
 <use dd/resources/images/Integration-Router.png>
-Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 169.
+Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 165.
 (pdftex.def)             Requested size: 366.06512pt x 158.79216pt.
 
-Overfull \hbox (21.06512pt too wide) in paragraph at lines 169--170
+Overfull \hbox (21.06512pt too wide) in paragraph at lines 165--166
 [][] 
  []
 
 <dd/resources/images/Integration-Web.png, id=463, 573.14125pt x 91.34125pt>
 File: dd/resources/images/Integration-Web.png Graphic file (type png)
 <use dd/resources/images/Integration-Web.png>
-Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 173.
+Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 169.
 (pdftex.def)             Requested size: 372.5374pt x 59.3711pt.
 
-Overfull \hbox (27.5374pt too wide) in paragraph at lines 173--174
+Overfull \hbox (27.5374pt too wide) in paragraph at lines 169--170
 [][] 
  []
 
@@ -1357,15 +1352,15 @@ Overfull \hbox (27.5374pt too wide) in paragraph at lines 173--174
 <dd/resources/images/Integration-DBMS.png, id=470, 663.47874pt x 975.645pt>
 File: dd/resources/images/Integration-DBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-DBMS.png>
-Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 179.
+Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 175.
 (pdftex.def)             Requested size: 331.73856pt x 487.8213pt.
 <dd/resources/images/Integration-MunicipalityDBMS.png, id=471, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-MunicipalityDBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-MunicipalityDBMS.png>
-Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 183.
+Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 179.
 (pdftex.def)             Requested size: 359.03893pt x 63.93843pt.
 
-Overfull \hbox (14.03893pt too wide) in paragraph at lines 183--184
+Overfull \hbox (14.03893pt too wide) in paragraph at lines 179--180
 [][] 
  []
 
@@ -1373,10 +1368,10 @@ Overfull \hbox (14.03893pt too wide) in paragraph at lines 183--184
 <dd/resources/images/Integration-GoogleMaps.png, id=480, 593.21625pt x 532.99126pt>
 File: dd/resources/images/Integration-GoogleMaps.png Graphic file (type png)
 <use dd/resources/images/Integration-GoogleMaps.png>
-Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 187.
+Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 183.
 (pdftex.def)             Requested size: 415.24854pt x 373.09134pt.
 
-Overfull \hbox (70.24854pt too wide) in paragraph at lines 187--188
+Overfull \hbox (70.24854pt too wide) in paragraph at lines 183--184
 [][] 
  []
 
@@ -1384,10 +1379,10 @@ Overfull \hbox (70.24854pt too wide) in paragraph at lines 187--188
 <dd/resources/images/Integration-PlateRecognizer.png, id=489, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-PlateRecognizer.png Graphic file (type png)
 <use dd/resources/images/Integration-PlateRecognizer.png>
-Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 191.
+Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 187.
 (pdftex.def)             Requested size: 359.03893pt x 63.93843pt.
 
-Overfull \hbox (14.03893pt too wide) in paragraph at lines 191--192
+Overfull \hbox (14.03893pt too wide) in paragraph at lines 187--188
 [][] 
  []
 
@@ -1395,10 +1390,10 @@ Overfull \hbox (14.03893pt too wide) in paragraph at lines 191--192
 <dd/resources/images/Integration-CrossDataManager.png, id=498, 522.95375pt x 231.86626pt>
 File: dd/resources/images/Integration-CrossDataManager.png Graphic file (type png)
 <use dd/resources/images/Integration-CrossDataManager.png>
-Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 197.
+Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 193.
 (pdftex.def)             Requested size: 366.06512pt x 162.30525pt.
 
-Overfull \hbox (21.06512pt too wide) in paragraph at lines 197--198
+Overfull \hbox (21.06512pt too wide) in paragraph at lines 193--194
 [][] 
  []
 
@@ -1468,7 +1463,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  71i,14n,85p,603b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (41 pages, 954399 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (41 pages, 954448 bytes).
 PDF statistics:
  615 PDF objects out of 1000 (max. 8388607)
  494 compressed objects within 5 object streams
