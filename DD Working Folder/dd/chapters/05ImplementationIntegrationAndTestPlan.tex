@@ -5,7 +5,7 @@
         \item MobileApp
         \item WebServerApp
         \item AuhtorityUserWebApp
-        \item ApplicationServer
+        \item ApplicationServer 
     \end{itemize}   
     All SafeStreets subsystems need to be implemented, tested and integrated
     using a bottom-up approach. With a bottom-up strategy it's possible to
@@ -54,9 +54,9 @@
     \begin{table}[H]
         \begin{tabular}{|l|l|l|}
             \hline
-            \textbf{Feature Of Component} & \textbf{Implementation percentage} &
+            \textbf{Component} & \textbf{Entry} &
             \textbf{Comments}\\ \hline
-            Accountmanager & 90-95 & \begin{minipage}[t]{0.4\textwidth}The
+            AccountManager & 90-95 & \begin{minipage}[t]{0.4\textwidth}The
                 functionality of 'Manage Account Settings' is important for the
                 user but we can see it as an extra accessory that does not
                 affect the other features of the system, and for this reason the
@@ -159,6 +159,10 @@
         of creation, in both resources and time.
 
         \subsection{Sequence of component/function integration}
+        The following section shows which components will go through the process
+        of integration for further clarification. As a matter of further
+        explanation, the arrows start from the component which uses the targeted
+        one.
 
         \subsubsection{Integration of frontend and backend}
             \begin{figure}[H]
