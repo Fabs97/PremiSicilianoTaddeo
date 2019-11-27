@@ -114,7 +114,7 @@
         provide more information.
         \item \textbf{UnsafeAreasManager}: this component provides all the users
         the possibility to see the unsafe areas. It receives all the information
-        from the DBMS.
+        from the DBMS.   
         \item \textbf{ViolationsListManager}: with this component the user can
         see all the violations he/she has reported. The authority user can see
         all the violations reported in his/her area.
@@ -127,6 +127,12 @@
         database and from the municipality database to generate the statistics
         and the unsafe areas.
     \end{itemize}    
+    \newpage
+
+    \begin{figure}[H]
+        \includegraphics[scale=0.8]{dd/resources/images/RouterComponents.png}
+        \caption{Detailed view of router components}        
+    \end{figure}
     \newpage
     \section{Deployment view}
     The following image is a deployment diagram which represents the
@@ -324,7 +330,7 @@
             system more flexible and reusable. Furthermore it makes the system safer
             because it separates the access to data from the other layers.
                 
-  
+
         \subsection{Design Patterns}
             \subsubsection*{Model View Controller (MVC)}
             \begin{figure}[H]

@@ -8,39 +8,39 @@
 \contentsline {subsection}{\numberline {1.3.3}Abbreviations}{5}{subsection.1.3.3}% 
 \contentsline {section}{\numberline {1.4}Revision history}{5}{section.1.4}% 
 \contentsline {section}{\numberline {1.5}Reference Documents}{5}{section.1.5}% 
-\contentsline {section}{\numberline {1.6}Document Structure}{6}{section.1.6}% 
-\contentsline {chapter}{\numberline {2}Architectural design}{7}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}\textit {Overview}: High-level components and their interaction}{7}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Component view}{10}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Deployment view}{12}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Run-time view}{14}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Signal a violation}{14}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}SignUp and SignIn}{15}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}Analyze Unsafe Areas}{17}{subsection.2.4.3}% 
-\contentsline {section}{\numberline {2.5}Component interfaces}{19}{section.2.5}% 
-\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{21}{section.2.6}% 
-\contentsline {subsection}{\numberline {2.6.1}Architectural styles}{21}{subsection.2.6.1}% 
-\contentsline {subsubsection}{\numberline {2.6.1.1}RESTful architecture}{21}{subsubsection.2.6.1.1}% 
-\contentsline {subsubsection}{\numberline {2.6.1.2}Three tier}{21}{subsubsection.2.6.1.2}% 
-\contentsline {subsection}{\numberline {2.6.2}Design Patterns}{22}{subsection.2.6.2}% 
-\contentsline {section}{\numberline {2.7}Other design decisions}{23}{section.2.7}% 
-\contentsline {subsection}{\numberline {2.7.1}Virtual Private Cloud}{23}{subsection.2.7.1}% 
-\contentsline {subsection}{\numberline {2.7.2}Thin Client}{23}{subsection.2.7.2}% 
-\contentsline {subsection}{\numberline {2.7.3}Relational Database}{24}{subsection.2.7.3}% 
-\contentsline {chapter}{\numberline {3}User interface design}{25}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Interface mockups}{25}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}UX Diagrams}{25}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Mobile application}{25}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Web application}{26}{subsection.3.2.2}% 
-\contentsline {chapter}{\numberline {4}Requirements traceability}{27}{chapter.4}% 
-\contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{29}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Implementation plan}{29}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Integration and testing}{30}{section.5.2}% 
+\contentsline {section}{\numberline {1.6}Document Structure}{7}{section.1.6}% 
+\contentsline {chapter}{\numberline {2}Architectural design}{8}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}\textit {Overview}: High-level components and their interaction}{8}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Component view}{11}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Deployment view}{14}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Run-time view}{16}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Signal a violation}{16}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}SignUp and SignIn}{17}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Analyze Unsafe Areas}{19}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}Component interfaces}{21}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{23}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Architectural styles}{23}{subsection.2.6.1}% 
+\contentsline {subsubsection}{\numberline {2.6.1.1}RESTful architecture}{23}{subsubsection.2.6.1.1}% 
+\contentsline {subsubsection}{\numberline {2.6.1.2}Three tier architecture}{23}{subsubsection.2.6.1.2}% 
+\contentsline {subsection}{\numberline {2.6.2}Design Patterns}{24}{subsection.2.6.2}% 
+\contentsline {section}{\numberline {2.7}Other design decisions}{25}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.7.1}Virtual Private Cloud}{25}{subsection.2.7.1}% 
+\contentsline {subsection}{\numberline {2.7.2}Thin Client}{25}{subsection.2.7.2}% 
+\contentsline {subsection}{\numberline {2.7.3}Relational Database}{26}{subsection.2.7.3}% 
+\contentsline {chapter}{\numberline {3}User interface design}{27}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Interface mockups}{27}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}UX Diagrams}{27}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Mobile application}{27}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Web application}{28}{subsection.3.2.2}% 
+\contentsline {chapter}{\numberline {4}Requirements traceability}{29}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Implementation, integration and test plan}{31}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Implementation plan}{31}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Integration and testing}{32}{section.5.2}% 
 \contentsline {subsection}{\numberline {5.2.1}Entry criteria}{32}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Elements to be integrated}{32}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Integration testing strategy}{32}{subsection.5.2.3}% 
-\contentsline {subsection}{\numberline {5.2.4}Sequence of component/function integration}{32}{subsection.5.2.4}% 
-\contentsline {subsubsection}{\numberline {5.2.4.1}Integration of frontend and backend}{32}{subsubsection.5.2.4.1}% 
-\contentsline {subsubsection}{\numberline {5.2.4.2}External services integration}{33}{subsubsection.5.2.4.2}% 
-\contentsline {subsubsection}{\numberline {5.2.4.3}External services integration}{35}{subsubsection.5.2.4.3}% 
-\contentsline {chapter}{\numberline {6}Effort spent}{36}{chapter.6}% 
+\contentsline {subsection}{\numberline {5.2.2}Integration testing strategy}{34}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Sequence of component/function integration}{34}{subsection.5.2.3}% 
+\contentsline {subsubsection}{\numberline {5.2.3.1}Integration of frontend and backend}{35}{subsubsection.5.2.3.1}% 
+\contentsline {subsubsection}{\numberline {5.2.3.2}External services integration}{36}{subsubsection.5.2.3.2}% 
+\contentsline {subsubsection}{\numberline {5.2.3.3}External services integration}{38}{subsubsection.5.2.3.3}% 
+\contentsline {chapter}{\numberline {6}Effort spent}{39}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}References}{40}{chapter.7}% 
