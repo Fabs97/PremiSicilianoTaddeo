@@ -158,8 +158,12 @@
         services. If it can't provide some information it forwards the requests
         to the application server.
         \item \textbf{Database tier}: in this tier data access must be deployed.
-        The application has to handle data both on SafeStreets database and on
-        the municipality database for cross references.
+        The internal Safestreets' database is going to be a relational database
+        (which is going to be furtherly explained in this document). In the
+        meantime, the software is going to require an exclusive access to third
+        party databases (eg. municipality databases), which are going to expose
+        a series of API calls in order to retrieve relative data on certain
+        areas of said municipality, traffic violations and so on.
     \end{itemize} 
     \newpage   
     \section{Run-time view}
