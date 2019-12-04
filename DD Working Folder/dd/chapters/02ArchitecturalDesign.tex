@@ -219,7 +219,7 @@
         When submitted, the request is sent to the Router, which forwards it to
         the right component, i.e. the 'SignInManager'. The latter is responsible
         for checking the input and asks to the DBMS if there exists a couple
-        <Id,password> into the database. If there no exists, SignInManager send
+        <Id,password> into the database. If it does not exist, the SignInManager send
         an error to the user, otherwise, once understand the right of the user
         (i.e. PoliceOfficerRights) and his municipality, he send these data to
         the WebApp which shows the personal menu to the Police Officer. 
@@ -229,40 +229,36 @@
             \includegraphics[scale=0.28]{dd/resources/images/RuntimeView-UnsafeAreas}
             \caption{Runtime View - Unsafe Areas}        
         \end{figure}
-        In this sequence diagram the process of analyze the Unsafe Areas is
-        shown. The Municipal Employee request the UnsafeAreaPage to the WebApp
-        which forwards the request to the Router adding the Id of the municipal
-        employee. The Routher forwards it to the right component, i.e. the
-        'UnsafeAreaManager'. The latter understand, through the Id, the
-        municipality of competence of the Municipal Employee and asks the map to
-        Google Maps. Therefore the map of the municipality is sent up to the
-        employee. At this point, the employee can add filters to his maps and,
-        through the same chain, UnsafeAreaManager receives the map from Google
-        Maps and forwards it and the filters to CrossDataManager. The latter
-        forwards all the data to the Municipality Database which responds with
-        the map filtered. Moreover the CrossDataManager forwards all the data to
-        the DBMS of SafeStreets which responds with the map and signalation. Now
-        CrossDataManager has all the data that it needs to cross the data and he
-        sends the resulting map up to the employee. The employee can decide to
-        update or delete or add suggestions and he send them to
-        UnsafeAreaManager which forwards them to the DBMS of Safestreets, the
-        process ends with the confirm of the DBMS sent up to the employee.
-
+        In this sequence diagram the process of analyzing the Unsafe Areas is
+        shown. The Municipal Employee requests the UnsafeAreaPage to the WebApp
+        which forwards the request to the Router adding the Id of the ME. 
+        The Router forwards it to the right component, the
+        'UnsafeAreaManager'. The latter understands, through the Id, the
+        municipality of competence of the Municipal Employee and requests a rendered map to
+        Google Maps, which is finally sent to the employee. Once the maps has been analyzed by the 
+        user, he/she can request a differently rendered map to the system by simply 
+        inputting (as many times as he/she desires) a series of filters offered by Safestreets.
+        All input filters are then forwarded to the CrossDataManager, which requests the needed data
+        to both municipality and Safesteets' databases. Once all requested data are received, it 
+        proceeds with a cross referencing of said data and returns a detail of the map with all 
+        suggested interventions in that area to the user, which can then proceed to create, update 
+        or delete some notes on that area of reference.
+        
         \subsection{Statistics}
         \begin{figure}[H]
             \includegraphics[scale=0.34]{dd/resources/images/RuntimeView-Statistics}
             \caption{Runtime View - Statistics}
         \end{figure}
-        In this sequence diagram the process of analyze the Statistics is shown. 
-        The Municipal Director request the StatisticsPage to the WebApp which forwards 
-        the request to rhe Router adding the Id of the municipal director. The Router 
-        forwards it to right component, i.e. the 'StatisticsManager'. The latter 
-        understand, through the Id, the municipality of competence of the Municipal 
-        Director and forward the request to the CrossDataManager. The latter retrieve 
+        In this sequence diagram the process of analyzing the Statistics is shown. 
+        The Municipal Director requests the StatisticsPage to the WebApp which forwards 
+        the request to the Router adding the Id of the Municipal Director. The Router 
+        forwards it to the right component, the 'StatisticsManager'. It 
+        understands, through the Id, the municipality of competence of the Municipal 
+        Director and forwards the request to the CrossDataManager. The latter retrieves 
         the data from the municipality and from the DBMS of SafeStreets. Now CrossDataManager 
-        has all the data that it needs to cross the data and he sends the resulting data up 
-        to the employee. The employee can decide which type of statistics to select and the 
-        process enda with the WebApp that show to the director the statistics selected.
+        has all the data that it needs to cross reference the data and it sends the resulting data up 
+        to the employee, which can then decide which type of statistics to select and the 
+        process ends with the WebApp that shows to the director the requested statistics.
 
     \newpage
     \section{Component interfaces}
