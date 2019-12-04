@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  3 NOV 2019 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  26 NOV 2019 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,7 +412,7 @@ LaTeX Info: Redefining \nameref on input line 15.
 \@outlinefile=\write3
 \openout3 = `Rasd.out'.
 
-<Images/logo_polimi.png, id=205, 211.79124pt x 106.3975pt>
+<Images/logo_polimi.png, id=188, 211.79124pt x 106.3975pt>
 File: Images/logo_polimi.png Graphic file (type png)
 <use Images/logo_polimi.png>
 Package pdftex.def Info: Images/logo_polimi.png  used on input line 17.
@@ -438,9 +438,9 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 33.
+(Font)              size <20.74> substituted on input line 32.
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 44.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 43.
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -455,219 +455,268 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `Rasd.toc'.
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 54--81
+Underfull \hbox (badness 10000) in paragraph at lines 53--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--81
+Underfull \hbox (badness 10000) in paragraph at lines 53--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--81
+Underfull \hbox (badness 10000) in paragraph at lines 53--78
 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 84.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 82.
 (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
- [4] [5]
-Overfull \hbox (16.9733pt too wide) in paragraph at lines 153--154
-[]\T1/cmr/m/n/10 Alloy doc: http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html 
- []
-
-[6]
-Overfull \hbox (1.99998pt too wide) in paragraph at lines 163--168
- []\T1/cmr/bx/n/10 Chapter 2 - Over-all De-scrip-tion[] \T1/cmr/m/n/10 Of-fers an over-all de-scrip-tion of the project.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+ [4] [5] [6]
+Overfull \hbox (69.69653pt too wide) in paragraph at lines 164--166
+[]\T1/cmr/bx/n/10 Alloy doc: []\T1/cmtt/m/n/10 http://alloy.lcs.mit.edu/alloy/documentation/quickguide/seq.html[] 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 192--224
+Overfull \hbox (1.99998pt too wide) in paragraph at lines 175--180
+ []\T1/cmr/bx/n/10 Chapter 2 - Over-all De-scrip-tion[] \T1/cmr/m/n/10 Of-fers an over-all de-scrip-tion of the project.
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 202--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--224
+Underfull \hbox (badness 10000) in paragraph at lines 202--233
 
  []
 
-<Images/umlmodel.png, id=320, 1597.97pt x 616.3025pt>
+<Images/umlmodel.png, id=309, 1597.97pt x 616.3025pt>
 File: Images/umlmodel.png Graphic file (type png)
 <use Images/umlmodel.png>
-Package pdftex.def Info: Images/umlmodel.png  used on input line 227.
+Package pdftex.def Info: Images/umlmodel.png  used on input line 236.
 (pdftex.def)             Requested size: 607.23492pt x 234.19737pt.
-[8]
+[9]
 Overfull \vbox (81.1789pt too high) has occurred while \output is active []
 
- [9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/umlmodel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 231--240
+ [10 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/umlmodel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
 
  []
 
-<Images/ActivityInputViolation.png, id=331, 985.6825pt x 342.27875pt>
+<Images/ActivityInputViolation.png, id=320, 985.6825pt x 342.27875pt>
 File: Images/ActivityInputViolation.png Graphic file (type png)
 <use Images/ActivityInputViolation.png>
-Package pdftex.def Info: Images/ActivityInputViolation.png  used on input line 243.
+Package pdftex.def Info: Images/ActivityInputViolation.png  used on input line 252.
 (pdftex.def)             Requested size: 354.84543pt x 123.22025pt.
 
-Overfull \hbox (9.84543pt too wide) in paragraph at lines 243--244
+Overfull \hbox (9.84543pt too wide) in paragraph at lines 252--253
  [][] 
  []
 
-<Images/ActivityCheckViolation.png, id=332, 984.67876pt x 414.54875pt>
+<Images/ActivityCheckViolation.png, id=321, 984.67876pt x 414.54875pt>
 File: Images/ActivityCheckViolation.png Graphic file (type png)
 <use Images/ActivityCheckViolation.png>
-Package pdftex.def Info: Images/ActivityCheckViolation.png  used on input line 260.
+Package pdftex.def Info: Images/ActivityCheckViolation.png  used on input line 269.
 (pdftex.def)             Requested size: 354.48409pt x 149.23743pt.
 
-Overfull \hbox (9.48409pt too wide) in paragraph at lines 260--261
+Overfull \hbox (9.48409pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
-[10 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityInputViolation.png>] [11 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityCheckViolation.png>] [12] [13] [14]
-<Images/SignUpAuthoritiesApp.png, id=360, 278.84175pt x 537.207pt>
+[11 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityInputViolation.png>] [12 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ActivityCheckViolation.png>] [13] [14] [15]
+<Images/SignUpAuthoritiesApp.png, id=350, 278.84175pt x 537.207pt>
 File: Images/SignUpAuthoritiesApp.png Graphic file (type png)
 <use Images/SignUpAuthoritiesApp.png>
-Package pdftex.def Info: Images/SignUpAuthoritiesApp.png  used on input line 386.
+Package pdftex.def Info: Images/SignUpAuthoritiesApp.png  used on input line 401.
 (pdftex.def)             Requested size: 195.18788pt x 376.04233pt.
-<Images/SignUpUtenteAPP.png, id=361, 281.25075pt x 545.03625pt>
+<Images/SignUpUtenteAPP.png, id=351, 281.25075pt x 545.03625pt>
 File: Images/SignUpUtenteAPP.png Graphic file (type png)
 <use Images/SignUpUtenteAPP.png>
-Package pdftex.def Info: Images/SignUpUtenteAPP.png  used on input line 391.
+Package pdftex.def Info: Images/SignUpUtenteAPP.png  used on input line 406.
 (pdftex.def)             Requested size: 196.87416pt x 381.52278pt.
-<Images/SignInAPP.png, id=362, 266.79675pt x 541.42274pt>
+<Images/SignInAPP.png, id=352, 266.79675pt x 541.42274pt>
 File: Images/SignInAPP.png Graphic file (type png)
 <use Images/SignInAPP.png>
-Package pdftex.def Info: Images/SignInAPP.png  used on input line 396.
+Package pdftex.def Info: Images/SignInAPP.png  used on input line 411.
 (pdftex.def)             Requested size: 186.75644pt x 378.99333pt.
- [15 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignUpAuthoritiesApp.png>]
-<Images/MenuAPP.png, id=369, 371.13657pt x 683.55376pt>
+ [16 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignUpAuthoritiesApp.png>]
+<Images/MenuAPP.png, id=359, 371.13657pt x 683.55376pt>
 File: Images/MenuAPP.png Graphic file (type png)
 <use Images/MenuAPP.png>
-Package pdftex.def Info: Images/MenuAPP.png  used on input line 401.
+Package pdftex.def Info: Images/MenuAPP.png  used on input line 416.
 (pdftex.def)             Requested size: 259.79381pt x 478.48438pt.
- [16 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignUpUtenteAPP.png>]
-<Images/SignalAViolationAPP.png, id=376, 264.38776pt x 545.03625pt>
+ [17 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignUpUtenteAPP.png>]
+<Images/MyReportsApp.png, id=366, 289.68225pt x 548.64975pt>
+File: Images/MyReportsApp.png Graphic file (type png)
+<use Images/MyReportsApp.png>
+Package pdftex.def Info: Images/MyReportsApp.png  used on input line 421.
+(pdftex.def)             Requested size: 202.77618pt x 384.0522pt.
+ [18 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignInAPP.png>]
+<Images/SignalAViolationAPP.png, id=373, 264.38776pt x 545.03625pt>
 File: Images/SignalAViolationAPP.png Graphic file (type png)
 <use Images/SignalAViolationAPP.png>
-Package pdftex.def Info: Images/SignalAViolationAPP.png  used on input line 406.
+Package pdftex.def Info: Images/SignalAViolationAPP.png  used on input line 426.
 (pdftex.def)             Requested size: 185.07016pt x 381.52278pt.
- [17 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignInAPP.png>]
-<Images/UnsafeAreaAnalysisAPP.png, id=383, 279.444pt x 543.2295pt>
+ [19 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/MenuAPP.png>]
+<Images/UnsafeAreaAnalysisAPP.png, id=381, 279.444pt x 543.2295pt>
 File: Images/UnsafeAreaAnalysisAPP.png Graphic file (type png)
 <use Images/UnsafeAreaAnalysisAPP.png>
-Package pdftex.def Info: Images/UnsafeAreaAnalysisAPP.png  used on input line 411.
+Package pdftex.def Info: Images/UnsafeAreaAnalysisAPP.png  used on input line 431.
 (pdftex.def)             Requested size: 195.60947pt x 380.25806pt.
- [18 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/MenuAPP.png>]
-<Images/MenuOfficerAPP.png, id=390, 347.79938pt x 685.8122pt>
+ [20 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/MyReportsApp.png>]
+<Images/MenuOfficerAPP.png, id=388, 347.79938pt x 685.8122pt>
 File: Images/MenuOfficerAPP.png Graphic file (type png)
 <use Images/MenuOfficerAPP.png>
-Package pdftex.def Info: Images/MenuOfficerAPP.png  used on input line 416.
+Package pdftex.def Info: Images/MenuOfficerAPP.png  used on input line 436.
 (pdftex.def)             Requested size: 243.4579pt x 480.06528pt.
- [19 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignalAViolationAPP.png>]
-<Images/ViolationsAPP.png, id=398, 376.40625pt x 694.09312pt>
+ [21 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SignalAViolationAPP.png>]
+<Images/ViolationsAPP.png, id=395, 376.40625pt x 694.09312pt>
 File: Images/ViolationsAPP.png Graphic file (type png)
 <use Images/ViolationsAPP.png>
-Package pdftex.def Info: Images/ViolationsAPP.png  used on input line 421.
+Package pdftex.def Info: Images/ViolationsAPP.png  used on input line 441.
 (pdftex.def)             Requested size: 263.48257pt x 485.86188pt.
- [20 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/UnsafeAreaAnalysisAPP.png>]
-<Images/WEBSignUp.png, id=405, 828.84656pt x 569.87906pt>
+ [22 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/UnsafeAreaAnalysisAPP.png>]
+<Images/WEBSignUp.png, id=402, 828.84656pt x 569.87906pt>
 File: Images/WEBSignUp.png Graphic file (type png)
 <use Images/WEBSignUp.png>
-Package pdftex.def Info: Images/WEBSignUp.png  used on input line 426.
+Package pdftex.def Info: Images/WEBSignUp.png  used on input line 446.
 (pdftex.def)             Requested size: 290.10063pt x 199.46065pt.
- [21 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/MenuOfficerAPP.png>]
-<Images/WEBSignIn.png, id=412, 818.30719pt x 567.62062pt>
+ [23 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/MenuOfficerAPP.png>]
+<Images/WEBSignIn.png, id=409, 818.30719pt x 567.62062pt>
 File: Images/WEBSignIn.png Graphic file (type png)
 <use Images/WEBSignIn.png>
-Package pdftex.def Info: Images/WEBSignIn.png  used on input line 431.
+Package pdftex.def Info: Images/WEBSignIn.png  used on input line 451.
 (pdftex.def)             Requested size: 286.4118pt x 198.67018pt.
- [22 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ViolationsAPP.png>]
-<Images/WEBViolations.png, id=419, 846.91406pt x 579.66562pt>
+ [24 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/ViolationsAPP.png>]
+<Images/WEBViolations.png, id=416, 846.91406pt x 579.66562pt>
 File: Images/WEBViolations.png Graphic file (type png)
 <use Images/WEBViolations.png>
-Package pdftex.def Info: Images/WEBViolations.png  used on input line 436.
+Package pdftex.def Info: Images/WEBViolations.png  used on input line 456.
 (pdftex.def)             Requested size: 296.42436pt x 202.886pt.
-<Images/WEBViolationChecking.png, id=420, 832.61063pt x 575.14874pt>
+<Images/WEBViolationChecking.png, id=417, 832.61063pt x 575.14874pt>
 File: Images/WEBViolationChecking.png Graphic file (type png)
 <use Images/WEBViolationChecking.png>
-Package pdftex.def Info: Images/WEBViolationChecking.png  used on input line 441.
+Package pdftex.def Info: Images/WEBViolationChecking.png  used on input line 461.
 (pdftex.def)             Requested size: 291.41808pt x 201.30507pt.
- [23 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBSignUp.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBSignIn.png>]
-<Images/WEBUnsafeAreas.png, id=429, 828.84656pt x 579.66562pt>
+ [25 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBSignUp.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBSignIn.png>]
+<Images/WEBUnsafeAreas.png, id=427, 828.84656pt x 579.66562pt>
 File: Images/WEBUnsafeAreas.png Graphic file (type png)
 <use Images/WEBUnsafeAreas.png>
-Package pdftex.def Info: Images/WEBUnsafeAreas.png  used on input line 446.
+Package pdftex.def Info: Images/WEBUnsafeAreas.png  used on input line 466.
 (pdftex.def)             Requested size: 290.10063pt x 202.886pt.
- [24 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolations.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolationChecking.png>] [25 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBUnsafeAreas.png>] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+<Images/StatisticsWeb.png, id=428, 849.92531pt x 581.17125pt>
+File: Images/StatisticsWeb.png Graphic file (type png)
+<use Images/StatisticsWeb.png>
+Package pdftex.def Info: Images/StatisticsWeb.png  used on input line 471.
+(pdftex.def)             Requested size: 297.47832pt x 203.41298pt.
+ [26 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolations.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBViolationChecking.png>] [27 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/WEBUnsafeAreas.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/StatisticsWeb.png>] [28]
+<Images/UseCaseUserView.png, id=450, 687.56876pt x 553.06625pt>
+File: Images/UseCaseUserView.png Graphic file (type png)
+<use Images/UseCaseUserView.png>
+Package pdftex.def Info: Images/UseCaseUserView.png  used on input line 510.
+(pdftex.def)             Requested size: 343.78354pt x 276.53244pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--512
 
  []
 
-[27]
-<Images/SequenceReportViolation.png, id=455, 820.06375pt x 815.045pt>
-File: Images/SequenceReportViolation.png Graphic file (type png)
-<use Images/SequenceReportViolation.png>
-Package pdftex.def Info: Images/SequenceReportViolation.png  used on input line 537.
-(pdftex.def)             Requested size: 369.02528pt x 366.76686pt.
 
-Overfull \hbox (24.02528pt too wide) in paragraph at lines 537--538
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--539
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 
  []
 
-<Images/SequenceUserAnalyseUnsafeAreas.png, id=456, 653.44125pt x 633.36626pt>
-File: Images/SequenceUserAnalyseUnsafeAreas.png Graphic file (type png)
-<use Images/SequenceUserAnalyseUnsafeAreas.png>
-Package pdftex.def Info: Images/SequenceUserAnalyseUnsafeAreas.png  used on input line 543.
-(pdftex.def)             Requested size: 326.71982pt x 316.68236pt.
-[28 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceReportViolation.png>] [29 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceUserAnalyseUnsafeAreas.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 559--561
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+[29 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/UseCaseUserView.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
 
  []
 
 [30]
-<Images/SequenceThirdPartyCheckViolation.png, id=475, 753.81625pt x 783.92876pt>
-File: Images/SequenceThirdPartyCheckViolation.png Graphic file (type png)
-<use Images/SequenceThirdPartyCheckViolation.png>
-Package pdftex.def Info: Images/SequenceThirdPartyCheckViolation.png  used on input line 590.
-(pdftex.def)             Requested size: 354.29369pt x 368.44656pt.
-
-Overfull \hbox (9.29369pt too wide) in paragraph at lines 590--591
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--592
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 
  []
 
-<Images/SequenceThirdPartyUnsafeAreas.png, id=476, 763.85374pt x 693.59125pt>
-File: Images/SequenceThirdPartyUnsafeAreas.png Graphic file (type png)
-<use Images/SequenceThirdPartyUnsafeAreas.png>
-Package pdftex.def Info: Images/SequenceThirdPartyUnsafeAreas.png  used on input line 596.
-(pdftex.def)             Requested size: 359.0113pt x 325.98793pt.
 
-Overfull \hbox (14.0113pt too wide) in paragraph at lines 596--597
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
+
  []
 
-[31 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceThirdPartyCheckViolation.png>]
-<Images/UseCaseUserView.png, id=485, 687.56876pt x 553.06625pt>
-File: Images/UseCaseUserView.png Graphic file (type png)
-<use Images/UseCaseUserView.png>
-Package pdftex.def Info: Images/UseCaseUserView.png  used on input line 605.
-(pdftex.def)             Requested size: 343.78354pt x 276.53244pt.
- [32 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceThirdPartyUnsafeAreas.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 612--612
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--597
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
@@ -682,42 +731,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 614--615
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--628
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
-
- []
-
-[33 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/UseCaseUserView.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 641--641
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 643--643
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
+Underfull \hbox (badness 10000) in paragraph at lines 639--639
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--663
 
  []
 
@@ -726,213 +790,150 @@ Underfull \hbox (badness 10000) in paragraph at lines 664--665
 
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 675--675
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--677
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
+Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
-
- []
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 695--697
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--706
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+[33] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 707--708
 
  []
 
+[35]
+<Images/SequenceReportViolation.png, id=523, 820.06375pt x 815.045pt>
+File: Images/SequenceReportViolation.png Graphic file (type png)
+<use Images/SequenceReportViolation.png>
+Package pdftex.def Info: Images/SequenceReportViolation.png  used on input line 752.
+(pdftex.def)             Requested size: 369.02528pt x 366.76686pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--716
-
+Overfull \hbox (24.02528pt too wide) in paragraph at lines 752--753
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 749--754
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--723
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 732--732
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 743--744
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 746--747
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 754--755
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 757--758
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 764--766
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 768--769
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
-
- []
-
-<Images/UseCaseThirdPartyView.png, id=539, 689.57625pt x 553.06625pt>
+<Images/SequenceUserAnalyseUnsafeAreas.png, id=524, 653.44125pt x 633.36626pt>
+File: Images/SequenceUserAnalyseUnsafeAreas.png Graphic file (type png)
+<use Images/SequenceUserAnalyseUnsafeAreas.png>
+Package pdftex.def Info: Images/SequenceUserAnalyseUnsafeAreas.png  used on input line 758.
+(pdftex.def)             Requested size: 326.71982pt x 316.68236pt.
+[36 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceReportViolation.png>] [37 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceUserAnalyseUnsafeAreas.png>] [38]
+<Images/UseCaseThirdPartyView.png, id=546, 689.57625pt x 553.06625pt>
 File: Images/UseCaseThirdPartyView.png Graphic file (type png)
 <use Images/UseCaseThirdPartyView.png>
-Package pdftex.def Info: Images/UseCaseThirdPartyView.png  used on input line 780.
+Package pdftex.def Info: Images/UseCaseThirdPartyView.png  used on input line 799.
 (pdftex.def)             Requested size: 344.78728pt x 276.53244pt.
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 787--787
+
+Underfull \hbox (badness 10000) in paragraph at lines 806--806
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--792
+Underfull \hbox (badness 10000) in paragraph at lines 811--812
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 802--803
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 805--807
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--817
+Underfull \hbox (badness 10000) in paragraph at lines 835--837
 
  []
 
-[38 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/UseCaseThirdPartyView.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 825--825
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 827--827
+[39 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/UseCaseThirdPartyView.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--830
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--839
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--842
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 848--849
-
- []
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 857--858
+Underfull \hbox (badness 10000) in paragraph at lines 862--863
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--859
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 861--862
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 868--870
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 872--873
+Underfull \hbox (badness 10000) in paragraph at lines 880--880
 
  []
 
@@ -942,73 +943,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 882--883
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 884--884
+Underfull \hbox (badness 10000) in paragraph at lines 889--891
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 886--887
+Underfull \hbox (badness 10000) in paragraph at lines 893--894
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 901--903
+Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--906
+Underfull \hbox (badness 10000) in paragraph at lines 905--905
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 908--909
-
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 916--917
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 918--918
+Underfull \hbox (badness 10000) in paragraph at lines 922--924
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 920--921
+Underfull \hbox (badness 10000) in paragraph at lines 926--927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--929
-
+Underfull \hbox (badness 1102) in paragraph at lines 929--930
+[]\T1/cmr/m/n/10 The au-thor-ithy user closes the web-site be-fore the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 931--932
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 934--935
+Underfull \hbox (badness 10000) in paragraph at lines 929--930
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 943--943
+Underfull \hbox (badness 10000) in paragraph at lines 937--938
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 944--945
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 946--947
+Underfull \hbox (badness 10000) in paragraph at lines 941--942
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 950--952
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--955
+
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 957--958
+[]\T1/cmr/m/n/10 The au-thor-ithy user closes the web-site be-fore the
  []
 
 
@@ -1016,97 +1022,190 @@ Underfull \hbox (badness 10000) in paragraph at lines 957--958
 
  []
 
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 965--966
 
-Underfull \hbox (badness 10000) in paragraph at lines 960--961
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--967
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 
  []
 
-[42] [43]
-Overfull \hbox (16.59729pt too wide) in paragraph at lines 988--990
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--978
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--981
+
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 984--985
+[]\T1/cmr/m/n/10 The au-thor-ithy user closes the web-site be-fore the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 984--985
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--993
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 994--995
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
+
+ []
+
+[43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1038
+
+ []
+
+[45]
+<Images/SequenceThirdPartyCheckViolation.png, id=624, 753.81625pt x 783.92876pt>
+File: Images/SequenceThirdPartyCheckViolation.png Graphic file (type png)
+<use Images/SequenceThirdPartyCheckViolation.png>
+Package pdftex.def Info: Images/SequenceThirdPartyCheckViolation.png  used on input line 1072.
+(pdftex.def)             Requested size: 354.29369pt x 368.44656pt.
+
+Overfull \hbox (9.29369pt too wide) in paragraph at lines 1072--1073
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1074
+
+ []
+
+<Images/SequenceThirdPartyUnsafeAreas.png, id=625, 763.85374pt x 693.59125pt>
+File: Images/SequenceThirdPartyUnsafeAreas.png Graphic file (type png)
+<use Images/SequenceThirdPartyUnsafeAreas.png>
+Package pdftex.def Info: Images/SequenceThirdPartyUnsafeAreas.png  used on input line 1078.
+(pdftex.def)             Requested size: 359.0113pt x 325.98793pt.
+
+Overfull \hbox (14.0113pt too wide) in paragraph at lines 1078--1079
+ [][] 
+ []
+
+[46 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceThirdPartyCheckViolation.png>] [47 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/SequenceThirdPartyUnsafeAreas.png>]
+Overfull \hbox (16.59729pt too wide) in paragraph at lines 1098--1100
 []\T1/cmr/m/n/10 must be able to make HTTPS re-quests (con-nec-tion to in-ter-net 4G/3G/2G/Wi-
  []
 
-[44] [45] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als [46] [47] [48] [49] [50] [51] [52] [53] [54]) [55]
-<Images/Alloy-Assertions.png, id=1016, 348.55219pt x 306.39468pt>
+[48] [49]
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1157
+
+ []
+
+[50] (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/RASD.als [51] [52] [53] [54] [55] [56] [57] [58] [59]) [60]
+<Images/Alloy-Assertions.png, id=1042, 438.13687pt x 592.46344pt>
 File: Images/Alloy-Assertions.png Graphic file (type png)
 <use Images/Alloy-Assertions.png>
-Package pdftex.def Info: Images/Alloy-Assertions.png  used on input line 1029.
-(pdftex.def)             Requested size: 348.55132pt x 306.39394pt.
+Package pdftex.def Info: Images/Alloy-Assertions.png  used on input line 1164.
+(pdftex.def)             Requested size: 438.13579pt x 592.46199pt.
 
-Overfull \hbox (3.55132pt too wide) in paragraph at lines 1029--1030
+Overfull \hbox (93.13579pt too wide) in paragraph at lines 1164--1165
  [][] 
  []
 
-<Images/Alloy-World1.png, id=1017, 2367.84625pt x 1090.0725pt>
+<Images/Alloy-World1.png, id=1043, 2367.84625pt x 1090.0725pt>
 File: Images/Alloy-World1.png Graphic file (type png)
 <use Images/Alloy-World1.png>
-Package pdftex.def Info: Images/Alloy-World1.png  used on input line 1034.
+Package pdftex.def Info: Images/Alloy-World1.png  used on input line 1169.
 (pdftex.def)             Requested size: 2367.8405pt x 1090.06984pt.
 
-Overfull \hbox (178.22885pt too wide) in paragraph at lines 1034--1035
- [][] 
- []
+Overfull \vbox (66.40596pt too high) has occurred while \output is active []
 
-<Images/Alloy-World2.png, id=1018, 2336.73pt x 867.24pt>
+ [61 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png>]
+<Images/Alloy-World2.png, id=1050, 2336.73pt x 867.24pt>
 File: Images/Alloy-World2.png Graphic file (type png)
 <use Images/Alloy-World2.png>
-Package pdftex.def Info: Images/Alloy-World2.png  used on input line 1039.
+Package pdftex.def Info: Images/Alloy-World2.png  used on input line 1174.
 (pdftex.def)             Requested size: 2336.72432pt x 867.2379pt.
-[56 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-Assertions.png>]
-Overfull \vbox (610.49728pt too high) has occurred while \output is active []
 
- [57 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png (PNG copy)>]
-<Images/Alloy-World3.png, id=1029, 2640.86626pt x 916.42375pt>
+Overfull \vbox (65.90408pt too high) has occurred while \output is active []
+
+ [62 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World1.png (PNG copy)>]
+<Images/Alloy-World3.png, id=1056, 2640.86626pt x 916.42375pt>
 File: Images/Alloy-World3.png Graphic file (type png)
 <use Images/Alloy-World3.png>
-Package pdftex.def Info: Images/Alloy-World3.png  used on input line 1044.
+Package pdftex.def Info: Images/Alloy-World3.png  used on input line 1179.
 (pdftex.def)             Requested size: 2640.85983pt x 916.42152pt.
 
-Overfull \vbox (291.81174pt too high) has occurred while \output is active []
+Overfull \vbox (58.12505pt too high) has occurred while \output is active []
 
- [58 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png (PNG copy)>]
-<Images/Alloy-World4.png, id=1035, 2908.8675pt x 682.55pt>
+ [63 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World2.png (PNG copy)>]
+<Images/Alloy-World4.png, id=1062, 2908.8675pt x 682.55pt>
 File: Images/Alloy-World4.png Graphic file (type png)
 <use Images/Alloy-World4.png>
-Package pdftex.def Info: Images/Alloy-World4.png  used on input line 1049.
+Package pdftex.def Info: Images/Alloy-World4.png  used on input line 1184.
 (pdftex.def)             Requested size: 2908.86043pt x 682.54834pt.
- [59 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png (PNG copy)>]
-Overfull \vbox (201.15907pt too high) has occurred while \output is active []
 
- [60 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1072.
- [61]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1072.
+Overfull \vbox (81.33044pt too high) has occurred while \output is active []
+
+ [64 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World3.png (PNG copy)>]
+Overfull \vbox (113.8968pt too high) has occurred while \output is active []
+
+ [65 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Images/Alloy-World4.png (PNG copy)>] [66]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1232.
+ [67]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1232.
  (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1072.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1072.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1232.
 Package rerunfilecheck Info: File `Rasd.out' has not changed.
-(rerunfilecheck)             Checksum: F6D773B145F62A3A52286B5418E71368;3627.
+(rerunfilecheck)             Checksum: FA414A18BAAE464FA5543ABAE1210D5E;3371.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1072.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1232.
  ) 
 Here is how much of TeX's memory you used:
- 18586 strings out of 492167
- 325735 string characters out of 6129158
- 527168 words of memory out of 5000000
- 22259 multiletter control sequences out of 15000+600000
- 543833 words of font info for 45 fonts, out of 8000000 for 9000
+ 18619 strings out of 492167
+ 326216 string characters out of 6129158
+ 527817 words of memory out of 5000000
+ 22270 multiletter control sequences out of 15000+600000
+ 544146 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,67p,401b,2032s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (61 pages, 3091106 bytes).
+ 44i,11n,67p,401b,2030s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/RASD Working Folder/Rasd.pdf" (67 pages, 3231215 bytes).
 PDF statistics:
- 1215 PDF objects out of 1440 (max. 8388607)
- 1078 compressed objects within 11 object streams
- 581 named destinations out of 1000 (max. 500000)
- 541 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1253 PDF objects out of 1440 (max. 8388607)
+ 1104 compressed objects within 12 object streams
+ 600 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -32,7 +32,7 @@
         \fontsize{20pt}{12pt}\selectfont \textbf{RASD}\\[1ex]
         \fontsize{15pt}{12pt}\selectfont Requirements Analysis and Specification
         Document \endgroup\\[8ex]
-    \normalsize \textbf{Version 1.0}\\\normalsize \today\\
+    \normalsize \textbf{Version 1.1}\\\normalsize \today\\
 \end{center}
 
 \vspace*{\fill}
@@ -155,7 +155,8 @@ requirement; \paragraph{ID: } identifier (Fiscal Code for Users, a
 municipality identifier for Authorithy Users)
 \subsection{Revision History}
 \begin{itemize}
-    \item \textbf{04/11/2019 :} Version 1.0 released
+    \item \textbf{Version 1.0} released: first release.
+    \item \textbf{Version 1.1} released: one constraint added and one use case ("Visualize Statistics") added.
 \end{itemize}
 \subsection{Reference Documents}
 \begin{itemize}
@@ -384,10 +385,13 @@ The system uses external suitable services to make its architecture simpler.
 SafeStreets uses sensitive data which handling differs from nation to nation.
 For example, in UE, GDPR provides the guidelines to transmit, store and analyze
 information.\\ SafeStreets personalizes the process according to the country in
-which the services are used. \paragraph{2.4.3.2 Parallel Operations}\mbox{}\\
+which the services are used.
+\paragraph{2.4.3.2 Parallel Operations}\mbox{}\\
 The system must provide support for multiple parallel operations from a big
 number of different users. The user must not wait in order to be able to connect
 to the service.
+\paragraph{2.4.3.3 Ghiro}\mbox{}\\
+The authorithy user must be able to download and use Ghiro.
 \newpage
 \section{Specific Requirements}
 \subsection{External Interface Requirements}
@@ -930,6 +934,34 @@ on previous data and data subsequent to the use of the service.
 \begin{table}[H]
     \begin{tabular}{|l|l|}
     \hline
+    Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Visualize Statistics\\}
+    \end{minipage} \\ \hline  
+    Actor & \begin{minipage}[t]{0.7\textwidth} Authorithy user\\ \end{minipage} \\
+    \hline 
+    Entry conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user has
+    already logged in\\ \end{minipage} \\
+    \hline 
+    Events flow & \begin{minipage}[t]{0.7\textwidth}
+    \begin{enumerate}
+        \item The authorithy user clicks on the menu icon
+        \item The authorithy user clicks on "Statistics"
+        \item The authorithy user is allowed to see the list of statistics
+        \item The authorithy user click on "Open Details" of one particular statistic
+        \item The authorithy user is allowed to see information about the particular
+        statistic\\
+    \end{enumerate}
+    \end{minipage} \\ \hline
+    Exit conditions & \begin{minipage}[t]{0.7\textwidth} The authorithy user can
+    see information about statistics\\ \end{minipage} \\
+    \hline
+    Exceptions & \begin{minipage}[t]{0.7\textwidth}The authorithy user closes the
+    website before the process has ended\\ \end{minipage} \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \begin{tabular}{|l|l|}
+    \hline
     Name & \begin{minipage}[t]{0.7\textwidth}\textbf{Manage Account\\}
     \end{minipage} \\ \hline  
     Actor & \begin{minipage}[t]{0.7\textwidth}Authorithy user\\\end{minipage} \\
@@ -1008,9 +1040,7 @@ Use \end{description}
 \begin{description}
     \item $\langle$\textbf{R14}$\rangle$ the authorithy user must be able to check
     all the new and past violations details
-    \item $\langle$\textbf{R15}$\rangle$ the authorithy user must be able to use
-    Ghiro
-    \item $\langle$\textbf{R16}$\rangle$ the authorithy user must be able to report
+    \item $\langle$\textbf{R15}$\rangle$ the authorithy user must be able to report
     the validity of the violation \end{description}
 \item $\langle$\textbf{G3}$\rangle$ Show Unsafe Areas
 \begin{description}
@@ -1018,7 +1048,7 @@ Use \end{description}
     unsafe areas
     \item $\langle$\textbf{R11}$\rangle$ the customer is allowed to search
     unsafe areas 
-    \item $\langle$\textbf{R17}$\rangle$ the authorithy user is shown a list of
+    \item $\langle$\textbf{R16}$\rangle$ the authorithy user is shown a list of
     possible improvements to be made to the shown areas by the system
 \end{description}
 \item $\langle$\textbf{G4}$\rangle$ Manage Account
@@ -1030,7 +1060,7 @@ Use \end{description}
 \end{description}  
 \item $\langle$\textbf{G5}$\rangle$ Statistics analysis
 \begin{description}
-    \item $\langle$\textbf{R18}$\rangle$ the authorithy user must be able to
+    \item $\langle$\textbf{R17}$\rangle$ the authorithy user must be able to
     visualize ad-hoc analysis of the Safestreets initiative created by the
     system
 \end{description}
