@@ -17,6 +17,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Signal a violation}{16}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}SignUp and SignIn}{17}{subsection.2.4.2}% 
 \contentsline {subsection}{\numberline {2.4.3}Analyze Unsafe Areas}{19}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.4}Statistics}{20}{subsection.2.4.4}% 
 \contentsline {section}{\numberline {2.5}Component interfaces}{21}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{23}{section.2.6}% 
 \contentsline {subsection}{\numberline {2.6.1}Architectural styles}{23}{subsection.2.6.1}% 

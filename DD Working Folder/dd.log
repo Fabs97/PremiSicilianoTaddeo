@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  27 NOV 2019 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  4 DEC 2019 12:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -959,7 +959,7 @@ LaTeX Info: Redefining \nameref on input line 18.
 \openout5 = `dd.out'.
 
  (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/title.tex
-<dd/resources/images/logo_polimi.png, id=191, 211.79124pt x 106.3975pt>
+<dd/resources/images/logo_polimi.png, id=195, 211.79124pt x 106.3975pt>
 File: dd/resources/images/logo_polimi.png Graphic file (type png)
 <use dd/resources/images/logo_polimi.png>
 Package pdftex.def Info: dd/resources/images/logo_polimi.png  used on input line 4.
@@ -984,7 +984,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...}Requirements traceability}{29}{chapter.4}
+l.36 ...}Requirements traceability}{29}{chapter.4}
                                                   % [1
 
 ])
@@ -1013,7 +1013,7 @@ LaTeX Font Info:    Font shape `OMS/aer/bx/n' in size <7> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 85.
  [5] [6]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/02ArchitecturalDesign.tex [7]
 Chapter 2.
-<dd/resources/images/HighLevelStructure.png, id=306, 765.86125pt x 335.2525pt>
+<dd/resources/images/HighLevelStructure.png, id=311, 765.86125pt x 335.2525pt>
 File: dd/resources/images/HighLevelStructure.png Graphic file (type png)
 <use dd/resources/images/HighLevelStructure.png>
 Package pdftex.def Info: dd/resources/images/HighLevelStructure.png  used on input line 27.
@@ -1036,7 +1036,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--76
  []
 
 [9 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/HighLevelStructure.png>]
-<dd/resources/images/ArchitecturalStructure.png, id=318, 1167.36125pt x 997.7275pt>
+<dd/resources/images/ArchitecturalStructure.png, id=323, 1167.36125pt x 997.7275pt>
 File: dd/resources/images/ArchitecturalStructure.png Graphic file (type png)
 <use dd/resources/images/ArchitecturalStructure.png>
 Package pdftex.def Info: dd/resources/images/ArchitecturalStructure.png  used on input line 78.
@@ -1046,7 +1046,7 @@ Overfull \hbox (5.21107pt too wide) in paragraph at lines 78--79
 [][] 
  []
 
-<dd/resources/images/ComponentDiagram.png, id=319, 2590.67876pt x 1386.17876pt>
+<dd/resources/images/ComponentDiagram.png, id=324, 2590.67876pt x 1386.17876pt>
 File: dd/resources/images/ComponentDiagram.png Graphic file (type png)
 <use dd/resources/images/ComponentDiagram.png>
 Package pdftex.def Info: dd/resources/images/ComponentDiagram.png  used on input line 92.
@@ -1055,7 +1055,7 @@ Package pdftex.def Info: dd/resources/images/ComponentDiagram.png  used on input
 Overfull \vbox (3.12392pt too high) has occurred while \output is active []
 
  [11 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/ComponentDiagram.png>] [12]
-<dd/resources/images/RouterComponents.png, id=338, 463.7325pt x 293.095pt>
+<dd/resources/images/RouterComponents.png, id=343, 463.7325pt x 293.095pt>
 File: dd/resources/images/RouterComponents.png Graphic file (type png)
 <use dd/resources/images/RouterComponents.png>
 Package pdftex.def Info: dd/resources/images/RouterComponents.png  used on input line 133.
@@ -1066,7 +1066,7 @@ Overfull \hbox (25.9865pt too wide) in paragraph at lines 133--134
  []
 
 [13 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/RouterComponents.png>]
-<dd/resources/images/DeploymentDiagram.png, id=345, 1145.27875pt x 876.27374pt>
+<dd/resources/images/DeploymentDiagram.png, id=350, 1145.27875pt x 876.27374pt>
 File: dd/resources/images/DeploymentDiagram.png Graphic file (type png)
 <use dd/resources/images/DeploymentDiagram.png>
 Package pdftex.def Info: dd/resources/images/DeploymentDiagram.png  used on input line 144.
@@ -1077,7 +1077,7 @@ Overfull \hbox (55.85356pt too wide) in paragraph at lines 144--145
  []
 
 [14 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/DeploymentDiagram.png>] [15]
-<dd/resources/images/RuntimeView-SignalViolation.png, id=356, 1185.42876pt x 723.70375pt>
+<dd/resources/images/RuntimeView-SignalViolation.png, id=361, 1185.42876pt x 723.70375pt>
 File: dd/resources/images/RuntimeView-SignalViolation.png Graphic file (type png)
 <use dd/resources/images/RuntimeView-SignalViolation.png>
 Package pdftex.def Info: dd/resources/images/RuntimeView-SignalViolation.png  used on input line 178.
@@ -1087,7 +1087,7 @@ Overfull \hbox (69.90628pt too wide) in paragraph at lines 178--179
 [][] 
  []
 
-<dd/resources/images/RuntimeView-SignUp+SignIn.png, id=357, 1235.61626pt x 1486.55376pt>
+<dd/resources/images/RuntimeView-SignUp+SignIn.png, id=362, 1235.61626pt x 1486.55376pt>
 File: dd/resources/images/RuntimeView-SignUp+SignIn.png Graphic file (type png)
 <use dd/resources/images/RuntimeView-SignUp+SignIn.png>
 Package pdftex.def Info: dd/resources/images/RuntimeView-SignUp+SignIn.png  used on input line 203.
@@ -1101,7 +1101,7 @@ Overfull \hbox (87.47217pt too wide) in paragraph at lines 203--204
 Overfull \vbox (23.95155pt too high) has occurred while \output is active []
 
  [17 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/RuntimeView-SignUp+SignIn.png>]
-<dd/resources/images/RuntimeView-UnsafeAreas.png, id=370, 1617.04124pt x 1265.72874pt>
+<dd/resources/images/RuntimeView-UnsafeAreas.png, id=375, 1617.04124pt x 1265.72874pt>
 File: dd/resources/images/RuntimeView-UnsafeAreas.png Graphic file (type png)
 <use dd/resources/images/RuntimeView-UnsafeAreas.png>
 Package pdftex.def Info: dd/resources/images/RuntimeView-UnsafeAreas.png  used on input line 231.
@@ -1111,41 +1111,52 @@ Overfull \hbox (107.76846pt too wide) in paragraph at lines 231--232
 [][] 
  []
 
-[18] [19 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/RuntimeView-UnsafeAreas.png>] [20]
-<dd/resources/images/ComponentInterfaces.png, id=387, 1477.52pt x 1125.20375pt>
+[18] [19 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/RuntimeView-UnsafeAreas.png>]
+<dd/resources/images/RuntimeView-Statistics.png, id=388, 1282.7925pt x 734.745pt>
+File: dd/resources/images/RuntimeView-Statistics.png Graphic file (type png)
+<use dd/resources/images/RuntimeView-Statistics.png>
+Package pdftex.def Info: dd/resources/images/RuntimeView-Statistics.png  used on input line 255.
+(pdftex.def)             Requested size: 436.14368pt x 249.80998pt.
+
+Overfull \hbox (91.14368pt too wide) in paragraph at lines 255--256
+[][] 
+ []
+
+[20 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/RuntimeView-Statistics.png>]
+<dd/resources/images/ComponentInterfaces.png, id=395, 1477.52pt x 1125.20375pt>
 File: dd/resources/images/ComponentInterfaces.png Graphic file (type png)
 <use dd/resources/images/ComponentInterfaces.png>
-Package pdftex.def Info: dd/resources/images/ComponentInterfaces.png  used on input line 256.
+Package pdftex.def Info: dd/resources/images/ComponentInterfaces.png  used on input line 272.
 (pdftex.def)             Requested size: 489.04854pt x 372.43439pt.
 
-Overfull \hbox (27.43439pt too wide) in paragraph at lines 256--257
+Overfull \hbox (27.43439pt too wide) in paragraph at lines 272--273
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--267
+Underfull \hbox (badness 10000) in paragraph at lines 275--283
 
  []
 
 [21 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/ComponentInterfaces.png>] [22]
-Overfull \hbox (5.87056pt too wide) in paragraph at lines 289--292
+Overfull \hbox (5.87056pt too wide) in paragraph at lines 305--308
 []\T1/aer/bx/n/10 Uniform In-ter-face\T1/aer/m/n/10 : there ex-ists a uni-form way to in-ter-act with SafeStreets
  []
 
 [23]
-<dd/resources/images/MVC.png, id=404, 481.8pt x 361.35pt>
+<dd/resources/images/MVC.png, id=412, 481.8pt x 361.35pt>
 File: dd/resources/images/MVC.png Graphic file (type png)
 <use dd/resources/images/MVC.png>
-Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 337.
+Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 353.
 (pdftex.def)             Requested size: 433.61598pt x 325.21199pt.
 
-Overfull \hbox (88.61598pt too wide) in paragraph at lines 337--338
+Overfull \hbox (88.61598pt too wide) in paragraph at lines 353--354
 [][] 
  []
 
 [24 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>]
 LaTeX Font Info:    Font shape `OMS/aer/m/it' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 360.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 376.
  [25]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [26]
 Chapter 3.
 
@@ -1153,7 +1164,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-<dd/resources/images/UX-diagram-mobile-user.png, id=420, 1155.31625pt x 442.65375pt>
+<dd/resources/images/UX-diagram-mobile-user.png, id=428, 1155.31625pt x 442.65375pt>
 File: dd/resources/images/UX-diagram-mobile-user.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-mobile-user.png>
 Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-user.png  used on input line 15.
@@ -1163,7 +1174,7 @@ Overfull \hbox (59.36674pt too wide) in paragraph at lines 15--16
 [][] 
  []
 
-<dd/resources/images/UX-diagram-mobile-authorityUser.png, id=421, 1135.24126pt x 403.5075pt>
+<dd/resources/images/UX-diagram-mobile-authorityUser.png, id=429, 1135.24126pt x 403.5075pt>
 File: dd/resources/images/UX-diagram-mobile-authorityUser.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-mobile-authorityUser.png>
 Package pdftex.def Info: dd/resources/images/UX-diagram-mobile-authorityUser.png  used on input line 19.
@@ -1176,7 +1187,7 @@ Overfull \hbox (52.3404pt too wide) in paragraph at lines 19--20
 [27
 
  <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/UX-diagram-mobile-user.png>]
-<dd/resources/images/UX-diagram-web.png, id=428, 1135.24126pt x 412.54124pt>
+<dd/resources/images/UX-diagram-web.png, id=436, 1135.24126pt x 412.54124pt>
 File: dd/resources/images/UX-diagram-web.png Graphic file (type png)
 <use dd/resources/images/UX-diagram-web.png>
 Package pdftex.def Info: dd/resources/images/UX-diagram-web.png  used on input line 24.
@@ -1246,6 +1257,11 @@ Underfull \hbox (badness 4156) in paragraph at lines 71--76
 
 Underfull \hbox (badness 10000) in paragraph at lines 71--76
 
+ []
+
+
+Overfull \hbox (10.88542pt too wide) in paragraph at lines 57--78
+[][] 
  []
 
 [32]
@@ -1318,6 +1334,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--119
 
  []
 
+
+Overfull \hbox (3.58568pt too wide) in paragraph at lines 83--122
+[][] 
+ []
+
 [33]
 Underfull \hbox (badness 10000) in paragraph at lines 132--137
 \T1/aer/m/n/10 com-po-nent 'Sig-nalVi-o-la-tion-
@@ -1328,7 +1349,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--137
 
  []
 
-<dd/resources/images/Integration-Router.png, id=462, 522.95375pt x 226.8475pt>
+
+Overfull \hbox (3.58568pt too wide) in paragraph at lines 127--139
+[][] 
+ []
+
+<dd/resources/images/Integration-Router.png, id=470, 522.95375pt x 226.8475pt>
 File: dd/resources/images/Integration-Router.png Graphic file (type png)
 <use dd/resources/images/Integration-Router.png>
 Package pdftex.def Info: dd/resources/images/Integration-Router.png  used on input line 165.
@@ -1338,7 +1364,7 @@ Overfull \hbox (21.06512pt too wide) in paragraph at lines 165--166
 [][] 
  []
 
-<dd/resources/images/Integration-Web.png, id=463, 573.14125pt x 91.34125pt>
+<dd/resources/images/Integration-Web.png, id=471, 573.14125pt x 91.34125pt>
 File: dd/resources/images/Integration-Web.png Graphic file (type png)
 <use dd/resources/images/Integration-Web.png>
 Package pdftex.def Info: dd/resources/images/Integration-Web.png  used on input line 169.
@@ -1349,12 +1375,12 @@ Overfull \hbox (27.5374pt too wide) in paragraph at lines 169--170
  []
 
 [34]
-<dd/resources/images/Integration-DBMS.png, id=470, 663.47874pt x 975.645pt>
+<dd/resources/images/Integration-DBMS.png, id=478, 663.47874pt x 975.645pt>
 File: dd/resources/images/Integration-DBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-DBMS.png>
 Package pdftex.def Info: dd/resources/images/Integration-DBMS.png  used on input line 175.
 (pdftex.def)             Requested size: 331.73856pt x 487.8213pt.
-<dd/resources/images/Integration-MunicipalityDBMS.png, id=471, 512.91624pt x 91.34125pt>
+<dd/resources/images/Integration-MunicipalityDBMS.png, id=479, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-MunicipalityDBMS.png Graphic file (type png)
 <use dd/resources/images/Integration-MunicipalityDBMS.png>
 Package pdftex.def Info: dd/resources/images/Integration-MunicipalityDBMS.png  used on input line 179.
@@ -1365,7 +1391,7 @@ Overfull \hbox (14.03893pt too wide) in paragraph at lines 179--180
  []
 
 [35 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-Router.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-Web.png>]
-<dd/resources/images/Integration-GoogleMaps.png, id=480, 593.21625pt x 532.99126pt>
+<dd/resources/images/Integration-GoogleMaps.png, id=488, 593.21625pt x 532.99126pt>
 File: dd/resources/images/Integration-GoogleMaps.png Graphic file (type png)
 <use dd/resources/images/Integration-GoogleMaps.png>
 Package pdftex.def Info: dd/resources/images/Integration-GoogleMaps.png  used on input line 183.
@@ -1376,7 +1402,7 @@ Overfull \hbox (70.24854pt too wide) in paragraph at lines 183--184
  []
 
 [36 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-DBMS.png>]
-<dd/resources/images/Integration-PlateRecognizer.png, id=489, 512.91624pt x 91.34125pt>
+<dd/resources/images/Integration-PlateRecognizer.png, id=497, 512.91624pt x 91.34125pt>
 File: dd/resources/images/Integration-PlateRecognizer.png Graphic file (type png)
 <use dd/resources/images/Integration-PlateRecognizer.png>
 Package pdftex.def Info: dd/resources/images/Integration-PlateRecognizer.png  used on input line 187.
@@ -1387,7 +1413,7 @@ Overfull \hbox (14.03893pt too wide) in paragraph at lines 187--188
  []
 
 [37 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-MunicipalityDBMS.png> <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/Integration-GoogleMaps.png>]
-<dd/resources/images/Integration-CrossDataManager.png, id=498, 522.95375pt x 231.86626pt>
+<dd/resources/images/Integration-CrossDataManager.png, id=506, 522.95375pt x 231.86626pt>
 File: dd/resources/images/Integration-CrossDataManager.png Graphic file (type png)
 <use dd/resources/images/Integration-CrossDataManager.png>
 Package pdftex.def Info: dd/resources/images/Integration-CrossDataManager.png  used on input line 193.
@@ -1451,22 +1477,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `dd.out' has not changed.
-(rerunfilecheck)             Checksum: FECCFBA9E67FB8679CB35B81CB1C3D8B;2687.
+(rerunfilecheck)             Checksum: 0344DBF76957B8DCF70C9CB333319EDD;2751.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 32321 strings out of 492167
- 603067 string characters out of 6129158
- 689858 words of memory out of 5000000
- 35981 multiletter control sequences out of 15000+600000
+ 32332 strings out of 492167
+ 603489 string characters out of 6129158
+ 690858 words of memory out of 5000000
+ 35989 multiletter control sequences out of 15000+600000
  585812 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,85p,603b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (41 pages, 954448 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (41 pages, 975034 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
- 534 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 623 PDF objects out of 1000 (max. 8388607)
+ 500 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 
