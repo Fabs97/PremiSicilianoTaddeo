@@ -100,31 +100,31 @@
         interacting components because of the different functionalities. 
         \item \textbf{SignUpManager}: this component provides all the procedures
         to allow customers to register to SafeStreets. Obviously, this
-        components has also to interact with the DBMS to store the registration
-        data and to run a check about the chosen email, password and
-        AuthoritiesID or fiscal code.
+        components has also to interact with SafeStreets DBMS to store the
+        registration data and to run a check about the chosen email, password
+        and AuthoritiesID or fiscal code.
         \item \textbf{SignInManager}: it contains all the logic devoted to the
         authentication of the customers. It check the authentication parameters
-        using the data stored on the DBMS.
+        using the data stored on SafeStreets DBMS.
         \item \textbf{AccountManager}: this component provides all the
-        procedures to manage the account
+        procedures to manage the account and interacts with SafeStreets
+        DBMS.
         \item \textbf{SignalViolationManager}: it deals with the signalations of
-        violations made by the users. This component has to verify that all the
-        inserted data are correct and if not has to immediately ask the user to
-        provide more information.
+        violations made by the users. It interacts with SafeStreets DBMS.
         \item \textbf{UnsafeAreasManager}: this component provides all the users
         the possibility to see the unsafe areas. It receives all the information
-        from the DBMS.   
+        from SafeStreets DBMS and municipality DBMS through CrossDataManager. 
         \item \textbf{ViolationsListManager}: with this component the user can
         see all the violations he/she has reported. The authority user can see
-        all the violations reported in his/her area.
+        all the violations reported in his/her area. It interacts with SafeStreets DBMS.
         \item \textbf{ViolationsCheckingManager}: this component provides the
-        authority user the ability to check che violations.
+        authority user the ability to check che violations. It interacts with SafeStreets DBMS.
         \item \textbf{StatisticsManager}: this component provides the authority
         user the possibility to see all the statistic generated crossing the
-        data on violations. 
+        data on violations. It receives all the information
+        from SafeStreets DBMS and municipality DBMS through CrossDataManager. 
         \item \textbf{CrossDataManager}: it crosses data from SafeStreets
-        database and from the municipality database to generate the statistics
+        DBMS and from the municipality DBSM to generate the statistics
         and the unsafe areas.
     \end{itemize}    
     \newpage
