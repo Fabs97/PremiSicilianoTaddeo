@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  4 DEC 2019 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.21)  4 DEC 2019 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1115,10 +1115,10 @@ Overfull \hbox (107.76846pt too wide) in paragraph at lines 229--230
 <dd/resources/images/RuntimeView-Statistics.png, id=388, 1282.7925pt x 734.745pt>
 File: dd/resources/images/RuntimeView-Statistics.png Graphic file (type png)
 <use dd/resources/images/RuntimeView-Statistics.png>
-Package pdftex.def Info: dd/resources/images/RuntimeView-Statistics.png  used on input line 253.
+Package pdftex.def Info: dd/resources/images/RuntimeView-Statistics.png  used on input line 249.
 (pdftex.def)             Requested size: 436.14368pt x 249.80998pt.
 
-Overfull \hbox (91.14368pt too wide) in paragraph at lines 253--254
+Overfull \hbox (91.14368pt too wide) in paragraph at lines 249--250
 [][] 
  []
 
@@ -1126,20 +1126,20 @@ Overfull \hbox (91.14368pt too wide) in paragraph at lines 253--254
 <dd/resources/images/ComponentInterfaces.png, id=395, 1477.52pt x 1125.20375pt>
 File: dd/resources/images/ComponentInterfaces.png Graphic file (type png)
 <use dd/resources/images/ComponentInterfaces.png>
-Package pdftex.def Info: dd/resources/images/ComponentInterfaces.png  used on input line 270.
+Package pdftex.def Info: dd/resources/images/ComponentInterfaces.png  used on input line 266.
 (pdftex.def)             Requested size: 489.04854pt x 372.43439pt.
 
-Overfull \hbox (27.43439pt too wide) in paragraph at lines 270--271
+Overfull \hbox (27.43439pt too wide) in paragraph at lines 266--267
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--281
+Underfull \hbox (badness 10000) in paragraph at lines 269--277
 
  []
 
 [21 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/ComponentInterfaces.png>] [22]
-Overfull \hbox (5.87056pt too wide) in paragraph at lines 303--306
+Overfull \hbox (5.87056pt too wide) in paragraph at lines 299--302
 []\T1/aer/bx/n/10 Uniform In-ter-face\T1/aer/m/n/10 : there ex-ists a uni-form way to in-ter-act with SafeStreets
  []
 
@@ -1147,16 +1147,16 @@ Overfull \hbox (5.87056pt too wide) in paragraph at lines 303--306
 <dd/resources/images/MVC.png, id=412, 481.8pt x 361.35pt>
 File: dd/resources/images/MVC.png Graphic file (type png)
 <use dd/resources/images/MVC.png>
-Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 351.
+Package pdftex.def Info: dd/resources/images/MVC.png  used on input line 347.
 (pdftex.def)             Requested size: 433.61598pt x 325.21199pt.
 
-Overfull \hbox (88.61598pt too wide) in paragraph at lines 351--352
+Overfull \hbox (88.61598pt too wide) in paragraph at lines 347--348
 [][] 
  []
 
 [24 <c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/resources/images/MVC.png>]
 LaTeX Font Info:    Font shape `OMS/aer/m/it' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 374.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 370.
  [25]) (c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd/chapters/03UserInterfaceDesign.tex [26]
 Chapter 3.
 
@@ -1491,7 +1491,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  71i,14n,85p,603b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (41 pages, 974479 bytes).
+Output written on "c:/Users/marco/OneDrive/94. OneNote/Git/SoftwareEngeneering2/PremiSicilianoTaddeo/RASD Working Folder/PremiSicilianoTaddeo/DD Working Folder/dd.pdf" (41 pages, 974357 bytes).
 PDF statistics:
  623 PDF objects out of 1000 (max. 8388607)
  500 compressed objects within 5 object streams
