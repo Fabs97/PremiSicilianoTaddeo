@@ -250,6 +250,22 @@
         UnsafeAreaManager which forwards them to the DBMS of Safestreets, the
         process ends with the confirm of the DBMS sent up to the employee.
 
+        \subsection{Statistics}
+        \begin{figure}[H]
+            \includegraphics[..]
+            \caption{Runtime View - Statistics}
+        \end{figure}
+        In this sequence diagram the process of analyze the Statistics is shown. 
+        The Municipal Director request the StatisticsPage to the WebApp which forwards 
+        the request to rhe Router adding the Id of the municipal director. The Router 
+        forwards it to right component, i.e. the 'StatisticsManager'. The latter 
+        understand, through the Id, the municipality of competence of the Municipal 
+        Director and forward the request to the CrossDataManager. The latter retrieve 
+        the data from the municipality and from the DBMS of SafeStreets. Now CrossDataManager 
+        has all the data that it needs to cross the data and he sends the resulting data up 
+        to the employee. The employee can decide which type of statistics to select and the 
+        process enda with the WebApp that show to the director the statistics selected.
+
     \newpage
     \section{Component interfaces}
     \begin{figure}[H]
