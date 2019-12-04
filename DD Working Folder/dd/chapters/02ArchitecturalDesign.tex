@@ -185,18 +185,16 @@
         hard evidence, type of violation are here thought to be contained in the
         request object. The position is assumed to be entered by the user
         manually, the detection of the online location by Google Maps is
-        neglected). When submitted, the request is sent to the Router, which
-        forwards it to the right component, i.e. the 'SignalViolationManager'.
-        The latter is responsible for checking the input inserted by the user:
-        if there are some missing or invalid input, an error message is sent
+        neglected). When submitted, The WebApp is responsible for checking the input 
+        inserted by the user: if there are some missing or invalid input, an error message is sent
         back to the user who can recompile the form and resubmit the new data.
-        Otherwise, if all the inputs are valid, the request with all data of the
-        violation and the parameter user set to the user who have done the
-        report is sent to 'ViolationListsManager', which forwards it to the DBMS
-        (which adds it to the list of reports of that municipality). At this
-        point, the DBMS send the confirm of the operation to the components up
-        to the user who it's ready to send other reports or to return to his
-        menu.
+        If all the inputs are valid, the request is sent to the Router, which
+        forwards it to the right component, i.e. the 'SignalViolationManager'.
+        The latter forwards all data of the violation, and the parameter user set 
+        to the user who have done the report, to DBMS (which adds it to the list of reports of that 
+        municipality). At this point, the DBMS send the confirm of the operation to 
+        the components up to the user who it's ready to send other reports or to 
+        return to his menu.
 
         \subsection{SignUp and SignIn}
         \begin{figure}[H]
